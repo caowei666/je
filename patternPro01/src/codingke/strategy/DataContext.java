@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class DataContext {
-    //DataContext只依赖接口，不依赖具体实现，这样的写法就是面时接口编程
+    //DataContext只依赖接口，不依赖具体实现，这样的写法就是面向接口编程
     private ISave iSave;
 
     public static ISave getSave() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
