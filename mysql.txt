@@ -1,0 +1,63 @@
+unique key      ----唯一约束，可以给多个字段设置唯一约束（该字段不能插入重复的值）
+
+primary key不一定要auto_increment, 而auto_incremant必须要设置为primary key(否则会报错)
+
+enum("1","2","3") default "3", enum 枚举类型，default设置默认值
+
+show columns from 表名 === desc 表名; 查看表信息
+
+对表的修改： 
+	添加新列：ALTER TABLE 表名 ADD 新列名 数据类型  约束 [FIRST | after 已存在列名]；
+	修改列名：ALTER TABLE 表名 CHANGE 旧列名 新列名 数据类型；
+	修改列的数据类型：ALTER TABLE 表名 MODIFY 列名 数据类型；
+	修改列的相对位置：ALTER TABLE 表名 MODIFY 列名 数据类型 FIRST | AFTER 列名2；
+	删除列：ALTER TABLE 表名 DROP 列名；
+	修改表名：ALTER TABLE 旧表名 RENAME TO 新表名；
+删除表：
+	DROP TABLE [IF EXISTS] 表名1，表名2；
+
+
+数据库提高性能：	选择合适的数据类型；
+		数据量大时使用表分区，提高检索效率；
+
+DDL操作：Data Definition Language（数据定义语言）
+create database if not exists wangnini2 character set gbk;
+alter database wangnini2 character set utf8;
+show create database wangnini2;  //展示wangnini2数据库的信息
+drop database wangnini2;
+select database();   //查看当前使用的数据库
+show tables;   //查看当前使用数据库下的表
+desc student;   //查看student表结构
+alter table student add image blob;  //给表增加一列字段
+		modify
+		drop
+rename table student user;   //把student表改为user
+show create table student;   //展示创建表的语句
+
+DML操作：Data Manipulation Language（数据操纵语言）
+添加、删除、更新 insert delete update
+insert into student(id,name,age) values(1,'cao',18);
+
+update emp set ename = 'caowei' where empno = 7369;
+
+DQL数据查询语言：
+select * from emp;
+select empno,ename from emp;
+select * from emp where sal > 1600;
+select * from emp where sal between 1000 and 2000;
+
+模糊查询：
+_ : 任意一个字符；
+%:任意0~n个字符；
+SELECT * FROM emp WHERE ENAME LIKE 'A%';
+字段控制查询：
+select distince dname from demp;   //去除重复记录
+SELECT *,sal+comm from emp;  //数字相加如果存在null相加结果为Null
+select *,sal+IFNULL(comm,0) from emp;  //如果为null把它转换为0
+函数计算：
+select count(*) from emp;  //计算数据总和
+SELECT AVG(sal) from emp; //统计平均工作
+分组查询：
+SELECT deptno,sum(sal) from emp GROUP BY deptno; //根据部门分组查询工资的总和
+分页查询：
+SELECT * FROM emp LIMIT 0,5;
