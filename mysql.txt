@@ -33,6 +33,7 @@ alter table student add image blob;  //给表增加一列字段
 		drop
 rename table student user;   //把student表改为user
 show create table student;   //展示创建表的语句
+drop table student;   //删除表
 
 DML操作：Data Manipulation Language（数据操纵语言）
 添加、删除、更新 insert delete update
