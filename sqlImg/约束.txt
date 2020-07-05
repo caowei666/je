@@ -1,0 +1,69 @@
+#主键约束
+create table student(
+stuNo int PRIMARY KEY,
+stuName VARCHAR(20),
+age int,
+address VARCHAR(50)
+);
+
+INSERT INTO student (stuNo,stuName,age,address) VALUES (1001,'艾克',18,'祖安的祖安人');
+INSERT INTO student (stuNo,stuName,age,address) VALUES (NULL,'恶魔',20,'祖安');
+INSERT INTO student (stuNo,stuName,age,address) VALUES (1002,'望你你',18,'祖安的祖安人');
+INSERT INTO student (stuNo,stuName,age,address) VALUES (1003,'王霓霓',18,'祖安的祖安人');
+
+create table student2(
+stuNo int,
+classId VARCHAR(20),
+stuName VARCHAR(20),
+age int,
+address VARCHAR(50),
+PRIMARY KEY(stuNo,classId)
+);
+INSERT INTO student2 VALUES(2,'二班','cao',18,'beijing');
+INSERT INTO student2 VALUES(2,'二班','王',28,'村里');
+
+#唯一约束
+CREATE TABLE person(
+	pId INT PRIMARY KEY,
+	pName VARCHAR(20),
+	cardNo VARCHAR(18) UNIQUE
+	);
+	INSERT INTO person VALUES(201,'sunny',130424199611101429);
+	INSERT INTO person VALUES(202,'sunny',NULL);
+	
+#自动增长 从一开始增长
+#金钱最多8位，2位小数点
+#可以设置自动增长初始值
+CREATE TABLE product(
+pId INT PRIMARY KEY auto_increment,
+pName VARCHAR(50),
+price DECIMAL(8,2),
+note VARCHAR(100)
+)auto_increment=200;
+INSERT INTO product(pName,price,note) values('bananer',3.58,'香蕉');
+INSERT INTO product(pName,price,note) values('apple',3.98,'苹果');
+INSERT INTO product(pId,pName,price,note) values(20,'apple',3.98,'苹果');
+#从21开始增长
+INSERT INTO product(pName,price,note) values('origce',3.98,'橘子');
+
+#数据类型 char(0-255长度) varchar(0-65535字节)
+CREATE TABLE student(
+stuNo INT PRIMARY KEY auto_increment,
+stuName char(5)
+);
+INSERT INTO student(stuName) VALUES('胖啪怕啪怕怕');
+INSERT INTO student(stuName) VALUES('aaaab');
+
+
+
+#外键约束
+CREATE TABLE score(
+id int PRIMARY KEY auto_increment,
+course VARCHAR(20),
+score DOUBLE(5,2),
+s_stu INT
+#constraint fk_score_student FOREIGN key(s_stu) REFERENCES student(stuNo)
+);
+alter table score add FOREIGN KEY(s_stu) REFERENCES student(stuNo);
+desc score;
+show create table score;

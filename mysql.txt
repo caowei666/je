@@ -37,7 +37,7 @@ show create table student;   //展示创建表的语句
 DML操作：Data Manipulation Language（数据操纵语言）
 添加、删除、更新 insert delete update
 insert into student(id,name,age) values(1,'cao',18);
-
+delete from student;  //清空表
 update emp set ename = 'caowei' where empno = 7369;
 
 DQL数据查询语言：
@@ -61,3 +61,5 @@ SELECT AVG(sal) from emp; //统计平均工作
 SELECT deptno,sum(sal) from emp GROUP BY deptno; //根据部门分组查询工资的总和
 分页查询：
 SELECT * FROM emp LIMIT 0,5;
+查询顺序：
+select 列名 from 表 [where ---> group by --->having--->order by ---> limit]

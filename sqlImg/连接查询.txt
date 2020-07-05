@@ -1,0 +1,22 @@
+#连接查询
+
+#笛卡尔积：交叉连接（有很多无用的数据）
+select * from emp,dept;
+#交叉连接
+select * from emp cross join dept;
+
+#内连接查询（两个表是平等的，位置可以互换）
+select * from emp,dept where emp.DEPTNO = dept.DEPTNO;
+select * from emp e inner join dept d on e.DEPTNO = d.DEPTNO;
+
+#外连接查询（两个表有主次之分）
+#左外连接（以左表为主表）
+select * from emp left outer join dept on emp.DEPTNO = dept.DEPTNO; 
+#右外连接（以右表为主表）
+select * from emp right outer join dept on emp.DEPTNO = dept.DEPTNO where emp.empno is NULL;
+
+#子查询  查询scott所在部门的所有人
+select deptno from emp where ename = 'scott';
+select * from emp where deptno = (select deptno from emp where ename = 'scott');
+#查询高于30部门所有人工资的员工信息
+select * from emp where sal > all(select sal from emp where deptno=30);
