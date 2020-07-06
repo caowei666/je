@@ -14,7 +14,7 @@ public class DBUtils {
     private static String password;
     static {
         driver = "com.mysql.cj.jdbc.Driver";
-        url="jdbc:mysql://localhost:3306?/test01?serverTimezone=GMT%2B8";
+        url="jdbc:mysql://localhost:3306/test01?serverTimezone=GMT%2B8";
         username="root";
         password="19940206";
         try {
