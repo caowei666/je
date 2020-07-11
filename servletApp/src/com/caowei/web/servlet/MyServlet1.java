@@ -1,6 +1,7 @@
 package com.caowei.web.servlet;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,8 @@ import java.io.PrintWriter;
 //name:给servlet起个名字
 //loadOnStartup:启动时时候加载，默认是-1，第一次访问实例化
 //      如果>=0，启动时实例化数字越小优先级越高
-@WebServlet(value = "/myservlet1",urlPatterns = )
+//initParams={}
+@WebServlet(value = "/myservlet1",initParams = {@WebInitParam(name="username",value = "曹伟")})
 public class MyServlet1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

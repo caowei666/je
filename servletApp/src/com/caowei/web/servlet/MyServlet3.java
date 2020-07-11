@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet("/myservlet3")
+@WebServlet(value = "/myservlet3",loadOnStartup = 0)
 public class MyServlet3 implements Servlet {
     //初始化servlet方法
     @Override
