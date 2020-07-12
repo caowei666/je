@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+   <form action="/servlet2/servlet3" method="post">
+       <div>用户名:<input type="text" name="username"></div>
+       <div>密码:<input type="password" name="password"></div>
+       <div>确认密码:<input type="password" name="repassword"></div>
+       <div>邮箱:<input type="text" name="email"></div>
+       <div>验证码:<input type="text" name="vcode"><img id="img" src="validate" onclick="changeImg()"><a onclick="return changeImg()">点击换一个</a></div>
+       <input type="submit" value="提交" />
+   </form>
+<script type="text/javascript">
+    function changeImg(){
+        var img = document.getElementById("img");
+        img.src="validate?n="+Math.random();
+        return false;
+    }
+</script>
+</body>
+</html>

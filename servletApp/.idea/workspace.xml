@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73057ff-b7d0-4677-b523-fbb0427b8e74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/caowei/web/servlet/MyServlet5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caowei/web/servlet2/InfoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletApp_war_exploded/WEB-INF/classes/com/caowei/web/servlet/MyServlet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletApp_war_exploded/WEB-INF/classes/com/caowei/web/servlet/MyServlet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servletApp_war_exploded/WEB-INF/classes/com/caowei/web/servlet/MyServlet3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servletApp_war_exploded/WEB-INF/classes/com/caowei/web/servlet/MyServlet3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletApp/com/caowei/web/servlet/MyServlet1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletApp/com/caowei/web/servlet/MyServlet1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servletApp/com/caowei/web/servlet/MyServlet3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servletApp/com/caowei/web/servlet/MyServlet3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caowei/web/servlet/MyServlet1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caowei/web/servlet/MyServlet1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caowei/web/servlet/MyServlet3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caowei/web/servlet/MyServlet3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/caowei/web/servlet2/InfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+            <state relative-caret-position="246">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,13 +180,6 @@
             <path>
               <item name="servletApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="servletApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servletApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servletApp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -206,7 +192,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594469375614" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594469511669" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -312,12 +298,12 @@
       <option name="presentableId" value="Default" />
       <updated>1594308397054</updated>
       <workItem from="1594308402284" duration="3967000" />
-      <workItem from="1594466297850" duration="3072000" />
+      <workItem from="1594466297850" duration="3728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7039000" />
+    <option name="totallyTimeSpent" value="7695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="833" y="0" width="731" height="784" extended-state="0" />
@@ -333,7 +319,7 @@
       <window_info id="Web" order="7" sideWeight="0.5034325" side_tool="true" weight="0.3640416" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297546" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29601228" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29601228" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/caowei/web/servlet2/InfoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        <state relative-caret-position="246">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
