@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://ke.qq.com/webcourse/index.html#cid=409948&term_id=100551919&taid=3864791961977180&vid=5285890800081855302 -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .x-tcp-container-dimensions {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .x-tcp-container-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>JSP（1）</title>
+  <meta name="keywords" content="腾讯课堂,腾讯教育,远程教育,公开课,网络公开课,在线学习,在线教育,在线培训,在线课堂,名师讲堂,视频课程">
+  <meta name="description" itemprop="description" content="快来直播教室观看直播课程，并参与现场讨论，让学习成就梦想！">
+  <meta itemprop="name" content="腾讯课堂-直播教室">
+  <meta itemprop="image" content="//9.url.cn/edu/lego_modules/edu-ui/0.0.1/img/nohash/logo_pc_rich.png">
+  <script src="./JSP（1）_files/hm.js.下载"></script><script>window.SENTRY_RELEASE = { id: 'study@feat-blue-img' }</script>
+<script>var T = { page_start: Date.now() };window._tx_webrtc_enable  = false;</script>
+  <link rel="dns-prefetch" href="https://7.url.cn/">
+  <link rel="dns-prefetch" href="https://8.url.cn/">
+  <link rel="dns-prefetch" href="https://9.url.cn/">
+  <link rel="stylesheet" href="./JSP（1）_files/index_120ff8dd3141b7bd18448a11072688bf.css">
+  <!--STYLE-->
+  <script>/*! Raven.js 3.27.2 (6d91db933) | github.com/getsentry/raven-js */
+  !function(a){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=a();else if("function"==typeof define&&define.amd)define([],a);else{var b;b="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,b.Raven=a()}}(function(){return function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){function d(a){this.name="RavenConfigError",this.message=a}d.prototype=new Error,d.prototype.constructor=d,b.exports=d},{}],2:[function(a,b,c){var d=a(5),e=function(a,b,c){var e=a[b],f=a;if(b in a){var g="warn"===b?"warning":b;a[b]=function(){var a=[].slice.call(arguments),h=d.safeJoin(a," "),i={level:g,logger:"console",extra:{arguments:a}};"assert"===b?a[0]===!1&&(h="Assertion failed: "+(d.safeJoin(a.slice(1)," ")||"console.assert"),i.extra.arguments=a.slice(1),c&&c(h,i)):c&&c(h,i),e&&Function.prototype.apply.call(e,f,a)}}};b.exports={wrapMethod:e}},{5:5}],3:[function(a,b,c){(function(c){function d(){return+new Date}function e(a,b){return s(b)?function(c){return b(c,a)}:b}function f(){this.a=!("object"!=typeof JSON||!JSON.stringify),this.b=!r(S),this.c=!r(T),this.d=null,this.e=null,this.f=null,this.g=null,this.h=null,this.i=null,this.j={},this.k={release:R.SENTRY_RELEASE&&R.SENTRY_RELEASE.id,logger:"javascript",ignoreErrors:[],ignoreUrls:[],whitelistUrls:[],includePaths:[],headers:null,collectWindowErrors:!0,captureUnhandledRejections:!0,maxMessageLength:0,maxUrlLength:250,stackTraceLimit:50,autoBreadcrumbs:!0,instrument:!0,sampleRate:1,sanitizeKeys:[]},this.l={method:"POST",referrerPolicy:K()?"origin":""},this.m=0,this.n=!1,this.o=Error.stackTraceLimit,this.p=R.console||{},this.q={},this.r=[],this.s=d(),this.t=[],this.u=[],this.v=null,this.w=R.location,this.x=this.w&&this.w.href,this.y();for(var a in this.p)this.q[a]=this.p[a]}var g=a(6),h=a(7),i=a(8),j=a(1),k=a(5),l=k.isErrorEvent,m=k.isDOMError,n=k.isDOMException,o=k.isError,p=k.isObject,q=k.isPlainObject,r=k.isUndefined,s=k.isFunction,t=k.isString,u=k.isArray,v=k.isEmptyObject,w=k.each,x=k.objectMerge,y=k.truncate,z=k.objectFrozen,A=k.hasKey,B=k.joinRegExp,C=k.urlencode,D=k.uuid4,E=k.htmlTreeAsString,F=k.isSameException,G=k.isSameStacktrace,H=k.parseUrl,I=k.fill,J=k.supportsFetch,K=k.supportsReferrerPolicy,L=k.serializeKeysForMessage,M=k.serializeException,N=k.sanitize,O=a(2).wrapMethod,P="source protocol user pass host port path".split(" "),Q=/^(?:(\w+):)?\/\/(?:(\w+)(:\w+)?@)?([\w\.-]+)(?::(\d+))?(\/.*)/,R="undefined"!=typeof window?window:"undefined"!=typeof c?c:"undefined"!=typeof self?self:{},S=R.document,T=R.navigator;f.prototype={VERSION:"3.27.2",debug:!1,TraceKit:g,config:function(a,b){var c=this;if(c.g)return this.z("error","Error: Raven has already been configured"),c;if(!a)return c;var d=c.k;b&&w(b,function(a,b){"tags"===a||"extra"===a||"user"===a?c.j[a]=b:d[a]=b}),c.setDSN(a),d.ignoreErrors.push(/^Script error\.?$/),d.ignoreErrors.push(/^Javascript error: Script error\.? on line 0$/),d.ignoreErrors=B(d.ignoreErrors),d.ignoreUrls=!!d.ignoreUrls.length&&B(d.ignoreUrls),d.whitelistUrls=!!d.whitelistUrls.length&&B(d.whitelistUrls),d.includePaths=B(d.includePaths),d.maxBreadcrumbs=Math.max(0,Math.min(d.maxBreadcrumbs||100,100));var e={xhr:!0,console:!0,dom:!0,location:!0,sentry:!0},f=d.autoBreadcrumbs;"[object Object]"==={}.toString.call(f)?f=x(e,f):f!==!1&&(f=e),d.autoBreadcrumbs=f;var h={tryCatch:!0},i=d.instrument;return"[object Object]"==={}.toString.call(i)?i=x(h,i):i!==!1&&(i=h),d.instrument=i,g.collectWindowErrors=!!d.collectWindowErrors,c},install:function(){var a=this;return a.isSetup()&&!a.n&&(g.report.subscribe(function(){a.A.apply(a,arguments)}),a.k.captureUnhandledRejections&&a.B(),a.C(),a.k.instrument&&a.k.instrument.tryCatch&&a.D(),a.k.autoBreadcrumbs&&a.E(),a.F(),a.n=!0),Error.stackTraceLimit=a.k.stackTraceLimit,this},setDSN:function(a){var b=this,c=b.G(a),d=c.path.lastIndexOf("/"),e=c.path.substr(1,d);b.H=a,b.h=c.user,b.I=c.pass&&c.pass.substr(1),b.i=c.path.substr(d+1),b.g=b.J(c),b.K=b.g+"/"+e+"api/"+b.i+"/store/",this.y()},context:function(a,b,c){return s(a)&&(c=b||[],b=a,a={}),this.wrap(a,b).apply(this,c)},wrap:function(a,b,c){function d(){var d=[],f=arguments.length,g=!a||a&&a.deep!==!1;for(c&&s(c)&&c.apply(this,arguments);f--;)d[f]=g?e.wrap(a,arguments[f]):arguments[f];try{return b.apply(this,d)}catch(h){throw e.L(),e.captureException(h,a),h}}var e=this;if(r(b)&&!s(a))return a;if(s(a)&&(b=a,a=void 0),!s(b))return b;try{if(b.M)return b;if(b.N)return b.N}catch(f){return b}for(var g in b)A(b,g)&&(d[g]=b[g]);return d.prototype=b.prototype,b.N=d,d.M=!0,d.O=b,d},uninstall:function(){return g.report.uninstall(),this.P(),this.Q(),this.R(),this.S(),Error.stackTraceLimit=this.o,this.n=!1,this},T:function(a){this.z("debug","Raven caught unhandled promise rejection:",a),this.captureException(a.reason,{mechanism:{type:"onunhandledrejection",handled:!1}})},B:function(){return this.T=this.T.bind(this),R.addEventListener&&R.addEventListener("unhandledrejection",this.T),this},P:function(){return R.removeEventListener&&R.removeEventListener("unhandledrejection",this.T),this},captureException:function(a,b){if(b=x({trimHeadFrames:0},b?b:{}),l(a)&&a.error)a=a.error;else{if(m(a)||n(a)){var c=a.name||(m(a)?"DOMError":"DOMException"),d=a.message?c+": "+a.message:c;return this.captureMessage(d,x(b,{stacktrace:!0,trimHeadFrames:b.trimHeadFrames+1}))}if(o(a))a=a;else{if(!q(a))return this.captureMessage(a,x(b,{stacktrace:!0,trimHeadFrames:b.trimHeadFrames+1}));b=this.U(b,a),a=new Error(b.message)}}this.d=a;try{var e=g.computeStackTrace(a);this.V(e,b)}catch(f){if(a!==f)throw f}return this},U:function(a,b){var c=Object.keys(b).sort(),d=x(a,{message:"Non-Error exception captured with keys: "+L(c),fingerprint:[i(c)],extra:a.extra||{}});return d.extra.W=M(b),d},captureMessage:function(a,b){if(!this.k.ignoreErrors.test||!this.k.ignoreErrors.test(a)){b=b||{},a+="";var c,d=x({message:a},b);try{throw new Error(a)}catch(e){c=e}c.name=null;var f=g.computeStackTrace(c),h=u(f.stack)&&f.stack[1];h&&"Raven.captureException"===h.func&&(h=f.stack[2]);var i=h&&h.url||"";if((!this.k.ignoreUrls.test||!this.k.ignoreUrls.test(i))&&(!this.k.whitelistUrls.test||this.k.whitelistUrls.test(i))){if(this.k.stacktrace||b.stacktrace||""===d.message){d.fingerprint=null==d.fingerprint?a:d.fingerprint,b=x({trimHeadFrames:0},b),b.trimHeadFrames+=1;var j=this.X(f,b);d.stacktrace={frames:j.reverse()}}return d.fingerprint&&(d.fingerprint=u(d.fingerprint)?d.fingerprint:[d.fingerprint]),this.Y(d),this}}},captureBreadcrumb:function(a){var b=x({timestamp:d()/1e3},a);if(s(this.k.breadcrumbCallback)){var c=this.k.breadcrumbCallback(b);if(p(c)&&!v(c))b=c;else if(c===!1)return this}return this.u.push(b),this.u.length>this.k.maxBreadcrumbs&&this.u.shift(),this},addPlugin:function(a){var b=[].slice.call(arguments,1);return this.r.push([a,b]),this.n&&this.F(),this},setUserContext:function(a){return this.j.user=a,this},setExtraContext:function(a){return this.Z("extra",a),this},setTagsContext:function(a){return this.Z("tags",a),this},clearContext:function(){return this.j={},this},getContext:function(){return JSON.parse(h(this.j))},setEnvironment:function(a){return this.k.environment=a,this},setRelease:function(a){return this.k.release=a,this},setDataCallback:function(a){var b=this.k.dataCallback;return this.k.dataCallback=e(b,a),this},setBreadcrumbCallback:function(a){var b=this.k.breadcrumbCallback;return this.k.breadcrumbCallback=e(b,a),this},setShouldSendCallback:function(a){var b=this.k.shouldSendCallback;return this.k.shouldSendCallback=e(b,a),this},setTransport:function(a){return this.k.transport=a,this},lastException:function(){return this.d},lastEventId:function(){return this.f},isSetup:function(){return!!this.a&&(!!this.g||(this.ravenNotConfiguredError||(this.ravenNotConfiguredError=!0,this.z("error","Error: Raven has not been configured.")),!1))},afterLoad:function(){var a=R.RavenConfig;a&&this.config(a.dsn,a.config).install()},showReportDialog:function(a){if(S){if(a=x({eventId:this.lastEventId(),dsn:this.H,user:this.j.user||{}},a),!a.eventId)throw new j("Missing eventId");if(!a.dsn)throw new j("Missing DSN");var b=encodeURIComponent,c=[];for(var d in a)if("user"===d){var e=a.user;e.name&&c.push("name="+b(e.name)),e.email&&c.push("email="+b(e.email))}else c.push(b(d)+"="+b(a[d]));var f=this.J(this.G(a.dsn)),g=S.createElement("script");g.async=!0,g.src=f+"/api/embed/error-page/?"+c.join("&"),(S.head||S.body).appendChild(g)}},L:function(){var a=this;this.m+=1,setTimeout(function(){a.m-=1})},$:function(a,b){var c,d;if(this.b){b=b||{},a="raven"+a.substr(0,1).toUpperCase()+a.substr(1),S.createEvent?(c=S.createEvent("HTMLEvents"),c.initEvent(a,!0,!0)):(c=S.createEventObject(),c.eventType=a);for(d in b)A(b,d)&&(c[d]=b[d]);if(S.createEvent)S.dispatchEvent(c);else try{S.fireEvent("on"+c.eventType.toLowerCase(),c)}catch(e){}}},_:function(a){var b=this;return function(c){if(b.aa=null,b.v!==c){b.v=c;var d;try{d=E(c.target)}catch(e){d="<unknown>"}b.captureBreadcrumb({category:"ui."+a,message:d})}}},ba:function(){var a=this,b=1e3;return function(c){var d;try{d=c.target}catch(e){return}var f=d&&d.tagName;if(f&&("INPUT"===f||"TEXTAREA"===f||d.isContentEditable)){var g=a.aa;g||a._("input")(c),clearTimeout(g),a.aa=setTimeout(function(){a.aa=null},b)}}},ca:function(a,b){var c=H(this.w.href),d=H(b),e=H(a);this.x=b,c.protocol===d.protocol&&c.host===d.host&&(b=d.relative),c.protocol===e.protocol&&c.host===e.host&&(a=e.relative),this.captureBreadcrumb({category:"navigation",data:{to:b,from:a}})},C:function(){var a=this;a.da=Function.prototype.toString,Function.prototype.toString=function(){return"function"==typeof this&&this.M?a.da.apply(this.O,arguments):a.da.apply(this,arguments)}},Q:function(){this.da&&(Function.prototype.toString=this.da)},D:function(){function a(a){return function(b,d){for(var e=new Array(arguments.length),f=0;f<e.length;++f)e[f]=arguments[f];var g=e[0];return s(g)&&(e[0]=c.wrap({mechanism:{type:"instrument",data:{"function":a.name||"<anonymous>"}}},g)),a.apply?a.apply(this,e):a(e[0],e[1])}}function b(a){var b=R[a]&&R[a].prototype;b&&b.hasOwnProperty&&b.hasOwnProperty("addEventListener")&&(I(b,"addEventListener",function(b){return function(d,f,g,h){try{f&&f.handleEvent&&(f.handleEvent=c.wrap({mechanism:{type:"instrument",data:{target:a,"function":"handleEvent",handler:f&&f.name||"<anonymous>"}}},f.handleEvent))}catch(i){}var j,k,l;return e&&e.dom&&("EventTarget"===a||"Node"===a)&&(k=c._("click"),l=c.ba(),j=function(a){if(a){var b;try{b=a.type}catch(c){return}return"click"===b?k(a):"keypress"===b?l(a):void 0}}),b.call(this,d,c.wrap({mechanism:{type:"instrument",data:{target:a,"function":"addEventListener",handler:f&&f.name||"<anonymous>"}}},f,j),g,h)}},d),I(b,"removeEventListener",function(a){return function(b,c,d,e){try{c=c&&(c.N?c.N:c)}catch(f){}return a.call(this,b,c,d,e)}},d))}var c=this,d=c.t,e=this.k.autoBreadcrumbs;I(R,"setTimeout",a,d),I(R,"setInterval",a,d),R.requestAnimationFrame&&I(R,"requestAnimationFrame",function(a){return function(b){return a(c.wrap({mechanism:{type:"instrument",data:{"function":"requestAnimationFrame",handler:a&&a.name||"<anonymous>"}}},b))}},d);for(var f=["EventTarget","Window","Node","ApplicationCache","AudioTrackList","ChannelMergerNode","CryptoOperation","EventSource","FileReader","HTMLUnknownElement","IDBDatabase","IDBRequest","IDBTransaction","KeyOperation","MediaController","MessagePort","ModalWindow","Notification","SVGElementInstance","Screen","TextTrack","TextTrackCue","TextTrackList","WebSocket","WebSocketWorker","Worker","XMLHttpRequest","XMLHttpRequestEventTarget","XMLHttpRequestUpload"],g=0;g<f.length;g++)b(f[g])},E:function(){function a(a,c){a in c&&s(c[a])&&I(c,a,function(c){return b.wrap({mechanism:{type:"instrument",data:{"function":a,handler:c&&c.name||"<anonymous>"}}},c)})}var b=this,c=this.k.autoBreadcrumbs,d=b.t;if(c.xhr&&"XMLHttpRequest"in R){var e=R.XMLHttpRequest&&R.XMLHttpRequest.prototype;I(e,"open",function(a){return function(c,d){return t(d)&&d.indexOf(b.h)===-1&&(this.ea={method:c,url:d,status_code:null}),a.apply(this,arguments)}},d),I(e,"send",function(c){return function(){function d(){if(e.ea&&4===e.readyState){try{e.ea.status_code=e.status}catch(a){}b.captureBreadcrumb({type:"http",category:"xhr",data:e.ea})}}for(var e=this,f=["onload","onerror","onprogress"],g=0;g<f.length;g++)a(f[g],e);return"onreadystatechange"in e&&s(e.onreadystatechange)?I(e,"onreadystatechange",function(a){return b.wrap({mechanism:{type:"instrument",data:{"function":"onreadystatechange",handler:a&&a.name||"<anonymous>"}}},a,d)}):e.onreadystatechange=d,c.apply(this,arguments)}},d)}c.xhr&&J()&&I(R,"fetch",function(a){return function(){for(var c=new Array(arguments.length),d=0;d<c.length;++d)c[d]=arguments[d];var e,f=c[0],g="GET";if("string"==typeof f?e=f:"Request"in R&&f instanceof R.Request?(e=f.url,f.method&&(g=f.method)):e=""+f,e.indexOf(b.h)!==-1)return a.apply(this,c);c[1]&&c[1].method&&(g=c[1].method);var h={method:g,url:e,status_code:null};return a.apply(this,c).then(function(a){return h.status_code=a.status,b.captureBreadcrumb({type:"http",category:"fetch",data:h}),a})["catch"](function(a){throw b.captureBreadcrumb({type:"http",category:"fetch",data:h,level:"error"}),a})}},d),c.dom&&this.b&&(S.addEventListener?(S.addEventListener("click",b._("click"),!1),S.addEventListener("keypress",b.ba(),!1)):S.attachEvent&&(S.attachEvent("onclick",b._("click")),S.attachEvent("onkeypress",b.ba())));var f=R.chrome,g=f&&f.app&&f.app.runtime,h=!g&&R.history&&R.history.pushState&&R.history.replaceState;if(c.location&&h){var i=R.onpopstate;R.onpopstate=function(){var a=b.w.href;if(b.ca(b.x,a),i)return i.apply(this,arguments)};var j=function(a){return function(){var c=arguments.length>2?arguments[2]:void 0;return c&&b.ca(b.x,c+""),a.apply(this,arguments)}};I(R.history,"pushState",j,d),I(R.history,"replaceState",j,d)}if(c.console&&"console"in R&&console.log){var k=function(a,c){b.captureBreadcrumb({message:a,level:c.level,category:"console"})};w(["debug","info","warn","error","log"],function(a,b){O(console,b,k)})}},R:function(){for(var a;this.t.length;){a=this.t.shift();var b=a[0],c=a[1],d=a[2];b[c]=d}},S:function(){for(var a in this.q)this.p[a]=this.q[a]},F:function(){var a=this;w(this.r,function(b,c){var d=c[0],e=c[1];d.apply(a,[a].concat(e))})},G:function(a){var b=Q.exec(a),c={},d=7;try{for(;d--;)c[P[d]]=b[d]||""}catch(e){throw new j("Invalid DSN: "+a)}if(c.pass&&!this.k.allowSecretKey)throw new j("Do not specify your secret key in the DSN. See: http://bit.ly/raven-secret-key");return c},J:function(a){var b="//"+a.host+(a.port?":"+a.port:"");return a.protocol&&(b=a.protocol+":"+b),b},A:function(a,b){b=b||{},b.mechanism=b.mechanism||{type:"onerror",handled:!1},this.m||this.V(a,b)},V:function(a,b){var c=this.X(a,b);this.$("handle",{stackInfo:a,options:b}),this.fa(a.name,a.message,a.url,a.lineno,c,b)},X:function(a,b){var c=this,d=[];if(a.stack&&a.stack.length&&(w(a.stack,function(b,e){var f=c.ga(e,a.url);f&&d.push(f)}),b&&b.trimHeadFrames))for(var e=0;e<b.trimHeadFrames&&e<d.length;e++)d[e].in_app=!1;return d=d.slice(0,this.k.stackTraceLimit)},ga:function(a,b){var c={filename:a.url,lineno:a.line,colno:a.column,"function":a.func||"?"};return a.url||(c.filename=b),c.in_app=!(this.k.includePaths.test&&!this.k.includePaths.test(c.filename)||/(Raven|TraceKit)\./.test(c["function"])||/raven\.(min\.)?js$/.test(c.filename)),c},fa:function(a,b,c,d,e,f){var g=(a?a+": ":"")+(b||"");if(!this.k.ignoreErrors.test||!this.k.ignoreErrors.test(b)&&!this.k.ignoreErrors.test(g)){var h;if(e&&e.length?(c=e[0].filename||c,e.reverse(),h={frames:e}):c&&(h={frames:[{filename:c,lineno:d,in_app:!0}]}),(!this.k.ignoreUrls.test||!this.k.ignoreUrls.test(c))&&(!this.k.whitelistUrls.test||this.k.whitelistUrls.test(c))){var i=x({exception:{values:[{type:a,value:b,stacktrace:h}]},transaction:c},f),j=i.exception.values[0];null==j.type&&""===j.value&&(j.value="Unrecoverable error caught"),!i.exception.mechanism&&i.mechanism&&(i.exception.mechanism=i.mechanism,delete i.mechanism),i.exception.mechanism=x({type:"generic",handled:!0},i.exception.mechanism||{}),this.Y(i)}}},ha:function(a){var b=this.k.maxMessageLength;if(a.message&&(a.message=y(a.message,b)),a.exception){var c=a.exception.values[0];c.value=y(c.value,b)}var d=a.request;return d&&(d.url&&(d.url=y(d.url,this.k.maxUrlLength)),d.Referer&&(d.Referer=y(d.Referer,this.k.maxUrlLength))),a.breadcrumbs&&a.breadcrumbs.values&&this.ia(a.breadcrumbs),a},ia:function(a){for(var b,c,d,e=["to","from","url"],f=0;f<a.values.length;++f)if(c=a.values[f],c.hasOwnProperty("data")&&p(c.data)&&!z(c.data)){d=x({},c.data);for(var g=0;g<e.length;++g)b=e[g],d.hasOwnProperty(b)&&d[b]&&(d[b]=y(d[b],this.k.maxUrlLength));a.values[f].data=d}},ja:function(){if(this.c||this.b){var a={};return this.c&&T.userAgent&&(a.headers={"User-Agent":T.userAgent}),R.location&&R.location.href&&(a.url=R.location.href),this.b&&S.referrer&&(a.headers||(a.headers={}),a.headers.Referer=S.referrer),a}},y:function(){this.ka=0,this.la=null},ma:function(){return this.ka&&d()-this.la<this.ka},na:function(a){var b=this.e;return!(!b||a.message!==b.message||a.transaction!==b.transaction)&&(a.stacktrace||b.stacktrace?G(a.stacktrace,b.stacktrace):a.exception||b.exception?F(a.exception,b.exception):!a.fingerprint&&!b.fingerprint||Boolean(a.fingerprint&&b.fingerprint)&&JSON.stringify(a.fingerprint)===JSON.stringify(b.fingerprint))},oa:function(a){if(!this.ma()){var b=a.status;if(400===b||401===b||429===b){var c;try{c=J()?a.headers.get("Retry-After"):a.getResponseHeader("Retry-After"),c=1e3*parseInt(c,10)}catch(e){}this.ka=c?c:2*this.ka||1e3,this.la=d()}}},Y:function(a){var b=this.k,c={project:this.i,logger:b.logger,platform:"javascript"},e=this.ja();if(e&&(c.request=e),a.trimHeadFrames&&delete a.trimHeadFrames,a=x(c,a),a.tags=x(x({},this.j.tags),a.tags),a.extra=x(x({},this.j.extra),a.extra),a.extra["session:duration"]=d()-this.s,this.u&&this.u.length>0&&(a.breadcrumbs={values:[].slice.call(this.u,0)}),this.j.user&&(a.user=this.j.user),b.environment&&(a.environment=b.environment),b.release&&(a.release=b.release),b.serverName&&(a.server_name=b.serverName),a=this.pa(a),Object.keys(a).forEach(function(b){(null==a[b]||""===a[b]||v(a[b]))&&delete a[b]}),s(b.dataCallback)&&(a=b.dataCallback(a)||a),a&&!v(a)&&(!s(b.shouldSendCallback)||b.shouldSendCallback(a)))return this.ma()?void this.z("warn","Raven dropped error due to backoff: ",a):void("number"==typeof b.sampleRate?Math.random()<b.sampleRate&&this.qa(a):this.qa(a))},pa:function(a){return N(a,this.k.sanitizeKeys)},ra:function(){return D()},qa:function(a,b){var c=this,d=this.k;if(this.isSetup()){if(a=this.ha(a),!this.k.allowDuplicates&&this.na(a))return void this.z("warn","Raven dropped repeat event: ",a);this.f=a.event_id||(a.event_id=this.ra()),this.e=a,this.z("debug","Raven about to send:",a);var e={sentry_version:"7",sentry_client:"raven-js/"+this.VERSION,sentry_key:this.h};this.I&&(e.sentry_secret=this.I);var f=a.exception&&a.exception.values[0];this.k.autoBreadcrumbs&&this.k.autoBreadcrumbs.sentry&&this.captureBreadcrumb({category:"sentry",message:f?(f.type?f.type+": ":"")+f.value:a.message,event_id:a.event_id,level:a.level||"error"});var g=this.K;(d.transport||this._makeRequest).call(this,{url:g,auth:e,data:a,options:d,onSuccess:function(){c.y(),c.$("success",{data:a,src:g}),b&&b()},onError:function(d){c.z("error","Raven transport failed to send: ",d),d.request&&c.oa(d.request),c.$("failure",{data:a,src:g}),d=d||new Error("Raven send failed (no additional details provided)"),b&&b(d)}})}},_makeRequest:function(a){var b=a.url+"?"+C(a.auth),c=null,d={};if(a.options.headers&&(c=this.sa(a.options.headers)),a.options.fetchParameters&&(d=this.sa(a.options.fetchParameters)),J()){d.body=h(a.data);var e=x({},this.l),f=x(e,d);return c&&(f.headers=c),R.fetch(b,f).then(function(b){if(b.ok)a.onSuccess&&a.onSuccess();else{var c=new Error("Sentry error code: "+b.status);c.request=b,a.onError&&a.onError(c)}})["catch"](function(){a.onError&&a.onError(new Error("Sentry error code: network unavailable"))})}var g=R.XMLHttpRequest&&new R.XMLHttpRequest;if(g){var i="withCredentials"in g||"undefined"!=typeof XDomainRequest;i&&("withCredentials"in g?g.onreadystatechange=function(){if(4===g.readyState)if(200===g.status)a.onSuccess&&a.onSuccess();else if(a.onError){var b=new Error("Sentry error code: "+g.status);b.request=g,a.onError(b)}}:(g=new XDomainRequest,b=b.replace(/^https?:/,""),a.onSuccess&&(g.onload=a.onSuccess),a.onError&&(g.onerror=function(){var b=new Error("Sentry error code: XDomainRequest");b.request=g,a.onError(b)})),g.open("POST",b),c&&w(c,function(a,b){g.setRequestHeader(a,b)}),g.send(h(a.data)))}},sa:function(a){var b={};for(var c in a)if(a.hasOwnProperty(c)){var d=a[c];b[c]="function"==typeof d?d():d}return b},z:function(a){this.q[a]&&(this.debug||this.k.debug)&&Function.prototype.apply.call(this.q[a],this.p,[].slice.call(arguments,1))},Z:function(a,b){r(b)?delete this.j[a]:this.j[a]=x(this.j[a]||{},b)}},f.prototype.setUser=f.prototype.setUserContext,f.prototype.setReleaseContext=f.prototype.setRelease,b.exports=f}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{1:1,2:2,5:5,6:6,7:7,8:8}],4:[function(a,b,c){(function(c){var d=a(3),e="undefined"!=typeof window?window:"undefined"!=typeof c?c:"undefined"!=typeof self?self:{},f=e.Raven,g=new d;g.noConflict=function(){return e.Raven=f,g},g.afterLoad(),b.exports=g,b.exports.Client=d}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{3:3}],5:[function(a,b,c){(function(c){function d(a){return"object"==typeof a&&null!==a}function e(a){switch(Object.prototype.toString.call(a)){case"[object Error]":return!0;case"[object Exception]":return!0;case"[object DOMException]":return!0;default:return a instanceof Error}}function f(a){return"[object ErrorEvent]"===Object.prototype.toString.call(a)}function g(a){return"[object DOMError]"===Object.prototype.toString.call(a)}function h(a){return"[object DOMException]"===Object.prototype.toString.call(a)}function i(a){return void 0===a}function j(a){return"function"==typeof a}function k(a){return"[object Object]"===Object.prototype.toString.call(a)}function l(a){return"[object String]"===Object.prototype.toString.call(a)}function m(a){return"[object Array]"===Object.prototype.toString.call(a)}function n(a){if(!k(a))return!1;for(var b in a)if(a.hasOwnProperty(b))return!1;return!0}function o(){try{return new ErrorEvent(""),!0}catch(a){return!1}}function p(){try{return new DOMError(""),!0}catch(a){return!1}}function q(){try{return new DOMException(""),!0}catch(a){return!1}}function r(){if(!("fetch"in U))return!1;try{return new Headers,new Request(""),new Response,!0}catch(a){return!1}}function s(){if(!r())return!1;try{return new Request("pickleRick",{referrerPolicy:"origin"}),!0}catch(a){return!1}}function t(){return"function"==typeof PromiseRejectionEvent}function u(a){function b(b,c){var d=a(b)||b;return c?c(d)||d:d}return b}function v(a,b){var c,d;if(i(a.length))for(c in a)z(a,c)&&b.call(null,c,a[c]);else if(d=a.length)for(c=0;c<d;c++)b.call(null,c,a[c])}function w(a,b){return b?(v(b,function(b,c){a[b]=c}),a):a}function x(a){return!!Object.isFrozen&&Object.isFrozen(a)}function y(a,b){if("number"!=typeof b)throw new Error("2nd argument to `truncate` function should be a number");return"string"!=typeof a||0===b?a:a.length<=b?a:a.substr(0,b)+"…"}function z(a,b){return Object.prototype.hasOwnProperty.call(a,b)}function A(a){for(var b,c=[],d=0,e=a.length;d<e;d++)b=a[d],l(b)?c.push(b.replace(/([.*+?^=!:${}()|\[\]\/\\])/g,"\\$1")):b&&b.source&&c.push(b.source);return new RegExp(c.join("|"),"i")}function B(a){var b=[];return v(a,function(a,c){b.push(encodeURIComponent(a)+"="+encodeURIComponent(c))}),b.join("&")}function C(a){if("string"!=typeof a)return{};var b=a.match(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/),c=b[6]||"",d=b[8]||"";return{protocol:b[2],host:b[4],path:b[5],relative:b[5]+c+d}}function D(){var a=U.crypto||U.msCrypto;if(!i(a)&&a.getRandomValues){var b=new Uint16Array(8);a.getRandomValues(b),b[3]=4095&b[3]|16384,b[4]=16383&b[4]|32768;var c=function(a){for(var b=a.toString(16);b.length<4;)b="0"+b;return b};return c(b[0])+c(b[1])+c(b[2])+c(b[3])+c(b[4])+c(b[5])+c(b[6])+c(b[7])}return"xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0,c="x"===a?b:3&b|8;return c.toString(16)})}function E(a){for(var b,c=5,d=80,e=[],f=0,g=0,h=" > ",i=h.length;a&&f++<c&&(b=F(a),!("html"===b||f>1&&g+e.length*i+b.length>=d));)e.push(b),g+=b.length,a=a.parentNode;return e.reverse().join(h)}function F(a){var b,c,d,e,f,g=[];if(!a||!a.tagName)return"";if(g.push(a.tagName.toLowerCase()),a.id&&g.push("#"+a.id),b=a.className,b&&l(b))for(c=b.split(/\s+/),f=0;f<c.length;f++)g.push("."+c[f]);var h=["type","name","title","alt"];for(f=0;f<h.length;f++)d=h[f],e=a.getAttribute(d),e&&g.push("["+d+'="'+e+'"]');return g.join("")}function G(a,b){return!!(!!a^!!b)}function H(a,b){return i(a)&&i(b)}function I(a,b){return!G(a,b)&&(a=a.values[0],b=b.values[0],a.type===b.type&&a.value===b.value&&(!H(a.stacktrace,b.stacktrace)&&J(a.stacktrace,b.stacktrace)))}function J(a,b){if(G(a,b))return!1;var c=a.frames,d=b.frames;if(void 0===c||void 0===d)return!1;if(c.length!==d.length)return!1;for(var e,f,g=0;g<c.length;g++)if(e=c[g],f=d[g],e.filename!==f.filename||e.lineno!==f.lineno||e.colno!==f.colno||e["function"]!==f["function"])return!1;return!0}function K(a,b,c,d){if(null!=a){var e=a[b];a[b]=c(e),a[b].M=!0,a[b].O=e,d&&d.push([a,b,e])}}function L(a,b){if(!m(a))return"";for(var c=[],d=0;d<a.length;d++)try{c.push(String(a[d]))}catch(e){c.push("[value cannot be serialized]")}return c.join(b)}function M(a){return~-encodeURI(a).split(/%..|./).length}function N(a){return M(JSON.stringify(a))}function O(a){if("string"==typeof a){var b=40;return y(a,b)}if("number"==typeof a||"boolean"==typeof a||"undefined"==typeof a)return a;var c=Object.prototype.toString.call(a);return"[object Object]"===c?"[Object]":"[object Array]"===c?"[Array]":"[object Function]"===c?a.name?"[Function: "+a.name+"]":"[Function]":a}function P(a,b){return 0===b?O(a):k(a)?Object.keys(a).reduce(function(c,d){return c[d]=P(a[d],b-1),c},{}):Array.isArray(a)?a.map(function(a){return P(a,b-1)}):O(a)}function Q(a,b,c){if(!k(a))return a;b="number"!=typeof b?V:b,c="number"!=typeof b?W:c;var d=P(a,b);return N(T(d))>c?Q(a,b-1):d}function R(a,b){if("number"==typeof a||"string"==typeof a)return a.toString();if(!Array.isArray(a))return"";if(a=a.filter(function(a){return"string"==typeof a}),0===a.length)return"[object has no keys]";if(b="number"!=typeof b?X:b,a[0].length>=b)return a[0];for(var c=a.length;c>0;c--){var d=a.slice(0,c).join(", ");if(!(d.length>b))return c===a.length?d:d+"…"}return""}function S(a,b){function c(a){return m(a)?a.map(function(a){return c(a)}):k(a)?Object.keys(a).reduce(function(b,d){return b[d]=e.test(d)?f:c(a[d]),b},{}):a}if(!m(b)||m(b)&&0===b.length)return a;var d,e=A(b),f="********";try{d=JSON.parse(T(a))}catch(g){return a}return c(d)}var T=a(7),U="undefined"!=typeof window?window:"undefined"!=typeof c?c:"undefined"!=typeof self?self:{},V=3,W=51200,X=40;b.exports={isObject:d,isError:e,isErrorEvent:f,isDOMError:g,isDOMException:h,isUndefined:i,isFunction:j,isPlainObject:k,isString:l,isArray:m,isEmptyObject:n,supportsErrorEvent:o,supportsDOMError:p,supportsDOMException:q,supportsFetch:r,supportsReferrerPolicy:s,supportsPromiseRejectionEvent:t,wrappedCallback:u,each:v,objectMerge:w,truncate:y,objectFrozen:x,hasKey:z,joinRegExp:A,urlencode:B,uuid4:D,htmlTreeAsString:E,htmlElementAsString:F,isSameException:I,isSameStacktrace:J,parseUrl:C,fill:K,safeJoin:L,serializeException:Q,serializeKeysForMessage:R,sanitize:S}}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{7:7}],6:[function(a,b,c){(function(c){function d(){return"undefined"==typeof document||null==document.location?"":document.location.href}function e(){return"undefined"==typeof document||null==document.location?"":document.location.origin?document.location.origin:document.location.protocol+"//"+document.location.hostname+(document.location.port?":"+document.location.port:"")}var f=a(5),g={collectWindowErrors:!0,debug:!1},h="undefined"!=typeof window?window:"undefined"!=typeof c?c:"undefined"!=typeof self?self:{},i=[].slice,j="?",k=/^(?:[Uu]ncaught (?:exception: )?)?(?:((?:Eval|Internal|Range|Reference|Syntax|Type|URI|)Error): )?(.*)$/;g.report=function(){function a(a){m(),s.push(a)}function b(a){for(var b=s.length-1;b>=0;--b)s[b]===a&&s.splice(b,1)}function c(){n(),s=[]}function e(a,b){var c=null;if(!b||g.collectWindowErrors){for(var d in s)if(s.hasOwnProperty(d))try{s[d].apply(null,[a].concat(i.call(arguments,2)))}catch(e){c=e}if(c)throw c}}function l(a,b,c,h,i){var l=null,m=f.isErrorEvent(i)?i.error:i,n=f.isErrorEvent(a)?a.message:a;if(v)g.computeStackTrace.augmentStackTraceWithInitialElement(v,b,c,n),o();else if(m&&f.isError(m))l=g.computeStackTrace(m),e(l,!0);else{var p,r={url:b,line:c,column:h},s=void 0;if("[object String]"==={}.toString.call(n)){var p=n.match(k);p&&(s=p[1],n=p[2])}r.func=j,l={name:s,message:n,url:d(),stack:[r]},e(l,!0)}return!!q&&q.apply(this,arguments)}function m(){r||(q=h.onerror,h.onerror=l,r=!0)}function n(){r&&(h.onerror=q,r=!1,q=void 0)}function o(){var a=v,b=t;t=null,v=null,u=null,e.apply(null,[a,!1].concat(b))}function p(a,b){var c=i.call(arguments,1);if(v){if(u===a)return;o()}var d=g.computeStackTrace(a);if(v=d,u=a,t=c,setTimeout(function(){u===a&&o()},d.incomplete?2e3:0),b!==!1)throw a}var q,r,s=[],t=null,u=null,v=null;return p.subscribe=a,p.unsubscribe=b,p.uninstall=c,p}(),g.computeStackTrace=function(){function a(a){if("undefined"!=typeof a.stack&&a.stack){for(var b,c,f,g=/^\s*at (?:(.*?) ?\()?((?:file|https?|blob|chrome-extension|native|eval|webpack|<anonymous>|[a-z]:|\/).*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i,h=/^\s*at (?:((?:\[object object\])?.+) )?\(?((?:file|ms-appx(?:-web)|https?|webpack|blob):.*?):(\d+)(?::(\d+))?\)?\s*$/i,i=/^\s*(.*?)(?:\((.*?)\))?(?:^|@)((?:file|https?|blob|chrome|webpack|resource|moz-extension).*?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js))(?::(\d+))?(?::(\d+))?\s*$/i,k=/(\S+) line (\d+)(?: > eval line \d+)* > eval/i,l=/\((\S*)(?::(\d+))(?::(\d+))\)/,m=a.stack.split("\n"),n=[],o=(/^(.*) is undefined$/.exec(a.message),0),p=m.length;o<p;++o){if(c=g.exec(m[o])){var q=c[2]&&0===c[2].indexOf("native"),r=c[2]&&0===c[2].indexOf("eval");r&&(b=l.exec(c[2]))&&(c[2]=b[1],c[3]=b[2],c[4]=b[3]),f={url:q?null:c[2],func:c[1]||j,args:q?[c[2]]:[],line:c[3]?+c[3]:null,column:c[4]?+c[4]:null}}else if(c=h.exec(m[o]))f={url:c[2],func:c[1]||j,args:[],line:+c[3],column:c[4]?+c[4]:null};else{if(!(c=i.exec(m[o])))continue;var r=c[3]&&c[3].indexOf(" > eval")>-1;r&&(b=k.exec(c[3]))?(c[3]=b[1],c[4]=b[2],c[5]=null):0!==o||c[5]||"undefined"==typeof a.columnNumber||(n[0].column=a.columnNumber+1),f={url:c[3],func:c[1]||j,args:c[2]?c[2].split(","):[],line:c[4]?+c[4]:null,column:c[5]?+c[5]:null}}if(!f.func&&f.line&&(f.func=j),f.url&&"blob:"===f.url.substr(0,5)){var s=new XMLHttpRequest;if(s.open("GET",f.url,!1),s.send(null),200===s.status){var t=s.responseText||"";t=t.slice(-300);var u=t.match(/\/\/# sourceMappingURL=(.*)$/);if(u){var v=u[1];"~"===v.charAt(0)&&(v=e()+v.slice(1)),f.url=v.slice(0,-4)}}}n.push(f)}return n.length?{name:a.name,message:a.message,url:d(),stack:n}:null}}function b(a,b,c,d){var e={url:b,line:c};if(e.url&&e.line){if(a.incomplete=!1,e.func||(e.func=j),
+  a.stack.length>0&&a.stack[0].url===e.url){if(a.stack[0].line===e.line)return!1;if(!a.stack[0].line&&a.stack[0].func===e.func)return a.stack[0].line=e.line,!1}return a.stack.unshift(e),a.partial=!0,!0}return a.incomplete=!0,!1}function c(a,e){for(var h,i,k=/function\s+([_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*)?\s*\(/i,l=[],m={},n=!1,o=c.caller;o&&!n;o=o.caller)if(o!==f&&o!==g.report){if(i={url:null,func:j,line:null,column:null},o.name?i.func=o.name:(h=k.exec(o.toString()))&&(i.func=h[1]),"undefined"==typeof i.func)try{i.func=h.input.substring(0,h.input.indexOf("{"))}catch(p){}m[""+o]?n=!0:m[""+o]=!0,l.push(i)}e&&l.splice(0,e);var q={name:a.name,message:a.message,url:d(),stack:l};return b(q,a.sourceURL||a.fileName,a.line||a.lineNumber,a.message||a.description),q}function f(b,e){var f=null;e=null==e?0:+e;try{if(f=a(b))return f}catch(h){if(g.debug)throw h}try{if(f=c(b,e+1))return f}catch(h){if(g.debug)throw h}return{name:b.name,message:b.message,url:d()}}return f.augmentStackTraceWithInitialElement=b,f.computeStackTraceFromStackProp=a,f}(),b.exports=g}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{5:5}],7:[function(a,b,c){function d(a,b){for(var c=0;c<a.length;++c)if(a[c]===b)return c;return-1}function e(a,b,c,d){return JSON.stringify(a,g(b,d),c)}function f(a){var b={stack:a.stack,message:a.message,name:a.name};for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&(b[c]=a[c]);return b}function g(a,b){var c=[],e=[];return null==b&&(b=function(a,b){return c[0]===b?"[Circular ~]":"[Circular ~."+e.slice(0,d(c,b)).join(".")+"]"}),function(g,h){if(c.length>0){var i=d(c,this);~i?c.splice(i+1):c.push(this),~i?e.splice(i,1/0,g):e.push(g),~d(c,h)&&(h=b.call(this,g,h))}else c.push(h);return null==a?h instanceof Error?f(h):h:a.call(this,g,h)}}c=b.exports=e,c.getSerialize=g},{}],8:[function(a,b,c){function d(a,b){var c=(65535&a)+(65535&b),d=(a>>16)+(b>>16)+(c>>16);return d<<16|65535&c}function e(a,b){return a<<b|a>>>32-b}function f(a,b,c,f,g,h){return d(e(d(d(b,a),d(f,h)),g),c)}function g(a,b,c,d,e,g,h){return f(b&c|~b&d,a,b,e,g,h)}function h(a,b,c,d,e,g,h){return f(b&d|c&~d,a,b,e,g,h)}function i(a,b,c,d,e,g,h){return f(b^c^d,a,b,e,g,h)}function j(a,b,c,d,e,g,h){return f(c^(b|~d),a,b,e,g,h)}function k(a,b){a[b>>5]|=128<<b%32,a[(b+64>>>9<<4)+14]=b;var c,e,f,k,l,m=1732584193,n=-271733879,o=-1732584194,p=271733878;for(c=0;c<a.length;c+=16)e=m,f=n,k=o,l=p,m=g(m,n,o,p,a[c],7,-680876936),p=g(p,m,n,o,a[c+1],12,-389564586),o=g(o,p,m,n,a[c+2],17,606105819),n=g(n,o,p,m,a[c+3],22,-1044525330),m=g(m,n,o,p,a[c+4],7,-176418897),p=g(p,m,n,o,a[c+5],12,1200080426),o=g(o,p,m,n,a[c+6],17,-1473231341),n=g(n,o,p,m,a[c+7],22,-45705983),m=g(m,n,o,p,a[c+8],7,1770035416),p=g(p,m,n,o,a[c+9],12,-1958414417),o=g(o,p,m,n,a[c+10],17,-42063),n=g(n,o,p,m,a[c+11],22,-1990404162),m=g(m,n,o,p,a[c+12],7,1804603682),p=g(p,m,n,o,a[c+13],12,-40341101),o=g(o,p,m,n,a[c+14],17,-1502002290),n=g(n,o,p,m,a[c+15],22,1236535329),m=h(m,n,o,p,a[c+1],5,-165796510),p=h(p,m,n,o,a[c+6],9,-1069501632),o=h(o,p,m,n,a[c+11],14,643717713),n=h(n,o,p,m,a[c],20,-373897302),m=h(m,n,o,p,a[c+5],5,-701558691),p=h(p,m,n,o,a[c+10],9,38016083),o=h(o,p,m,n,a[c+15],14,-660478335),n=h(n,o,p,m,a[c+4],20,-405537848),m=h(m,n,o,p,a[c+9],5,568446438),p=h(p,m,n,o,a[c+14],9,-1019803690),o=h(o,p,m,n,a[c+3],14,-187363961),n=h(n,o,p,m,a[c+8],20,1163531501),m=h(m,n,o,p,a[c+13],5,-1444681467),p=h(p,m,n,o,a[c+2],9,-51403784),o=h(o,p,m,n,a[c+7],14,1735328473),n=h(n,o,p,m,a[c+12],20,-1926607734),m=i(m,n,o,p,a[c+5],4,-378558),p=i(p,m,n,o,a[c+8],11,-2022574463),o=i(o,p,m,n,a[c+11],16,1839030562),n=i(n,o,p,m,a[c+14],23,-35309556),m=i(m,n,o,p,a[c+1],4,-1530992060),p=i(p,m,n,o,a[c+4],11,1272893353),o=i(o,p,m,n,a[c+7],16,-155497632),n=i(n,o,p,m,a[c+10],23,-1094730640),m=i(m,n,o,p,a[c+13],4,681279174),p=i(p,m,n,o,a[c],11,-358537222),o=i(o,p,m,n,a[c+3],16,-722521979),n=i(n,o,p,m,a[c+6],23,76029189),m=i(m,n,o,p,a[c+9],4,-640364487),p=i(p,m,n,o,a[c+12],11,-421815835),o=i(o,p,m,n,a[c+15],16,530742520),n=i(n,o,p,m,a[c+2],23,-995338651),m=j(m,n,o,p,a[c],6,-198630844),p=j(p,m,n,o,a[c+7],10,1126891415),o=j(o,p,m,n,a[c+14],15,-1416354905),n=j(n,o,p,m,a[c+5],21,-57434055),m=j(m,n,o,p,a[c+12],6,1700485571),p=j(p,m,n,o,a[c+3],10,-1894986606),o=j(o,p,m,n,a[c+10],15,-1051523),n=j(n,o,p,m,a[c+1],21,-2054922799),m=j(m,n,o,p,a[c+8],6,1873313359),p=j(p,m,n,o,a[c+15],10,-30611744),o=j(o,p,m,n,a[c+6],15,-1560198380),n=j(n,o,p,m,a[c+13],21,1309151649),m=j(m,n,o,p,a[c+4],6,-145523070),p=j(p,m,n,o,a[c+11],10,-1120210379),o=j(o,p,m,n,a[c+2],15,718787259),n=j(n,o,p,m,a[c+9],21,-343485551),m=d(m,e),n=d(n,f),o=d(o,k),p=d(p,l);return[m,n,o,p]}function l(a){var b,c="",d=32*a.length;for(b=0;b<d;b+=8)c+=String.fromCharCode(a[b>>5]>>>b%32&255);return c}function m(a){var b,c=[];for(c[(a.length>>2)-1]=void 0,b=0;b<c.length;b+=1)c[b]=0;var d=8*a.length;for(b=0;b<d;b+=8)c[b>>5]|=(255&a.charCodeAt(b/8))<<b%32;return c}function n(a){return l(k(m(a),8*a.length))}function o(a,b){var c,d,e=m(a),f=[],g=[];for(f[15]=g[15]=void 0,e.length>16&&(e=k(e,8*a.length)),c=0;c<16;c+=1)f[c]=909522486^e[c],g[c]=1549556828^e[c];return d=k(f.concat(m(b)),512+8*b.length),l(k(g.concat(d),640))}function p(a){var b,c,d="0123456789abcdef",e="";for(c=0;c<a.length;c+=1)b=a.charCodeAt(c),e+=d.charAt(b>>>4&15)+d.charAt(15&b);return e}function q(a){return unescape(encodeURIComponent(a))}function r(a){return n(q(a))}function s(a){return p(r(a))}function t(a,b){return o(q(a),q(b))}function u(a,b){return p(t(a,b))}function v(a,b,c){return b?c?t(b,a):u(b,a):c?r(a):s(a)}b.exports=v},{}]},{},[4])(4)});
+  //# sourceMappingURL=raven.min.js.map
+  window.Raven && Raven.config('https://e11961f5786c45c49323d90d4ecae6bd@report.url.cn/sentry/2563', {
+    // 性能原因，根据项目运行情况自行添加ignore Errors
+    ignoreErrors: []
+  }).install();
+</script>
+  <script>
+    T.page_css_ready = Date.now();
+    // 一个hack，处理判断聊天区是否在webcourse
+    // 下次再挂 window 我就不是人
+    window.IS_WEBCOURSE = true;
+  </script>
+<style type="text/css">@charset "utf-8";
+
+@font-face {
+  font-family: 'videofont';
+  src: url(//7.url.cn/edu/webcourse/b4f387b3305bac84ed86d12dbe425599.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-32:before {
+  content: "\E900";
+}
+
+.icon-volume:before {
+  content: "\E901";
+}
+
+.icon-mute:before {
+  content: "\E902";
+}
+
+.icon-full-screen:before {
+  content: "\E903";
+}
+
+.icon-exit-full-screen:before {
+  content: "\E904";
+}
+
+.icon-setting:before {
+  content: "\E905";
+}
+
+.video-cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #020202;
+  overflow: hidden;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.video-cont video::-webkit-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::-moz-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::-o-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::media-controls {
+    display: none !important;
+  }
+
+.video-cont .main-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+
+.video-cont .vice-video {
+    position: absolute;
+    width: 180px;
+    bottom: 40px;
+    right: 0px;
+  }
+
+.video-cont .stu-video {
+    position: absolute;
+    width: 180px;
+    bottom: 40px;
+    left: 0px;
+  }
+
+.video-cont .local-video {
+    position: absolute;
+    width: 180px;
+    top: 0px;
+    left: 0px;
+  }
+
+.video-cont .video-controls {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 99474836499;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+
+  }
+
+.video-cont .video-controls [class^="icon-"], .video-cont .video-controls [class*=" icon-"] {
+      font-family: 'videofont' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      -webkit-font-feature-settings: normal;
+              font-feature-settings: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+.video-cont .video-controls .control-item {
+      padding: 0 10px 0 5px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+.video-cont .video-controls .control-item.network {
+        padding: 0 0px 0 10px;
+        width: 40px;
+
+      }
+
+.video-cont .video-controls .control-item.network i {
+          display: inline-block;
+          /* vertical-align: middle;*/
+          background-color: #20b51e;
+          width: 1px;
+          height: 10px;
+          line-height: 20px;
+          margin: 0 2px;
+        }
+
+.video-cont .video-controls .control-item.network.good i {
+            background-color: #20b51e;
+          }
+
+.video-cont .video-controls .control-item.network.middle i:nth-child(n+4){
+            /* display: none;*/
+            background-color: #666;
+          }
+
+.video-cont .video-controls .control-item.network.middle i {
+            background-color: #f1c31a;
+          }
+
+.video-cont .video-controls .control-item.network.bad i {
+            background-color: #ec2525;
+          }
+
+.video-cont .video-controls .control-item.network.bad i:nth-child(n+2){
+            display: none;
+            background-color: #666;
+          }
+
+.video-cont .video-controls .control-item.time {
+        border-right: 1px solid #333333;
+        width: 50px;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+      }
+
+.video-cont .video-controls .control-item.volume {
+        margin-right: 10px;
+        position: relative;
+      }
+
+.video-cont .video-controls .control-item.scale {
+        position: relative;
+      }
+
+.video-cont .video-controls .control-item .icon {
+        vertical-align: middle;
+        margin-top: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+.video-cont .video-controls .control-item.open-video-button, .video-cont .video-controls .control-item.onstage-button {
+          font-size: 16px;
+          line-height: 40px;
+      }
+
+.video-cont .video-controls .left-panel {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      line-height: 20px;
+      font-size: 12px;
+      padding: 10px 0px;
+      width: 30%;
+    }
+
+.video-cont .video-controls .right-panel {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      line-height: 20px;
+      width: 70%;
+      height: 40px;
+      text-align: right;
+      margin-right: 5px;
+    }
+
+.video-cont .video-controls .right-panel .control-item {
+        display: inline-block;
+        margin: 0 0px;
+        cursor: pointer;
+      }
+
+.video-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: auto;
+  background-color: #1d1d1d;
+}
+
+.video-mask.not-support {
+      text-align: center;
+    }
+
+.video-mask.not-support .mask-bg {
+        background: url(//7.url.cn/edu/webcourse/43211752d76c4e286413420660af3681.png) center -60px no-repeat;
+        display: block !important;
+        height: 645px;
+        width: 750px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -322px;
+        margin-left: -375px;
+      }
+
+.video-mask .mask-bg {
+      display: none;
+    }
+
+.video-mask.wait-class {
+    background: url(//7.url.cn/edu/webcourse/02fbd50ad1af330168909b4818a45cbd.png) center center no-repeat #383c40;
+  }
+
+.video-mask.video-play-btn {
+    background: url(//7.url.cn/edu/webcourse/ea2b7c47604068efeecfbe4908c97767.png)18px 16px no-repeat;
+    display: block !important;
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #fff;
+    border-radius: 100px;
+    line-height: 100px;
+    padding: 50px;
+  }
+
+.video-mask.change-video {
+    background: url(//7.url.cn/edu/webcourse/b3a02c711716ec2d84ed9c110ecba9e3.png) center center no-repeat #383c40;
+  }
+
+.video-mask .mask-wording {
+    position: relative;
+    top: 415px;
+  }
+
+.video-mask .mask-wording p {
+      color: #fff;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+.video-mask .mask-wording p span {
+        font-size: 24px;
+      }
+
+.video-mask .mask-wording p span a {
+          color: #fff;
+          padding: 0 10px;
+          text-decoration: none;
+        }
+
+.video-mask .download-chrome-btn {
+    width: 180px;
+    height: 40px;
+    background-color: #25b8ff;
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 74px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+
+.video-mask .flash-play {
+    color: #23B8FF;
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    cursor: pointer;
+  }
+
+@-webkit-keyframes translateX{
+  0%{ -webkit-transform: translate3d(100%, 70%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,70%, 0);}
+}
+
+@keyframes translateX{
+  0%{ -webkit-transform: translate3d(100%, 70%, 0); transform: translate3d(100%, 70%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,70%, 0); transform: translate3d(0 ,70%, 0);}
+}
+
+@-webkit-keyframes translateX1{
+  0%{ -webkit-transform: translate3d(100%, 50%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,50%, 0);}
+}
+
+@keyframes translateX1{
+  0%{ -webkit-transform: translate3d(100%, 50%, 0); transform: translate3d(100%, 50%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,50%, 0); transform: translate3d(0 ,50%, 0);}
+}
+
+@-webkit-keyframes translateX2{
+  0%{ -webkit-transform: translate3d(100%, 30%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,30%, 0);}
+}
+
+@keyframes translateX2{
+  0%{ -webkit-transform: translate3d(100%, 30%, 0); transform: translate3d(100%, 30%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,30%, 0); transform: translate3d(0 ,30%, 0);}
+}
+
+.marquee {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+.marquee span {
+      color: #fff;
+      font-size: 18px;
+      -moz-text-shadow: #888888 0.1em 0.1em 0.2em;
+      text-shadow: #888888 0.1em 0.1em 0.2em;
+    }
+
+.animation0 {
+    -webkit-animation:translateX 30s ease-out infinite;
+    animation:translateX 30s ease-out infinite;
+  }
+
+.animation1 {
+    -webkit-animation:translateX1 30s ease-out infinite;
+    animation:translateX1 30s ease-out infinite;
+  }
+
+.animation2 {
+    -webkit-animation:translateX2 30s ease-out infinite;
+    animation:translateX2 30s ease-out infinite;
+  }
+
+.range-wrap {
+  width: 38px;
+  height: 163px;
+  position: absolute;
+  bottom: 10px;
+  left: -5px;
+  display: none;
+}
+
+.range-wrap .bg-layer {
+    height: 120px;
+    background: #333333;
+    border-radius: 2px;
+    position: relative;
+  }
+
+.range-wrap .bg-layer:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: #333333;
+      border-color: rgba(51, 51, 51, 0);
+      border-top-color: #333333;
+      border-width: 7px;
+      margin-left: -7px;
+    }
+
+.range-wrap .range-slider {
+    margin-top: 60px;
+    margin-left: -24px;
+    outline: none;
+    padding: 0;
+    width: 88px;
+    height: 2px;
+    background-color: #1d1d1d;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #51cc93), color-stop(100%, #51cc93));
+    background-image: -webkit-linear-gradient(#51cc93, #51cc93);
+    background-image: -o-linear-gradient(#51cc93, #51cc93);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#51cc93), to(#51cc93));
+    background-image: linear-gradient(#51cc93, #51cc93);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+
+.range-wrap .range-slider::-webkit-slider-runnable-track {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+
+.range-wrap .range-slider::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+.range-wrap .range-slider::-moz-focus-outer {
+    border: 0;
+  }
+
+.range-wrap .range-slider::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+    -webkit-appearance: none;
+  }
+
+.range-wrap .range-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+  }
+
+.icon-volume, .icon-mute {
+  cursor: pointer;
+}
+
+.scale-wrap {
+  width: 120px;
+  height: 90px;
+  display: none;
+  background-color: #16171b;
+  padding: 0px 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: -90px;
+  right: -40px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.scale-wrap.onstage-list {
+      right: 100px;
+  }
+
+.scale-wrap.actived {
+    display: block;
+  }
+
+.scale-wrap .scale-button {
+    line-height: 45px;
+    color: #8c8c8d;
+  }
+
+.scale-wrap .scale-button.actived {
+      color: #0083e0;
+    }
+
+.scale-wrap .scale-button:nth-child(1){
+    border-bottom: 1px solid #24262b;
+  }
+
+.debug-box {
+  background: #1c1c1c;
+  background: rgba(28, 28, 28, .9);
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  color: #fff;
+  width: 200px;
+  position: absolute;
+  line-height: 25px;
+  padding: 3px;
+  border: 1px solid #eee;
+  width: 250px;
+  display: none;
+}
+
+.debug-box.show {
+    display: block;
+  }
+
+.debug-box li {
+    cursor: pointer;
+  }
+
+.debug-box li:hover {
+      background-color:#2c2b2b;
+      background-color:rgba(44, 43, 43, .9);
+    }
+
+.debug-pop {
+  position: absolute;
+  /* right: 300px;*/
+  background: #1c1c1c;
+  background: rgba(28, 28, 28, .9);
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  color: #fff;
+  display: none;
+  padding: 3px 10px;
+  left: 0px;
+}
+
+.debug-pop.show {
+    display: block;
+  }
+
+#hand{
+  min-width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 64px;
+  left: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3000;
+  cursor: pointer;
+  display: none;
+}
+
+#hand.show {
+    width: 48px;
+    height: 48px;
+    display: block;
+    -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+#hand.show.first{
+    width: 48px;
+    height: 48px;
+    display: block;
+    -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+    -webkit-animation: handOn 3s;
+            animation: handOn 3s;
+  }
+
+#hand.show.first:after{
+      display: block;
+      content:'\53D1\8D77\4E3E\624B';
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0px;
+      opacity: 1;
+      -webkit-animation: handOnAfer 3s;
+              animation: handOnAfer 3s;
+    }
+
+#hand.raised{
+    background-image: url(//7.url.cn/edu/webcourse/5c0aa5bb9e612dac5f2ccfc0df0a43cd.png);
+    width: 248px;
+    height: 48px;
+    display: block;
+  }
+
+#hand.calling{
+    background-image: url(//7.url.cn/edu/webcourse/02b3b713f62502d5263192b9514b7555.png);
+    width: 248px;
+    height: 48px;
+    display: block;
+  }
+
+@-webkit-keyframes handOn{
+  0%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  80%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  100%{
+    width: 48px;
+    height: 48px;
+    bottom: 64px;
+    left: 24px;
+    -webkit-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+}
+
+@keyframes handOn{
+  0%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  80%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  100%{
+    width: 48px;
+    height: 48px;
+    bottom: 64px;
+    left: 24px;
+    -webkit-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+}
+
+@-webkit-keyframes handOnAfer{
+  0%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  80%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  100%{
+      font-size: 0px;
+      opacity: 0;
+  }
+}
+
+@keyframes handOnAfer{
+  0%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  80%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  100%{
+      font-size: 0px;
+      opacity: 0;
+  }
+}
+</style><style></style><link rel="stylesheet" href="./JSP（1）_files/tcplayer.css"><script type="text/javascript" charset="utf8" async="" src="./JSP（1）_files/hls.min.0.12.4.js.下载"></script><script type="text/javascript" charset="utf8" async="" src="./JSP（1）_files/tcplayer.min.js.下载"></script><script name="MTAH5" sid="500608092" cid="500608093" src="./JSP（1）_files/stats.js.下载"></script></head>
+<body><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__"><symbol viewBox="0 0 32 32" id="course-data"><path d="M30 25.187c0 .762-.591 1.413-1.321 1.413H3.32c-.729 0-1.321-.651-1.321-1.413V9.946c0-.762.591-1.346 1.321-1.346h25.358c.729 0 1.321.584 1.321 1.346v15.241zM2.65 7.933h9.805l-.416-1.216c-.244-.774-1.066-1.317-1.802-1.317H3.333C2.597 5.4 2 5.997 2 6.733v1.366a1.35 1.35 0 0 1 .65-.166z"></path></symbol><symbol viewBox="0 0 32 32" id="course-live"><path d="M28.6 6.067H3.267c-.736 0-1.333.597-1.333 1.333v17.333c0 .736.597 1.333 1.333 1.333H28.6c.736 0 1.333-.597 1.333-1.333V7.4c0-.736-.597-1.333-1.333-1.333zM12.267 20.67v-9.23l7.994 4.615-7.994 4.615z"></path></symbol><symbol viewBox="0 0 32 32" id="course-record"><path d="M30 6.944l-8.067 5.56V8.233c0-.726-.543-1.3-1.253-1.3H3.252c-.71 0-1.32.574-1.32 1.3v15.372a1.34 1.34 0 0 0 1.32 1.328H20.68c.71 0 1.253-.602 1.253-1.328v-4.221L30 25.027V6.943z"></path></symbol><symbol viewBox="0 0 32 32" id="course-test"><path d="M30 6.267c0-.736-.597-1.333-1.333-1.333H3.334c-.736 0-1.333.597-1.333 1.333V25.6c0 .736.597 1.333 1.333 1.333h25.333c.736 0 1.333-.597 1.333-1.333V6.267zM15.304 21.533L14.107 18.4H9.816l-1.127 3.133H7.247l3.941-10.267h1.463l4.2 10.267h-1.547zm9.096-4.466h-2.8v2.8h-1.2v-2.8h-2.8v-1.2h2.8v-2.8h1.2v2.8h2.8v1.2zm-12.512-4.733a13.314 13.314 0 0 1-.553 1.975l-1.127 3.025h3.479l-1.071-2.857a27.948 27.948 0 0 1-.728-2.143z"></path></symbol></svg>
+<div id="index_120ff8dd3141b7bd18448a11072688bf"></div><script>function customGetComputedStyle(e,t){return e.currentStyle?e.currentStyle[t]:window.getComputedStyle&&window.getComputedStyle(e,null)?window.getComputedStyle(e,null).getPropertyValue(t):e.style[t]}window.IMWEB_WEBPACK={},IMWEB_WEBPACK.CSSARRAY=[{name:"index_120ff8dd3141b7bd18448a11072688bf",url:"//7.url.cn/edu/webcourse/index_120ff8dd3141b7bd18448a11072688bf.css"}];for(var i=0;i<IMWEB_WEBPACK.CSSARRAY.length;i++){var div=document.getElementById(IMWEB_WEBPACK.CSSARRAY[i].name);if("none"!==customGetComputedStyle(div,"display")){var newLink=document.createElement("link");newLink.rel="stylesheet",newLink.href=IMWEB_WEBPACK.CSSARRAY[i].url.replace("7.url.cn/edu","ke.qq.com"),document.head.appendChild(newLink),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"css retry: "+newLink.href,ext:{msid:33712509}})}}</script><script>function IMWEB_WEBPACK_JS_ONLOAD(e){if(IMWEB_WEBPACK.firstLoad)for(;IMWEB_WEBPACK.jsRunCnt<IMWEB_WEBPACK.JSARRAY.length;){var n=IMWEB_WEBPACK.JSARRAY[IMWEB_WEBPACK.jsRunCnt];if(n.name===e)n.isLoad=!0,window["IMWEB_WEBPACK_"+n.name](),IMWEB_WEBPACK.jsRunCnt++;else if(-1!==n.name.indexOf("ie")&&-1===navigator.userAgent.indexOf("MSIE")){IMWEB_WEBPACK.jsRunCnt++;continue}break}else IMWEB_WEBPACK.jsLoadedCnt++,IMWEB_WEBPACK.jsLoadedCnt===IMWEB_WEBPACK.JSARRAY.length&&IMWEB_WEBPACK_RunScripts(),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"js retry success: "+e,ext:{msid:3172411}})}IMWEB_WEBPACK.JSARRAY=[{name:"WebRTCAPI_edu_v1",url:"//7.url.cn/edu/webcourse/WebRTCAPI_edu_v1.0.2.min.js"},{name:"ie_polyfill_c7371b3fa51c1736a46f",url:"//7.url.cn/edu/webcourse/ie_polyfill_c7371b3fa51c1736a46f.js"},{name:"vendor_5a3c9be6d6a0b00e3fba",url:"//7.url.cn/edu/webcourse/vendor_5a3c9be6d6a0b00e3fba.js"},{name:"index_d733f0027b4350540a75",url:"//7.url.cn/edu/webcourse/index_d733f0027b4350540a75.js"}],IMWEB_WEBPACK.firstLoad=!0,IMWEB_WEBPACK.jsRunCnt=0;</script>
+
+<div id="react-body" class="web"><div class="study-header"><div class="contents-icon header-item"><i class="icon-css icon-css-list icon-css--m"></i>目录</div><div class="current-task-name header-item" title="JSP（1）">JSP（1）</div><div class="sign-tips header-item applied-tip"><i class="i-custom-tick"></i><span class="applied-text">已报名</span></div><div class="operations"><div class="comment header-item">评价<ul class="comment-tip hidden"><li>需要满足以下条件，才能评价课程：</li><li class="apply-condition"><i class="icon-tips icon-css-ok finished"></i><span class="tips">报名该课程</span><span class="status finished">已完成</span></li><li class="progress-condition"><i class="icon-tips icon-css-ok finished"></i><span class="tips">学习任务超过20分钟或进度超过50%</span><span class="status finished">已完成</span></li><li class="student-condition"><i class="icon-tips icon-css-ok finished"></i><span class="tips">只有学员可以评价</span><span class="status finished">已完成</span></li><li class="level-condition"><i class="icon-tips icon-css-ok finished"></i><span class="tips">QQ等级达到一个太阳以上</span><span class="status finished">已完成</span></li></ul></div><div class="share header-item">分享<div class="share-popup hidden"><div class="code-popup"><div class="share-content"><ul class="share-list"><li class="share-qq"><div class="share-qq-logo"></div><span>分享给QQ好友</span></li><li class="share-qzone"><div class="share-qzone-logo"></div><span>分享到QQ空间</span></li></ul><ul class="code-list"><li class="weapp-code"><span><i class="icon-font i-weixin"></i>微信扫码</span><div><div class="weapp-code-pic" style="width: 96px; height: 96px;"><img src="blob:https://ke.qq.com/f74b2a4a-d342-4835-9cbc-0276b1fb1176" alt="小程序码"></div><a class="download" download="weappCode.jpg" data-download="weappCode.jpg" href="blob:https://ke.qq.com/f74b2a4a-d342-4835-9cbc-0276b1fb1176">点击保存</a></div></li><li class="qrcode"><span><i class="icon-font i-qq"></i>QQ扫码</span><div><div class="qrcode-pic" style="width: 96px; height: 96px;"><div class="qrcode-logo"></div><canvas height="96" width="96" style="height: 96px; width: 96px;"></canvas></div><a class="download" download="qrcode.jpg" data-download="qrcode.jpg" href="blob:https://ke.qq.com/a0441547-8487-4a44-8b70-f9d8484d7224">点击保存</a></div></li></ul></div></div></div></div><span><div class="mobile-watch header-item">用手机看<div class="mobile-watch-popup hidden"><div class="code-popup"><p class="mobile-tips">扫一扫继续用手机看</p><ul class="code-list"><li class="weapp-code"><div><div class="weapp-code-pic" style="width: 96px; height: 96px;"><img src="blob:https://ke.qq.com/f74b2a4a-d342-4835-9cbc-0276b1fb1176" alt="小程序码"></div></div><p class="code-desc"><i class="icon-font i-weixin"></i>微信扫码</p></li><li class="qrcode"><div><div class="qrcode-pic" style="width: 96px; height: 96px;"><div class="qrcode-logo"></div><canvas height="96" width="96" style="height: 96px; width: 96px;"></canvas></div></div><p class="code-desc"><i class="icon-font i-qq"></i>QQ扫码</p></li></ul><a class="go-app" href="https://ke.qq.com/download/app.html" target="_blank">下载手机APP</a></div></div></div></span><div class="contact header-item"><span style="position: relative;"><i class="red-tip" id="teacher-contact-point"></i><span class="im-icon icon-font i-comment"></span>咨询老师</span></div><div class="complain header-item"><span class="show-complain">投诉</span></div><div class="header-item etc"><i class="icon-css icon-css-dots icon-css--m"></i><ul class="etc-menu hidden"><li class="li-item"><a href="https://support.qq.com/products/1290" target="__blank">意见反馈</a></li><li class="li-item"><div class="complain header-item"><span class="show-complain">投诉</span></div></li><li class="li-item"><a href="https://ke.qq.com/faq.html#/0/3" rel="nofollow" target="__blank">帮助</a></li><li class="li-item"></li></ul></div><div class="header-item profile"><div class="s-avatar"><img class="avatar-img img--full-radius" src="./JSP（1）_files/132" alt="Hero" width="32" height="32"></div><ul class="profile-menu hidden"><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=plan" target="_blank" rel="noopener noreferrer">课程表</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=coupon" target="_blank" rel="noopener noreferrer">优惠券</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=signup" target="_blank" rel="noopener noreferrer">报名记录</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=fav" target="_blank" rel="noopener noreferrer">收藏</a></li><li class="li-item last"><span>退出</span></li></ul></div></div></div><div class="playlist hidden"><div class="container"><div class="course-name" title="Java高级程序员/微服务/源码解析/分布式/企业级架构【千锋教育】"><span>《</span><span class="name">Java高级程序员/微服务/源码解析/分布式/企业级架构【千锋教育】</span><span>》</span></div><ul class="chapters"><li class=""><div class="sub-title" title="第1节 课程宣讲及开班典礼；VIP课咨询QQ1872783708">第1节 课程宣讲及开班典礼；VIP课咨询QQ1872783708</div><div class="task-item task-info" id="3864671702892892" title="[录播] 扣丁学堂Java高级VIP课程大纲介绍"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix">(28分钟)</span></div><div class="task-name">扣丁学堂Java高级VIP课程大纲介绍</div></div></div><div class="task-info" id="3864675997860188" title="[回放] 开班典礼"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">开班典礼</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="开班典礼（1）">开班典礼（1）</div></div></li><li class=""><div class="sub-title" title="第2节 Java语法综合案例开发">第2节 Java语法综合案例开发</div><div class="task-info" id="3864680292827484" title="[回放] Java语法综合案例开发"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Java语法综合案例开发</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Java语法综合案例开发（1）">Java语法综合案例开发（1）</div></div></li><li class=""><div class="sub-title" title="第3节 动态数组原理分析">第3节 动态数组原理分析</div><div class="task-info" id="3864684587794780" title="[回放] 动态数组原理分析"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">动态数组原理分析</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="动态数组原理分析（1）">动态数组原理分析（1）</div></div></li><li class=""><div class="sub-title" title="第4节 链表数据结构实现原理">第4节 链表数据结构实现原理</div><div class="task-info" id="3864688882762076" title="[回放] 链表数据结构实现原理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">链表数据结构实现原理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="链表数据结构实现原理（1）">链表数据结构实现原理（1）</div></div></li><li class=""><div class="sub-title" title="第5节 二叉树数据结构原理">第5节 二叉树数据结构原理</div><div class="task-info" id="3864693177729372" title="[回放] 二叉树数据结构原理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">二叉树数据结构原理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="二叉树数据结构原理（1）">二叉树数据结构原理（1）</div></div></li><li class=""><div class="sub-title" title="第6节 HashMap 源码分析与哈希表实现原理">第6节 HashMap 源码分析与哈希表实现原理</div><div class="task-info" id="3864697472696668" title="[回放] HashMap 源码分析与哈希表实现原理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">HashMap 源码分析与哈希表实现原理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="HashMap 源码分析与哈希表实现原理（1）">HashMap 源码分析与哈希表实现原理（1）</div></div></li><li class=""><div class="sub-title" title="第7节 生产者与消费者实现原理">第7节 生产者与消费者实现原理</div><div class="task-info" id="3864701767663964" title="[回放] 生产者与消费者实现原理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">生产者与消费者实现原理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="生产者与消费者实现原理（1）">生产者与消费者实现原理（1）</div></div></li><li class=""><div class="sub-title" title="第8节 即时聊天简易版">第8节 即时聊天简易版</div><div class="task-info" id="3864706062631260" title="[回放] 即时聊天简易版"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">即时聊天简易版</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="即时聊天简易版（1）">即时聊天简易版（1）</div></div></li><li class=""><div class="sub-title" title="第9节 设计模式">第9节 设计模式</div><div class="task-info" id="3864710357598556" title="[回放] 设计模式01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">设计模式01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="设计模式01（1）">设计模式01（1）</div></div><div class="task-info" id="3864714652565852" title="[回放] 设计模式02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">设计模式02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="设计模式02（1）">设计模式02（1）</div></div><div class="task-info" id="3864718947533148" title="[回放] 设计模式03"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">设计模式03</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="设计模式03（1）">设计模式03（1）</div></div></li><li class=""><div class="sub-title" title="第10节 综合案例">第10节 综合案例</div><div class="task-info" id="3864723242500444" title="[回放] 综合案例——理解可配置的AOP框架"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">综合案例——理解可配置的AOP框架</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="综合案例——理解可配置的AOP框架（1）">综合案例——理解可配置的AOP框架（1）</div></div></li><li class=""><div class="sub-title" title="第11节 JVM虚拟机与类加载器">第11节 JVM虚拟机与类加载器</div><div class="task-info" id="3864727537467740" title="[回放] JVM虚拟机与类加载器"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JVM虚拟机与类加载器</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="JVM虚拟机与类加载器（1）">JVM虚拟机与类加载器（1）</div></div></li><li class=""><div class="sub-title" title="第12节 购物系统项目实战">第12节 购物系统项目实战</div><div class="task-info" id="3864731832435036" title="[回放] 购物系统项目实战"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">购物系统项目实战</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="购物系统项目实战（1）">购物系统项目实战（1）</div></div></li><li class=""><div class="sub-title" title="第13节 MySql数据库">第13节 MySql数据库</div><div class="task-info" id="3864736127402332" title="[回放] 数据库安装与基本操作"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">数据库安装与基本操作</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="数据库安装与基本操作（1）">数据库安装与基本操作（1）</div></div><div class="task-info" id="3864740422369628" title="[回放] Mysql高级查询"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Mysql高级查询</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Mysql高级查询（1）">Mysql高级查询（1）</div></div></li><li class=""><div class="sub-title" title="第14节 JDBC">第14节 JDBC</div><div class="task-info" id="3864744717336924" title="[回放] JDBC简介与使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JDBC简介与使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="JDBC简介与使用（1）">JDBC简介与使用（1）</div></div></li><li class=""><div class="sub-title" title="第15节 JDBC">第15节 JDBC</div><div class="task-info" id="3864749012304220" title="[回放] JDBC操作数据库"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JDBC操作数据库</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="JDBC操作数据库（1）">JDBC操作数据库（1）</div></div><div class="task-info" id="3864753307271516" title="[回放] 连接池和DBUtils"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">连接池和DBUtils</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="连接池和DBUtils（1）">连接池和DBUtils（1）</div></div></li><li class=""><div class="sub-title" title="第16节 HTML+CSS">第16节 HTML+CSS</div><div class="task-info" id="3864757602238812" title="[回放] HTML"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">HTML</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="HTML（1）">HTML（1）</div></div><div class="task-info" id="3864761897206108" title="[回放] CSS"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">CSS</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="CSS（1）">CSS（1）</div></div></li><li class=""><div class="sub-title" title="第17节 JavaScript">第17节 JavaScript</div><div class="task-info" id="3864766192173404" title="[回放] JavaScript语法及使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JavaScript语法及使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="JavaScript语法及使用（1）">JavaScript语法及使用（1）</div></div><div class="task-info" id="3864770487140700" title="[回放] JSON"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JSON</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="JSON（1）">JSON（1）</div></div><div class="task-info" id="3864774782107996" title="[回放] Filter过滤器"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Filter过滤器</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Filter过滤器（1）">Filter过滤器（1）</div></div></li><li class=""><div class="sub-title" title="第18节 Servlet">第18节 Servlet</div><div class="task-info" id="3864779077075292" title="[回放] Servlet入门"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Servlet入门</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Servlet入门（1）">Servlet入门（1）</div></div><div class="task-info" id="3864783372042588" title="[回放] Tomcat"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Tomcat</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Tomcat（1）">Tomcat（1）</div></div><div class="task-info" id="3864787667009884" title="[回放] Cookie和Session"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Cookie和Session</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Cookie和Session（1）">Cookie和Session（1）</div></div></li><li class=""><div class="sub-title" title="第19节 JSP">第19节 JSP</div><div class="task-info active" id="3864791961977180" title="[回放] JSP"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">JSP</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1 hidden"></i></div><div class="playback-list"><div class="task-item active" title="JSP（1）">JSP（1）</div></div></li><li class=""><div class="sub-title" title="第20节 Jquery">第20节 Jquery</div><div class="task-info" id="3864796256944476" title="[回放] Jquery语法和使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Jquery语法和使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Jquery语法和使用（1）">Jquery语法和使用（1）</div></div></li><li class=""><div class="sub-title" title="第21节 BootStrap">第21节 BootStrap</div><div class="task-info" id="3864800551911772" title="[回放] BootStrap"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">BootStrap</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="BootStrap（1）">BootStrap（1）</div></div></li><li class=""><div class="sub-title" title="第22节 项目实战">第22节 项目实战</div><div class="task-info" id="3864804846879068" title="[回放] 项目实战01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">项目实战01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="项目实战01（1）">项目实战01（1）</div></div><div class="task-info" id="3864809141846364" title="[回放] 项目实战02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">项目实战02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="项目实战02（1）">项目实战02（1）</div></div></li><li class=""><div class="sub-title" title="第23节 Maven项目管理">第23节 Maven项目管理</div><div class="task-info" id="3864813436813660" title="[回放] Maven项目管理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Maven项目管理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Maven项目管理（1）">Maven项目管理（1）</div></div></li><li class=""><div class="sub-title" title="第24节 Spring5">第24节 Spring5</div><div class="task-info" id="3864817731780956" title="[回放] Spring入门和使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Spring入门和使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Spring入门和使用（1）">Spring入门和使用（1）</div></div><div class="task-info" id="3864822026748252" title="[回放] 动态代理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">动态代理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="动态代理（1）">动态代理（1）</div></div><div class="task-info" id="3864826321715548" title="[回放] Spring AOP"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Spring AOP</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Spring AOP（1）">Spring AOP（1）</div></div></li><li class=""><div class="sub-title" title="第25节 SpringMVC">第25节 SpringMVC</div><div class="task-info" id="3864830616682844" title="[回放] SpringMVC入门"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringMVC入门</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringMVC入门（1）">SpringMVC入门（1）</div></div><div class="task-info" id="3864834911650140" title="[回放] SpringMVC注解使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringMVC注解使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringMVC注解使用（1）">SpringMVC注解使用（1）</div></div><div class="task-info" id="3864839206617436" title="[回放] 自定义拦截器"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">自定义拦截器</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="自定义拦截器（1）">自定义拦截器（1）</div></div></li><li class=""><div class="sub-title" title="第26节 MyBatis">第26节 MyBatis</div><div class="task-info" id="3864843501584732" title="[回放] Mybatis 入门使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Mybatis 入门使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Mybatis 入门使用（1）">Mybatis 入门使用（1）</div></div><div class="task-info" id="3864847796552028" title="[回放] Mybatis 动态sql"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Mybatis 动态sql</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Mybatis 动态sql（1）">Mybatis 动态sql（1）</div></div></li><li class=""><div class="sub-title" title="第27节 EHcache与 Guava Cache">第27节 EHcache与 Guava Cache</div><div class="task-info" id="3864852091519324" title="[回放] EHcache与 Guava Cache"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">EHcache与 Guava Cache</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="EHcache与 Guava Cache（1）">EHcache与 Guava Cache（1）</div></div></li><li class=""><div class="sub-title" title="第28节 GIT">第28节 GIT</div><div class="task-info" id="3864856386486620" title="[回放] Git"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Git</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Git（1）">Git（1）</div></div></li><li class=""><div class="sub-title" title="第29节 SVN">第29节 SVN</div><div class="task-info" id="3864860681453916" title="[回放] SVN"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SVN</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SVN（1）">SVN（1）</div></div></li><li class=""><div class="sub-title" title="第30节 SSM项目整合">第30节 SSM项目整合</div><div class="task-info" id="3864864976421212" title="[回放] SSM项目01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SSM项目01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SSM项目01（1）">SSM项目01（1）</div></div><div class="task-info" id="3864869271388508" title="[回放] SSM项目02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SSM项目02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SSM项目02（1）">SSM项目02（1）</div></div><div class="task-info" id="3864873566355804" title="[回放] SSM项目03"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SSM项目03</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SSM项目03（1）">SSM项目03（1）</div></div><div class="task-info" id="3864877861323100" title="[回放] SSM项目04"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SSM项目04</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SSM项目04（1）">SSM项目04（1）</div></div></li><li class=""><div class="sub-title" title="第31节 Linux">第31节 Linux</div><div class="task-info" id="3864882156290396" title="[回放] Linux系统安装及使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Linux系统安装及使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Linux系统安装及使用（1）">Linux系统安装及使用（1）</div></div></li><li class=""><div class="sub-title" title="第32节 Docker">第32节 Docker</div><div class="task-info" id="3864886451257692" title="[回放] Docker安装与配置"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Docker安装与配置</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Docker安装与配置（1）">Docker安装与配置（1）</div></div><div class="task-info" id="3864890746224988" title="[回放] Docker常见操作"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Docker常见操作</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Docker常见操作（1）">Docker常见操作（1）</div></div></li><li class=""><div class="sub-title" title="第33节 SpringBoot">第33节 SpringBoot</div><div class="task-info" id="3864895041192284" title="[回放] SpringBoot简介"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringBoot简介</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringBoot简介（1）">SpringBoot简介（1）</div></div><div class="task-info" id="3864899336159580" title="[回放] SpringBoot使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringBoot使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringBoot使用（1）">SpringBoot使用（1）</div></div><div class="task-info" id="3864903631126876" title="[回放] SpringBoot整合项目"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringBoot整合项目</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringBoot整合项目（1）">SpringBoot整合项目（1）</div></div></li><li class=""><div class="sub-title" title="第34节 Shiro">第34节 Shiro</div><div class="task-info" id="3864907926094172" title="[回放] Shiro权限管理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Shiro权限管理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Shiro权限管理（1）">Shiro权限管理（1）</div></div></li><li class=""><div class="sub-title" title="第35节 Vue">第35节 Vue</div><div class="task-info" id="3864912221061468" title="[回放] Vue入门"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Vue入门</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Vue入门（1）">Vue入门（1）</div></div><div class="task-info" id="3864916516028764" title="[回放] Vue语法及使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Vue语法及使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Vue语法及使用（1）">Vue语法及使用（1）</div></div><div class="task-info" id="3864920810996060" title="[回放] Vue-cli脚手架"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Vue-cli脚手架</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Vue-cli脚手架（1）">Vue-cli脚手架（1）</div></div><div class="task-info" id="3864925105963356" title="[回放] SSM项目整合VUE"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SSM项目整合VUE</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SSM项目整合VUE（1）">SSM项目整合VUE（1）</div></div></li><li class=""><div class="sub-title" title="第36节 分布式应用-Zookeepr">第36节 分布式应用-Zookeepr</div><div class="task-info" id="3864929400930652" title="[回放] Zookeepr配置使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Zookeepr配置使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Zookeepr配置使用（1）">Zookeepr配置使用（1）</div></div><div class="task-info" id="3864933695897948" title="[回放] Zookeepr集群"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Zookeepr集群</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Zookeepr集群（1）">Zookeepr集群（1）</div></div></li><li class=""><div class="sub-title" title="第37节 分布式应用-Dubbo">第37节 分布式应用-Dubbo</div><div class="task-info" id="3864937990865244" title="[回放] Dubbo负载均衡"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Dubbo负载均衡</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Dubbo负载均衡（1）">Dubbo负载均衡（1）</div></div><div class="task-info" id="3864942285832540" title="[回放] Dubbo整合SpringBoot"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Dubbo整合SpringBoot</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Dubbo整合SpringBoot（1）">Dubbo整合SpringBoot（1）</div></div></li><li class=""><div class="sub-title" title="第38节 分布式应用-SpringCloud">第38节 分布式应用-SpringCloud</div><div class="task-info" id="3864946580799836" title="[回放] SpringCloud 组件01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringCloud 组件01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringCloud 组件01（1）">SpringCloud 组件01（1）</div></div><div class="task-info" id="3864950875767132" title="[回放] SpringCloud 组件02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">SpringCloud 组件02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="SpringCloud 组件02（1）">SpringCloud 组件02（1）</div></div></li><li class=""><div class="sub-title" title="第39节 分布式应用-Redis">第39节 分布式应用-Redis</div><div class="task-info" id="3864955170734428" title="[回放] Redis安装与使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Redis安装与使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Redis安装与使用（1）">Redis安装与使用（1）</div></div><div class="task-info" id="3864959465701724" title="[回放] Redis集群"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Redis集群</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Redis集群（1）">Redis集群（1）</div></div></li><li class=""><div class="sub-title" title="第40节 分布式应用-Elasticsearch">第40节 分布式应用-Elasticsearch</div><div class="task-info" id="3864963760669020" title="[回放] Elasticsearch安装及使用"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Elasticsearch安装及使用</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Elasticsearch安装及使用（1）">Elasticsearch安装及使用（1）</div></div><div class="task-info" id="3864968055636316" title="[回放] Elasticsearch中文分词器"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Elasticsearch中文分词器</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Elasticsearch中文分词器（1）">Elasticsearch中文分词器（1）</div></div></li><li class=""><div class="sub-title" title="第41节 分布式应用-Quartz">第41节 分布式应用-Quartz</div><div class="task-info" id="3864972350603612" title="[回放] Quartz使用、整合"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Quartz使用、整合</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Quartz使用、整合（1）">Quartz使用、整合（1）</div></div></li><li class=""><div class="sub-title" title="第42节 分布式应用- RocketMQ">第42节 分布式应用- RocketMQ</div><div class="task-info" id="3864976645570908" title="[回放] RocketMQ消息队列"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">RocketMQ消息队列</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="RocketMQ消息队列（1）">RocketMQ消息队列（1）</div></div></li><li class=""><div class="sub-title" title="第43节 分布式应用-FastDFS">第43节 分布式应用-FastDFS</div><div class="task-info" id="3864980940538204" title="[回放] FastDFS文件管理"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">FastDFS文件管理</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="FastDFS文件管理（1）">FastDFS文件管理（1）</div></div></li><li class=""><div class="sub-title" title="第44节 分布式应用-MyCat">第44节 分布式应用-MyCat</div><div class="task-info" id="3864985235505500" title="[回放] Mycat 数据库中间件01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Mycat 数据库中间件01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Mycat 数据库中间件01（1）">Mycat 数据库中间件01（1）</div></div></li><li class=""><div class="sub-title" title="第45节 分布式应用-MyCat">第45节 分布式应用-MyCat</div><div class="task-info" id="3864989530472796" title="[回放] Mycat 数据库中间件02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Mycat 数据库中间件02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Mycat 数据库中间件02（1）">Mycat 数据库中间件02（1）</div></div></li><li class=""><div class="sub-title" title="第46节 单点登录">第46节 单点登录</div><div class="task-info" id="3864993825440092" title="[回放] CAS单点登录"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">CAS单点登录</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="CAS单点登录（1）">CAS单点登录（1）</div></div></li><li class=""><div class="sub-title" title="第47节 分布式锁与事务">第47节 分布式锁与事务</div><div class="task-info" id="3864998120407388" title="[回放] Redis实现分布式锁"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">Redis实现分布式锁</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="Redis实现分布式锁（1）">Redis实现分布式锁（1）</div></div><div class="task-info" id="3865002415374684" title="[回放] 分布式事务"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">分布式事务</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="分布式事务（1）">分布式事务（1）</div></div></li><li class=""><div class="sub-title" title="第48节 微信公众号开发">第48节 微信公众号开发</div><div class="task-info" id="3865006710341980" title="[回放] 公众号开发"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">公众号开发</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="公众号开发（1）">公众号开发（1）</div></div></li><li class=""><div class="sub-title" title="第49节 亿级项目解决实战">第49节 亿级项目解决实战</div><div class="task-info" id="3865011005309276" title="[回放] 亿级项目解决方案实战01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">亿级项目解决方案实战01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="亿级项目解决方案实战01（1）">亿级项目解决方案实战01（1）</div></div><div class="task-info" id="3865015300276572" title="[回放] 亿级项目解决方案实战02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">亿级项目解决方案实战02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="亿级项目解决方案实战02（1）">亿级项目解决方案实战02（1）</div></div></li><li class=""><div class="sub-title" title="第50节 面试题解析">第50节 面试题解析</div><div class="task-info" id="3865019595243868" title="[回放] 技术面试题解析01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">技术面试题解析01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="技术面试题解析01（1）">技术面试题解析01（1）</div></div><div class="task-info" id="3865023890211164" title="[回放] 技术面试题解析02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">技术面试题解析02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="技术面试题解析02（1）">技术面试题解析02（1）</div></div></li><li class=""><div class="sub-title" title="第51节 就业指导">第51节 就业指导</div><div class="task-info" id="3865028185178460" title="[回放] 就业指导 01"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">就业指导 01</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="就业指导 01（1）">就业指导 01（1）</div></div><div class="task-info" id="3865032480145756" title="[回放] 就业指导 02"><svg class="icon-svg task-type svg--course-record" viewBox="0 0 32 32" inline="true"><use xlink:href="#course-record"></use></svg><div class="task-inner"><div class="fr"><span class="task-suffix"></span><span class="icon-css-mark--outline icon-css-mark" title="有回放"></span></div><div class="task-name">就业指导 02</div></div><i class="icon-css-v icon-css-v--right show-playback-list icon-css-v--1"></i></div><div class="hidden playback-list"><div class="task-item" title="就业指导 02（1）">就业指导 02（1）</div></div></li></ul></div></div><div class="study-body"><div class="video-wrap tc-video" tabindex="0"><div id="txvideo-player-container" class="video-ctn"><div class="tcplayer video-js tcp-skin vjs-controls-enabled vjs-workinghover vjs-errors vjs-has-started x-tcp-container-dimensions vjs-user-active vjs-playing" playsinline="true" preload="auto" id="x-tcp-container" lang="zh-cn" role="region" aria-label="视频播放器"><video id="x-tcp-container_html5_api" preload="auto" playsinline="playsinline" class="vjs-tech" tabindex="-1" autoplay="" src="blob:https://ke.qq.com/d96ed822-7872-4e6f-b332-b95453c3e77e"></video><div class="vjs-menu tcp-right-click-popup-menu vjs-hidden"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item tc-menu-list" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false"><span class="vjs-menu-item-text">腾讯云提供技术支持</span><span class="vjs-control-text"></span></li></ul></div><div class="tcp-logo vjs-hidden" aria-disabled="false"><a class="tcp-logo-link" target="_blank"><img class="tcp-logo-img"></a></div><div class="vjs-poster" tabindex="-1" aria-disabled="false" style="background-image: url(&quot;https://1258712167.vod2.myqcloud.com/fb8e6c92vodtranscq1258712167/033d81225285890800081855302/1584370632_1051148933.100_0.jpg?t=5f33f45f&amp;exper=0&amp;us=6284451084917984464&amp;sign=2f00de5f8b3c16467915658891f28e1e&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="tcp-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="播放" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">播放</span><div class="vjs-button-icon"><svg height="100%" width="100%" viewBox="0 0 484 348">
+      <path class="draw-fill" transform="translate(4 4)" d="M383,124C350-42,122.3-40.5,90.6,123.5c-110.4,18.5-131,185,.6,216.5H381.6C519.7,310.7,494.1,137.8,383,124Z"></path>
+      <path transform="translate(4 4)" d="M200.4,110.2c-9.4-5.8-19.6,2.7-19.4,11.7V256.2c0,8,10.4,16.7,19.4,10.8,2.2-1.4,111.8-65.9,114-67.3,7.4-4,10.1-15.8,0-22.2Z" style="fill:#fff ;"></path>
+    </svg></div></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" aria-live="polite" title="暂停" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">暂停</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-vertical enable-volume-control"><button class="vjs-mute-control vjs-control vjs-button enable-volume-control vjs-vol-3" type="button" aria-live="polite" title="静音" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">静音</span></button><div class="vjs-volume-control vjs-control vjs-volume-vertical enable-volume-control"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-vertical" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="音量" aria-live="polite" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off">2:28:10</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off">2:48:19</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="88.02" aria-valuemin="0" aria-valuemax="100" aria-label="进度小节" aria-valuetext="2:28:10 of 2:48:19"><div class="vjs-load-progress" style="width: 88.32%;"><span class="vjs-control-text"><span>加载完毕</span>: 0%</span><div style="left: 85.9879%; width: 14.0121%;"></div></div><div class="vjs-mouse-display" style="left: 274.128px;"><div class="vjs-time-tooltip" style="right: -24.0188px;">0:53:45</div></div><div class="vjs-play-progress vjs-slider-bar" style="width: 88.02%;"><div class="vjs-time-tooltip" style="right: -28.0188px;">2:28:10</div><span class="vjs-control-text"><span>进度</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">媒体流类型</span>直播</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off">-20:09</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" title="播放速度" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">播放速度</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text">, 选择</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.8x</span><span class="vjs-control-text"></span></li></ul></div><div class="vjs-playback-rate-value">1.25x</div></div><div class="vjs-menu-button vjs-menu-button-popup vjs-control vjs-button tcp-video-quality-switcher"><button class="vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"></span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">720p</span><span class="vjs-control-text">, 选择</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">480p</span><span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">270p</span><span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">自动</span><span class="vjs-control-text"></span></li></ul></div><div class="tcp-quality-switcher-value"><p>720p</p></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" title="节目段落" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">节目段落</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">节目段落</li></ul></div></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" title="描述" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">描述</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">关闭描述</span><span class="vjs-control-text">, 选择</span></li></ul></div></div><div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" title="字幕" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">字幕</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false"><span class="vjs-menu-item-text">字幕设定</span><span class="vjs-control-text">, 开启字幕设置弹窗</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">关闭字幕</span><span class="vjs-control-text">, 选择</span></li></ul></div></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-live="polite" aria-disabled="false" title="音轨" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">音轨</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"></ul></div></div><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" aria-live="polite" title="全屏" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">全屏</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="x-tcp-container_component_493_description" aria-hidden="true" aria-label="弹窗" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="x-tcp-container_component_493_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" tabindex="-1" aria-describedby="x-tcp-container_component_499_description" aria-hidden="true" aria-label="字幕设定视窗" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="x-tcp-container_component_499_description">开始对话视窗。离开会取消及关闭视窗</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg-color vjs-track-setting"><legend id="captions-text-legend-x-tcp-container_component_499">文字</legend><label id="captions-foreground-color-x-tcp-container_component_499" class="vjs-label">Color</label><select aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499"><option id="captions-foreground-color-x-tcp-container_component_499-White" value="#FFF" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-White">白</option><option id="captions-foreground-color-x-tcp-container_component_499-Black" value="#000" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Black">黑</option><option id="captions-foreground-color-x-tcp-container_component_499-Red" value="#F00" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Red">红</option><option id="captions-foreground-color-x-tcp-container_component_499-Green" value="#0F0" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Green">绿</option><option id="captions-foreground-color-x-tcp-container_component_499-Blue" value="#00F" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Blue">蓝</option><option id="captions-foreground-color-x-tcp-container_component_499-Yellow" value="#FF0" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Yellow">黄</option><option id="captions-foreground-color-x-tcp-container_component_499-Magenta" value="#F0F" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Magenta">紫红</option><option id="captions-foreground-color-x-tcp-container_component_499-Cyan" value="#0FF" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499 captions-foreground-color-x-tcp-container_component_499-Cyan">青</option></select><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-x-tcp-container_component_499" class="vjs-label">Transparency</label><select aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-opacity-x-tcp-container_component_499"><option id="captions-foreground-opacity-x-tcp-container_component_499-Opaque" value="1" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-opacity-x-tcp-container_component_499 captions-foreground-opacity-x-tcp-container_component_499-Opaque">不透明</option><option id="captions-foreground-opacity-x-tcp-container_component_499-Semi-Transparent" value="0.5" aria-labelledby="captions-text-legend-x-tcp-container_component_499 captions-foreground-opacity-x-tcp-container_component_499 captions-foreground-opacity-x-tcp-container_component_499-Semi-Transparent">半透明</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-track-setting"><legend id="captions-background-x-tcp-container_component_499">背景</legend><label id="captions-background-color-x-tcp-container_component_499" class="vjs-label">Color</label><select aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499"><option id="captions-background-color-x-tcp-container_component_499-Black" value="#000" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Black">黑</option><option id="captions-background-color-x-tcp-container_component_499-White" value="#FFF" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-White">白</option><option id="captions-background-color-x-tcp-container_component_499-Red" value="#F00" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Red">红</option><option id="captions-background-color-x-tcp-container_component_499-Green" value="#0F0" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Green">绿</option><option id="captions-background-color-x-tcp-container_component_499-Blue" value="#00F" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Blue">蓝</option><option id="captions-background-color-x-tcp-container_component_499-Yellow" value="#FF0" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Yellow">黄</option><option id="captions-background-color-x-tcp-container_component_499-Magenta" value="#F0F" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Magenta">紫红</option><option id="captions-background-color-x-tcp-container_component_499-Cyan" value="#0FF" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499 captions-background-color-x-tcp-container_component_499-Cyan">青</option></select><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-x-tcp-container_component_499" class="vjs-label">Transparency</label><select aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499"><option id="captions-background-opacity-x-tcp-container_component_499-Opaque" value="1" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499-Opaque">不透明</option><option id="captions-background-opacity-x-tcp-container_component_499-Semi-Transparent" value="0.5" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499-Semi-Transparent">半透明</option><option id="captions-background-opacity-x-tcp-container_component_499-Transparent" value="0" aria-labelledby="captions-background-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499 captions-background-opacity-x-tcp-container_component_499-Transparent">透明</option></select></span></fieldset><fieldset class="vjs-window-color vjs-track-setting"><legend id="captions-window-x-tcp-container_component_499">视窗</legend><label id="captions-window-color-x-tcp-container_component_499" class="vjs-label">Color</label><select aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499"><option id="captions-window-color-x-tcp-container_component_499-Black" value="#000" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Black">黑</option><option id="captions-window-color-x-tcp-container_component_499-White" value="#FFF" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-White">白</option><option id="captions-window-color-x-tcp-container_component_499-Red" value="#F00" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Red">红</option><option id="captions-window-color-x-tcp-container_component_499-Green" value="#0F0" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Green">绿</option><option id="captions-window-color-x-tcp-container_component_499-Blue" value="#00F" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Blue">蓝</option><option id="captions-window-color-x-tcp-container_component_499-Yellow" value="#FF0" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Yellow">黄</option><option id="captions-window-color-x-tcp-container_component_499-Magenta" value="#F0F" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Magenta">紫红</option><option id="captions-window-color-x-tcp-container_component_499-Cyan" value="#0FF" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499 captions-window-color-x-tcp-container_component_499-Cyan">青</option></select><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-x-tcp-container_component_499" class="vjs-label">Transparency</label><select aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499"><option id="captions-window-opacity-x-tcp-container_component_499-Transparent" value="0" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499-Transparent">透明</option><option id="captions-window-opacity-x-tcp-container_component_499-Semi-Transparent" value="0.5" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499-Semi-Transparent">半透明</option><option id="captions-window-opacity-x-tcp-container_component_499-Opaque" value="1" aria-labelledby="captions-window-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499 captions-window-opacity-x-tcp-container_component_499-Opaque">不透明</option></select></span></fieldset></div><div class="vjs-track-settings-font&quot;&gt;"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-x-tcp-container_component_499" class="">字体尺寸</legend><select aria-labelledby="captions-font-size-x-tcp-container_component_499"><option id="captions-font-size-x-tcp-container_component_499-50%" value="0.50" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-50%">50%</option><option id="captions-font-size-x-tcp-container_component_499-75%" value="0.75" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-75%">75%</option><option id="captions-font-size-x-tcp-container_component_499-100%" value="1.00" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-100%">100%</option><option id="captions-font-size-x-tcp-container_component_499-125%" value="1.25" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-125%">125%</option><option id="captions-font-size-x-tcp-container_component_499-150%" value="1.50" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-150%">150%</option><option id="captions-font-size-x-tcp-container_component_499-175%" value="1.75" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-175%">175%</option><option id="captions-font-size-x-tcp-container_component_499-200%" value="2.00" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-200%">200%</option><option id="captions-font-size-x-tcp-container_component_499-300%" value="3.00" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-300%">300%</option><option id="captions-font-size-x-tcp-container_component_499-400%" value="4.00" aria-labelledby="captions-font-size-x-tcp-container_component_499 captions-font-size-x-tcp-container_component_499-400%">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="x-tcp-container_component_499" class="">字体边缘样式</legend><select aria-labelledby="x-tcp-container_component_499"><option id="x-tcp-container_component_499-None" value="none" aria-labelledby="x-tcp-container_component_499 x-tcp-container_component_499-None">无</option><option id="x-tcp-container_component_499-Raised" value="raised" aria-labelledby="x-tcp-container_component_499 x-tcp-container_component_499-Raised">浮雕</option><option id="x-tcp-container_component_499-Depressed" value="depressed" aria-labelledby="x-tcp-container_component_499 x-tcp-container_component_499-Depressed">压低</option><option id="x-tcp-container_component_499-Uniform" value="uniform" aria-labelledby="x-tcp-container_component_499 x-tcp-container_component_499-Uniform">均匀</option><option id="x-tcp-container_component_499-Dropshadow" value="dropshadow" aria-labelledby="x-tcp-container_component_499 x-tcp-container_component_499-Dropshadow">下阴影</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-x-tcp-container_component_499" class="">字体库</legend><select aria-labelledby="captions-font-family-x-tcp-container_component_499"><option id="captions-font-family-x-tcp-container_component_499-Proportional Sans-Serif" value="proportionalSansSerif" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Proportional Sans-Serif">比例无细体</option><option id="captions-font-family-x-tcp-container_component_499-Monospace Sans-Serif" value="monospaceSansSerif" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Monospace Sans-Serif">单间隔无细体</option><option id="captions-font-family-x-tcp-container_component_499-Proportional Serif" value="proportionalSerif" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Proportional Serif">比例细体</option><option id="captions-font-family-x-tcp-container_component_499-Monospace Serif" value="monospaceSerif" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Monospace Serif">单间隔细体</option><option id="captions-font-family-x-tcp-container_component_499-Casual" value="casual" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Casual">舒适</option><option id="captions-font-family-x-tcp-container_component_499-Script" value="script" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Script">手写体</option><option id="captions-font-family-x-tcp-container_component_499-Small Caps" value="small-caps" aria-labelledby="captions-font-family-x-tcp-container_component_499 captions-font-family-x-tcp-container_component_499-Small Caps">小型大写字体</option></select></fieldset></div><div class="vjs-track-settings-controls"><button class="vjs-default-button" title="恢复全部设定至预设值">重启<span class="vjs-control-text"> 恢复全部设定至预设值</span></button><button class="vjs-done-button">完成</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-live="polite" aria-disabled="false" title="关闭弹窗"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text">关闭弹窗</span></button><p class="vjs-control-text">结束对话视窗</p></div><txpdiv class="player-inject"><div class="player-marquee" style="
+      position: absolute;
+      top: 102px;
+      left: -81.70000000001804px;
+      color: #fff;
+      height: 20px;
+      white-space: nowrap;
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      font-size: 16px;
+      text-shadow: 0 0 0.2em #000;
+    ">144115215922644366正在观看视频</div></txpdiv></div></div></div></div><iframe id="private-msgs-iframe" class="msg-iframe msg-iframe-show" src="./JSP（1）_files/index.html" title="private-msgs"></iframe></div>
+<!--只在IE下注入ie_polyfill-->
+<script>/* eslint-disable */
+(function() {
+  var location = window.location;
+  var href = location.href;
+  var protocol = location.protocol;
+  if (protocol === 'http:') {
+    location.protocol = 'https:';
+  }
+  // 移动设备进入web化课堂跳转任务详情页
+  var reg = /(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i;
+  if(reg.test(navigator.userAgent)){
+    var cidResult = href.match(/[?#&](course_id|cid)=(\d+)/);
+    var tidResult = href.match(/[?#&]term_id=(\d+)/);
+    var taidResult = href.match(/[?#&]taid=(\d+)/);
+    var fromResult = href.match(/[?#&]from=(\w+)/);
+    var isLiteResult = href.match(/[?#&]lite=(\d+)/);
+    var vidResult = href.match(/[?#&]vid=(\d+)/)
+    var cid = cidResult && cidResult[2];
+    var tid = tidResult && tidResult[1];
+    var taid = taidResult && taidResult[1];
+    var from = fromResult && fromResult[1];
+    var lite = isLiteResult && isLiteResult[1];
+    var vid = vidResult && vidResult[1];
+    if (!lite) {
+      var url = '//m.ke.qq.com/taskList.html?_bid=167&_wv=1&cid=' + cid + '&tid=' + tid + '&taid=' + taid + '&from=' + from + '&fr=2';
+    } else {
+      if (taid) {
+        var url = '//m.ke.qq.com/m-core/taskList.html?_bid=167&_wv=3&cid=' + cid + '&tid=' + tid + '#taid=' + taid + '&vid=' + vid;
+      } else {
+        var url = '//m.ke.qq.com/m-core/live.html?_bid=167&_wv=1&cid=' + cid + '&term_id=' + tid + '&from=' + from + '&lite=' + lite;
+      }
+    }
+    window.location.href = url;
+  }
+  // 不允许四级域名访问，做一下跳转
+  if (location.host !== 'ke.qq.com') {
+    window.location.href = href.replace(location.host, 'ke.qq.com');
+  }
+  // 兼容题库嵌入需求
+  location.hash = location.hash.replace(/\?.*/, '');
+  var task_id = location.hash.match(/task_id=(.*?)(&|$)/),
+    exam_id = location.hash.match(/exam_id=(.*?)(&|$)/),
+    has_taid = /taid=/.test(location.hash),
+    has_vid = /vid=/.test(location.hash);
+  task_id && !has_taid && (window.location.hash += '&taid=' + task_id[1]);
+  exam_id && !has_vid && (window.location.hash += '&vid=' + exam_id[1]);
+  // IE8/9/10 跳旧版
+  var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+  window.isIE = userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+  window.isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+  if (window.isIE && !window.isIE11) {
+    // window.location.href = href.replace(/webcourse/, 'webcourse_old'); // 跳转webcouse旧版
+    window.location.href = href.replace(/index\.html/, 'upgrade.html'); // 跳转提示页面
+  }
+})();
+/* eslint-enable */
+</script>
+<script>var BJ_REPORT=function(a){function b(a){var b=document.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return b?decodeURIComponent(b[2]):""}function c(a){return a>=200&&a<=299||304===a}if(a.BJ_REPORT)return a.BJ_REPORT;var d=[],e={},f={id:0,uin:0,url:"",combo:1,ext:null,level:4,ignore:[],random:1,delay:1e3,submit:null,repeat:5,fulllink:!1,tcode:null,initPv:!0,pvMsg:"!#imweb-badjs-pv#!",costomStringify:null,passMonitorId:!1},g="//badjs.qq.com/badjs",h="application/json; charset=utf-8",i=a.location.href,j=function(a,b){return Object.prototype.toString.call(a)==="[object "+(b||"Object")+"]"},k=function(a){return"object"==typeof a&&!!a},l=function(a){return null===a||!j(a,"Number")&&!a},m=(parseInt(b("uid_type"),10),a.onerror);a.onerror=function(b,c,d,e,g){var h=b;g&&g.stack&&(h=o(g)),j(h,"Event")&&(h+=h.type?"--"+h.type+"--"+(h.target?h.target.tagName+"::"+h.target.src:""):"");var i={msg:h,level:4,target:c,rowNum:d,colNum:e};f.jsErrorMSID&&(i.ext={msid:f.jsErrorMSID}),B.push(i),y(),m&&m.apply(a,arguments)};var n=function(a){try{if(a.stack){var b=a.stack.match("https?://[^\n]+");b=b?b[0]:"";var c=b.match(":(\\d+):(\\d+)");c||(c=[0,0,0]);return{msg:o(a),rowNum:c[1],colNum:c[2],target:b.replace(c[0],"")}}return a.name&&a.message&&a.description?{msg:f.customStringify?f.customStringify(a):JSON.stringify(a)}:a}catch(b){return a}},o=function(a){var b=a.stack.replace(/\n/gi,"").split(/\bat\b/).slice(0,5).join("@").replace(/\?[^:]+/gi,""),c=a.toString();return b.indexOf(c)<0&&(b=c+"@"+b),b},p=function(a){if(!k(a))return!0;var b=a.msg;return(e[b]=(parseInt(e[b],10)||0)+1)>f.repeat},q=function(a,b){var c=[],d=[],e=[];if(k(a)){if(a.level=a.level||f.level,!a.ext){var g=null;switch(a.level){case 1:g=f.debugMSID;break;case 2:g=f.infoMSID;break;case 4:g=f.errorMSID}g&&(a.ext={msid:g})}for(var h in a){var i=a[h];if(!l(i)){if(k(i))try{i=f.customStringify?f.customStringify(i):JSON.stringify(i)}catch(a){i="[BJ_REPORT detect value stringify error] "+a.toString()}e.push(h+":"+i),c.push(h+"="+encodeURIComponent(i)),"id"!==h&&d.push(h+"["+b+"]="+encodeURIComponent(i))}}}return[d.join("&"),e.join(","),c.join("&")]},r=function(a){(new Image).src=a.replace(f.url,g)},s=function(a){if(f.submit)f.submit(a);else{var b=u(a);if(f.fulllink){var d=new XMLHttpRequest;d.open("post",b.url),d.setRequestHeader("content-type",h),d.send(b.data),d.onload=function(){var b,e=c(d.status);if(e)try{b=JSON.parse(d.responseText)}catch(a){}(!e||b&&"number"==typeof b.err&&0!==b.err)&&r(a)}}else r(a)}},t=function(a){setTimeout(function(){s(a)},0)},u=function(a){var b=v(a),c=b[0],d=b[1],e=[];if(f.fulllink){"string"==typeof d.msg&&(d.msg=[d.msg],d.level=[d.level],d.ext&&(d.ext=[d.ext]));for(var g=0;g<d.msg.length;g++){var h={content:d.msg[g],level:+d.level[g]};if(d.ext&&d.ext[g])try{var i=JSON.parse(d.ext[g]),j=parseInt(i,10);"number"==typeof j&&j===j?(h.ext={msid:parseInt(i,10)},f.passMonitorId&&(h.pass_fields=h.pass_fields||{},h.pass_fields.monitor_id=i.toString())):i.msid&&(h.ext={msid:parseInt(i.msid,10)},f.passMonitorId&&(h.pass_fields=h.pass_fields||{},h.pass_fields.monitor_id=i.msid.toString()))}catch(a){}f.tcode&&(h.cmd=f.tcode),e.push(h)}d={id:d.id,uin:d.uin,from:d.from,msg:e}}return{url:c,data:f.customStringify?f.customStringify(d):JSON.stringify(d)}},v=function(a){for(var b=a.split("?"),c=b[0],d=b[1],e={},f=d.split("&"),g=0;g<f.length;g++){var h=f[g].split("="),i=decodeURIComponent(h[0]),j=decodeURIComponent(h[1]||""),k=i.match(/\[\d+]$/);if(k){var l=k[0].match(/\d+/g)[0];i=i.replace(k[0],"");var m=e[i]||[];m[l]=j,e[i]=m}else e[i]=j}return[c,e]},w=[],x=0,y=function(a){if(f.report){for(;d.length;){var b=!1,c=d.shift();if(!p(c)){var e=q(c,w.length);if(j(f.ignore,"Array"))for(var g=0,h=f.ignore.length;g<h;g++){var i=f.ignore[g];if(j(i,"RegExp")&&i.test(e[1])||j(i,"Function")&&i(c,e[1])){b=!0;break}}if(!b){if(c.id&&c.id.toString()!==f.id.toString()){var k=(f.url||"/badjs")+"?uin="+f.uin+"&from="+encodeURIComponent(location.href)+"&";t(k+e[2]+"&_t="+ +new Date)}else f.combo?w.push(e[0]):t(f.report+e[2]+"&_t="+ +new Date);f.onReport&&f.onReport(f.id,c)}}}if(w.length){var l=function(){clearTimeout(x),t(f.report+w.join("&")+"&count="+w.length+"&_t="+ +new Date),x=0,w=[]};a?l():x||(x=setTimeout(l,f.delay))}}},z=function(a,b){var c=a;return k(a)?c.level=b:c={msg:a,level:b},c},A=function(){var a=parseInt(f.id,10);f.report=(f.url||"/badjs")+"?id="+a+"&uin="+f.uin+"&from="+encodeURIComponent(location.href)+"&"},B={push:function(a){var b=location.href;if(b!==i&&(B.report(),i=b,A()),Math.random()>=f.random)return B;var c=k(a)?n(a):{msg:a};return f.ext&&!c.ext&&(c.ext=f.ext),d.push(c),y(),B},report:function(a){return a&&B.push(a),y(!0),B},error:function(a){return a?(a=z(a,4),B.push(a),B):B},info:function(a){return a?(a=z(a,2),B.push(a),B):B},debug:function(a){return a?(a=z(a,1),B.push(a),B):B},pv:function(){return B.info(f.pvMsg)},init:function(a){if(k(a))for(var c in a)f[c]=a[c];return parseInt(f.id,10)&&(/qq\.com$/gi.test(location.hostname)&&(f.url||(f.url=g),f.uin||(f.uin=b("uin")||b("uid_uin")||b("p_luin")||b("p_uin"))),f.tcode=b("im_t_c"),A(),f.initPv&&B.pv()),B},bjReq:function(a){var b=q(a,0),c=g+"?uin="+f.uin+"&id="+f.id+"&from="+encodeURIComponent(location.href)+"&";(new Image).src=c+b[0]},__onerror__:a.onerror};if("undefined"!=typeof console&&console.error&&setTimeout(function(){var a=((location.hash||"").match(/([#&])BJ_ERROR=([^&$]+)/)||[])[2];a&&console.error("BJ_ERROR",decodeURIComponent(a).replace(/(:\d+:\d+)\s*/g,"$1\n"))},0),window.onhashchange){var C=window.onhashchange;window.onhashchange=function(a){C(a),B.pv()}}else window.onhashchange=function(){B.pv()};return B}(window);"undefined"!=typeof exports&&("undefined"!=typeof module&&module.exports&&(exports=module.exports=BJ_REPORT),exports.BJ_REPORT=BJ_REPORT),function(a){if(a.BJ_REPORT){var b,c=function(b){a.BJ_REPORT.error(b)},d=a.BJ_REPORT.tryJs=function(a){return a&&(c=a),d},e=function(a,b){var c;for(c in b)a[c]=b[c]},f=function(a){return"function"==typeof a},g=function(d,e){return function(){try{return d.apply(this,e||arguments)}catch(d){if(c(d),d.stack&&console&&console.error&&console.error("[BJ-REPORT]",d.stack),!b){var f=a.onerror;a.onerror=function(){},b=setTimeout(function(){a.onerror=f,b=null},50)}throw d}}},h=function(a){return function(){for(var b,c=[],d=0,e=arguments.length;d<e;d++)b=arguments[d],f(b)&&(b=g(b)),c.push(b);return a.apply(this,c)}},i=function(a){return function(b,c){if("string"==typeof b)try{b=new Function(b)}catch(a){throw a}var d=[].slice.call(arguments,2);return b=g(b,d.length&&d),a(b,c)}},j=function(a,b){return function(){for(var c,d,e=[],h=0,i=arguments.length;h<i;h++)c=arguments[h],f(c)&&(c.tryWrap?c.tryWrap:(d=g(c),c.tryWrap=d,c=d)),e.push(c);return a.apply(b||this,e)}},k=function(a){var b,c;for(b in a)c=a[b],f(c)&&(a[b]=g(c));return a};d.spyJquery=function(){var b=a.$;if(!b||!b.event)return d;var c,e;b.zepto?(c=b.fn.on,e=b.fn.off,b.fn.on=j(c),b.fn.off=function(){for(var a,b=[],c=0,d=arguments.length;c<d;c++)a=arguments[c],f(a)&&a.tryWrap&&(a=a.tryWrap),b.push(a);return e.apply(this,b)}):window.jQuery&&(c=b.event.add,e=b.event.remove,b.event.add=j(c),b.event.remove=function(){for(var a,b=[],c=0,d=arguments.length;c<d;c++)a=arguments[c],f(a)&&a.tryWrap&&(a=a.tryWrap),b.push(a);return e.apply(this,b)});var g=b.ajax;return g&&(b.ajax=function(a,c){return c||(c=a,a=void 0),k(c),a?g.call(b,a,c):g.call(b,c)}),d},d.spyModules=function(){var b=a.require,c=a.define;return c&&c.amd&&b&&(a.require=h(b),e(a.require,b),a.define=h(c),e(a.define,c)),a.seajs&&c&&(a.define=function(){for(var a,b=[],d=0,e=arguments.length;d<e;d++)a=arguments[d],f(a)&&(a=g(a),a.toString=function(a){return function(){return a.toString()}}(arguments[d])),b.push(a);return c.apply(this,b)},a.seajs.use=h(a.seajs.use),e(a.define,c)),d},d.spySystem=function(){return a.setTimeout=i(a.setTimeout),a.setInterval=i(a.setInterval),d},d.spyCustom=function(a){return f(a)?g(a):k(a)},d.spyAll=function(){return d.spyJquery().spyModules().spySystem(),d}}}(window);</script>
+<script>// 初始化badjs，没有经过babel请勿使用ES6语法
+/* eslint-disable */
+if (window.BJ_REPORT) {
+  var BJ_REPORT = window.BJ_REPORT;
+  var ignores = [
+    '"isTrigger":true,"namespace":"","namespace_re":null', // 腾讯视频使用jquery处理已移除元素事件的错误
+    'Query is not defined', // 一些浏览器插件报错，先屏蔽
+    '$ is not defined',
+    'letv is not defined',
+    '@ showTips', // qq浏览器下腾讯视频触发的bug
+    'Unexpected identifier after numeric literal', // 老版本Edge浏览器不能识别badjs代码中的1e写法
+    "缺少 ';'", // IE浏览器已做跳转处理
+    "Expected ';'",
+    'getQualityReportFronSafariAsync', // WebRTC SDK在Safari下的bug
+    'WebViewJavascriptBridge',
+    'vi.l.qq.com', // 腾讯视频
+    'vd.l.qq.com', // 腾讯视频
+    'vm.gtimg.cn', // 腾讯视频
+    'chrome-extension',
+    'moz-extension',
+    'NotSupportedError: Failed to construct:',
+  ];
+  BJ_REPORT.init({
+    id: 1414,
+    ignore: [
+      function (error) {
+        var str = JSON.stringify(error.msg || error) || '';
+        if (error.level === 4) {
+          for (var i = 0; i < ignores.length; i++) {
+            if (str.indexOf(ignores[i]) > -1 || str.indexOf(encodeURIComponent(ignores[i])) > -1) {
+              BJ_REPORT.info(error);
+              return true;
+            }
+          }
+        }
+        return false;
+      },
+    ],
+    repeat: 1,
+    jsErrorMSID: 3233841,
+    debugMSID: 3234595,
+    infoMSID: 3234596,
+    errorMSID: 3234597,
+    fulllink: true,
+    url: '//report.edu.qq.com/data_report/web_report',
+    passMonitorId: true,
+  });
+  BJ_REPORT.tryJs().spyAll();
+}
+</script>
+<script src="./JSP（1）_files/WebRTCAPI_CLOUD_V4.js.下载" crossorigin="anonymous" v="1205"></script>
+<script src="./JSP（1）_files/WebRTCAPI_edu_v1.0.2.min.js.下载" crossorigin="anonymous"></script>
+<!--[if IE]><script src="//7.url.cn/edu/webcourse/ie_polyfill_c7371b3fa51c1736a46f.js"></script><![endif]-->
+<script src="./JSP（1）_files/vendor_5a3c9be6d6a0b00e3fba.js.下载" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" src="./JSP（1）_files/index_d733f0027b4350540a75.js.下载"></script><div class="im-dialog-root"></div>
+<script>function IMWEB_WEBPACK_RunScripts(){for(var e=IMWEB_WEBPACK.jsRunCnt;e<IMWEB_WEBPACK.JSARRAY.length;e++){var E=IMWEB_WEBPACK.JSARRAY[e].name;-1!==E.indexOf("ie")&&-1===navigator.userAgent.indexOf("MSIE")||window["IMWEB_WEBPACK_"+E]()}}IMWEB_WEBPACK.firstLoad=!1,IMWEB_WEBPACK.jsLoadedCnt=IMWEB_WEBPACK.jsRunCnt,function(){for(var e=IMWEB_WEBPACK.jsLoadedCnt;e<IMWEB_WEBPACK.JSARRAY.length;e++){var E=IMWEB_WEBPACK.JSARRAY[e].name;if(-1===E.indexOf("ie")||-1!==navigator.userAgent.indexOf("MSIE"))if(IMWEB_WEBPACK[E])IMWEB_WEBPACK.jsLoadedCnt++;else{var n=document.createElement("script");n.src=IMWEB_WEBPACK.JSARRAY[e].url.replace("7.url.cn/edu","ke.qq.com"),document.body.appendChild(n),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"js retry: "+n.src,ext:{msid:3182314}})}else IMWEB_WEBPACK.jsLoadedCnt++}}();</script>
+
+<script>T.page_js_ready = Date.now();window.__time__ = new Date().getTime();</script>
+<!--<script src="http://localhost:7476/webpack-dev-server.js?_dev"></script>-->
+<script>/**
+ * @description 百度统计上报代码
+ */
+/* eslint-disable */
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0c196c536f609d373a16d246a117fd44";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+/* eslint-enable */
+</script>
+<script>/**
+ * @description tcss点击流上报
+ */
+/* eslint-disable */
+(function () {
+  var node = document.createElement('script'),
+    script = document.getElementsByTagName('script')[0];
+  node.src = window.location.protocol === 'https:' ?
+    'https://pingjs.qq.com/tcss.ping.https.js' :
+    'http://pingjs.qq.com/tcss.ping.js';
+  node.type = 'text/javascript';
+  node.onload = node.onerror = node.onreadystatechange = function () {
+    /loaded|complete|undefined/.test(node.readyState) && (function () {
+      node.onload = node.onerror = node.onreadystatechange = null;
+      node.parentNode.removeChild(node);
+      node = undefined;
+      if (typeof window.pgvMain == 'function') {
+        window.pgvMain();
+      }
+    }());
+  };
+  script.parentNode.insertBefore(node, script);
+})();
+/* eslint-enable */
+</script>
+
+
+<script>"use strict";var __register__sw__={version:"af0199eaf2b2f4b7784aad30841c3ee8",monitor:{support:33593251,notSupport:33593252,forceReload:33593253,autoReload:33593254,toHitCache:33593255,hitCache:33593256,cdnFailed:33593257,trySuccess:33593258,registerFailed:33593259},checkSwStatusUrl:"//sas.qq.com/cgi-bin/ke_GrayStrategy_study",checkSwStatusPushId:"491",autoRefresh:!1},monitorReport=function(){var a="https://cgi.connect.qq.com/report/report_vm",r=1e3,c=[];return function(t,o){var e;t&&((e=t)&&"[object Array]"===Object.prototype.toString.call(e)?Object.keys(t).forEach(function(e){t[e]&&c.push({id:t[e],msg:o})}):c.push({id:t,msg:o}),setTimeout(function(){!function(){var e=new Image;e.onload=e.onerror=function(){e=null};for(var t=[],o=[],r=0;r<c.length;r++){var n=c[r],s=n.id,i=n.msg;t.push(s),o.push(i)}0<c.length&&(e.src=a+"?monitors=["+t.join(",")+"]&_="+o.join(",").substr(0,1e3)+"&t="+Math.random()),c=[]}()},r))}}(),badjsReport=function(e){window.BJ_REPORT&&window.BJ_REPORT.info(e)},getCookie=function(e){var t,o=new RegExp("(^| )"+e+"=([^;]*)(;|$)");return(t=document.cookie.match(o))?unescape(t[2]):null},version=__register__sw__.version,checkSwStatusUrl=__register__sw__.checkSwStatusUrl,checkSwStatusPushId=__register__sw__.checkSwStatusPushId,monitor=__register__sw__.monitor,autoRefresh=__register__sw__.autoRefresh;function registerSw(o){var w=navigator.serviceWorker;function h(e,t){var o,r=e.isUseCache,n=e.reloadVersion,s=e.isRefresh,i=e.whiteUin,a=void 0===i?"":i,c=getCookie("uin")||"",u=c[c.length-1],d=-1<a.indexOf(u),l=r&&d;n&&n!==version?(monitorReport(monitor&&monitor.forceReload),registerSw(!0)):w.controller.postMessage(l),!t&&l&&(o=setInterval(function(){checkSwStatusPushId&&window.imconnect&&(clearInterval(o),window.imconnect(checkSwStatusPushId,{appId:"tencentedu",modId:"sas",version:2,closeRegister:!1}).on("push",function(e){var t=e.data.body.result;w.controller&&h(t,!0)}))},200)),t&&s&&window.location.reload()}if(w.register("/webcourse/sw.js").then(function(e){badjsReport("sw注册成功"),e.onupdatefound=function(){var t=e.installing;t.onstatechange=function(){if("activated"===t.state&&w.controller){if(o)return void window.location.reload();console.log("New content is available; please refresh.");var e=new Event("sw-refresh");window.dispatchEvent(e)}}},console.log("ServiceWorker registration successful with scope: ",e.scope)}).catch(function(e){console.log("ServiceWorker registration failed: ",e),monitorReport(monitor&&monitor.registerFailed),badjsReport("sw注册失败:"+e.message)}),checkSwStatusUrl){o||fetch(checkSwStatusUrl).then(function(e){return e.json()}).then(function(e){w.controller&&0==+e.retcode&&h(e.result)})}}var isNotSupportBrowser=/QQBrowser/.test(navigator.userAgent)||/Android/.test(navigator.userAgent)||/Nexus/.test(navigator.userAgent);"serviceWorker"in navigator&&!isNotSupportBrowser?(monitorReport(monitor&&monitor.support),window.addEventListener("DOMContentLoaded",function(){autoRefresh&&monitorReport(monitor&&monitor.autoReload),registerSw(autoRefresh)})):monitorReport(monitor&&monitor.notSupport);</script>
+
+<div class="im-dialog-root"></div></body></html>
