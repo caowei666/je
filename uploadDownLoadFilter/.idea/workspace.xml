@@ -7,17 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ffd16c2-ac89-4375-af14-3ba90fa533f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caowei/web/ListFileServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caowei/web/downServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/uploadDownLoadFilter_war_exploded/WEB-INF/classes/com/caowei/utils/UploadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/uploadDownLoadFilter_war_exploded/WEB-INF/classes/com/caowei/utils/UploadUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/uploadDownLoadFilter/com/caowei/utils/UploadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/uploadDownLoadFilter/com/caowei/utils/UploadUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caowei/utils/UploadUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caowei/utils/UploadUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploadDownLoadFilter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/uploadDownLoadFilter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filter/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../filter/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/web/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -66,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/caowei/web/downServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="20" column="81" lean-forward="true" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+            <state relative-caret-position="206">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -76,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/caowei/web/ListFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,7 +120,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1012" />
     <option name="y" value="22" />
     <option name="width" value="948" />
@@ -196,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594827171399" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594827179892" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -302,18 +294,18 @@
       <option name="presentableId" value="Default" />
       <updated>1594656649941</updated>
       <workItem from="1594656656641" duration="3333000" />
-      <workItem from="1594823229666" duration="3901000" />
+      <workItem from="1594823229666" duration="4138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7234000" />
+    <option name="totallyTimeSpent" value="7471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="810" y="18" width="758" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955157" visible="true" weight="0.32104558" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955157" visible="true" weight="0.38142857" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -323,7 +315,7 @@
       <window_info id="Web" order="7" sideWeight="0.5044843" side_tool="true" weight="0.2942857" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36963192" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24929178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,7 +378,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/caowei/web/ListFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -396,7 +388,7 @@
     <entry file="file://$PROJECT_DIR$/web/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -416,8 +408,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/caowei/web/downServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="20" column="81" lean-forward="true" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+        <state relative-caret-position="206">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
         </state>
       </provider>
     </entry>
