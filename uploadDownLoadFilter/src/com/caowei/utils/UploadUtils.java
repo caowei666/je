@@ -1,6 +1,7 @@
 package com.caowei.utils;
 
 import java.io.File;
+import java.util.Map;
 import java.util.UUID;
 
 public class UploadUtils {
@@ -20,5 +21,20 @@ public class UploadUtils {
             dir.mkdirs();
         }
         return newPath;
+    }
+    //遍历文件夹的方法
+    public static void listFiles(File dir, Map<String,String> map){
+        File[] files = dir.listFiles();
+        if(files != null){
+            for(File f:files){
+                if(f.isDirectory()){
+                    listFiles(f,map);
+                }else{
+                    String uuidfileName = f.getName();
+                    String filename = uuidfileName.substring(uuidfileName.indexOf("_") + 1);
+                    map.put(uuidfileName,filename);
+                }
+            }
+        }
     }
 }
