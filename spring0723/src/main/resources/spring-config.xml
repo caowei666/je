@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="pojo.Pet"/>
-    <bean id="master" class="pojo.Master" init-method="init" destroy-method="close">
-        <property name="name" value="张三"/>
-    </bean>
-
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--<bean class="pojo.Pet"/>-->
+    <!--<bean id="master" class="pojo.Master" init-method="init" destroy-method="close">-->
+        <!--<property name="name" value="张三"/>-->
+    <!--</bean>-->
+    <bean id="actor" class="pojo.Actor"/>
+    <bean class="aop.BeforeService" id="beforeService"/>
+    <bean class="aop.AfterService" id="afterService"/>
+    <bean class="aop.ExceptionService" id="exceptionService"/>
+    <bean class="aop.AroundService" id="aroundService"/>
+    <bean class="aop.MyAdvice" id="myAdvice"/>
+    <aop:config>
+        <!--<aop:pointcut id="point" expression="execution(public pojo.Actor.play(java.lang.String))"/>-->
+        <aop:pointcut id="point" expression="execution(* pojo..*(..))"/>
+        <!--<aop:advisor advice-ref="beforeService" pointcut-ref="point"/>-->
+        <!--<aop:advisor advice-ref="afterService" pointcut-ref="point"/>-->
+        <!--<aop:advisor advice-ref="exceptionService" pointcut-ref="point"/>-->
+        <!--<aop:advisor advice-ref="aroundService" pointcut-ref="point"/>-->
+        <aop:aspect ref="myAdvice">
+            <aop:before method="test" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>
 </beans>
