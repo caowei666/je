@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [30/Jul/2020:22:10:57 +0800] "GET /test.jsp HTTP/1.1" 200 479 http-bio-8080-exec-1 351
+0:0:0:0:0:0:0:1 - - [30/Jul/2020:22:11:08 +0800] "GET /addEmp.html?id=123&name=%E6%9B%B9%E4%BC%9F&salary=80000&dept.id=%E6%8A%80%E6%9C%AF HTTP/1.1" 400 968 http-bio-8080-exec-3 50

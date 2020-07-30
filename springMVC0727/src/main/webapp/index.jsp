@@ -12,5 +12,8 @@
 </head>
 <body>
 <h2>首页</h2>
+<form action="/a/test.html" method="post">
+    <input value="submit" type="submit">
+</form>
 </body>
 </html>
