@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>${sessionScope.sobj}</h1>
 <h1>添加部门</h1>
 <form action="/add.html">
     id:<input name="id">

@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1>test2</h1>
+<h1>${sessionScope.sobj}</h1>
 </body>
 </html>

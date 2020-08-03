@@ -1,0 +1,165 @@
+POST http://localhost:8080/param10.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+[{ 		"id": 1, 		"name": "张三" 	}, { 		"id": 2, 		"name": "李四" 	}]
+
+<> 2020-08-03T113937.200.html
+
+###
+
+POST http://localhost:8080/param9.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{ 	"id": 1, 	"name": "财务部门", 	"employees": [{ 		"id": 1, 		"name": "张三" 	}, { 		"id": 2, 		"name": "李四" 	}] }
+
+<> 2020-08-03T113429.200.html
+
+###
+
+POST http://localhost:8080/param9.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":1,"name":"财务部门","employees":[{"id":1,"name":张三},{{"id":2,"name":李四}}]}
+
+<> 2020-08-03T113113.400.html
+
+###
+
+POST http://localhost:8080/param9.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":1,"name":"财务部门","employees":[{"id":1,"name":张三},{{"id":2,"name":李四}}]}
+
+<> 2020-08-03T113110.400.html
+
+###
+
+POST http://localhost:8080/param9.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":"1","name":"财务部门","employees":[{"id":“1”,"name":张三},{{"id":“2”,"name":李四}}]}
+
+<> 2020-08-03T113028.400.html
+
+###
+
+POST http://localhost:8080/param9.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":"1","name":"财务部门","employees":[{"id":“1”,"name":张三},{{"id":“2”,"name":李四}}]}
+
+<> 2020-08-03T112727.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":"1","name":"财务部门","employees":[{"id":“1”,"name":张三},{{"id":“2”,"name":李四}}]}
+
+<> 2020-08-03T112719.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":"1","name":"财务部门","employees":[{"id":“1”,"name":张三},{{"id":“2”,"name":李四}}]}
+
+<> 2020-08-03T112717.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{"id":"1","name":"财务部门","employees":[{"id":1,"name":张三},{{"id":2,"name":李四}}]}
+
+<> 2020-08-03T112652.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+[{"id":"1","name":"cao"},{"id":"2","name":"caowei"}]
+
+<> 2020-08-03T111542.200.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+[{id:1,name:"cao"},{id:2,name:"caowei"}]
+
+<> 2020-08-03T111432.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+[{id:"2",name:"cao"},{id:"1",name:"caowei"}]
+
+<> 2020-08-03T111336.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+[{id:"2",name:"cao"},{id:"1",name:"caowei"}]
+
+<> 2020-08-03T111321.400.html
+
+###
+
+POST http://localhost:8080/param8.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+{[id:"1",name:"caowei"],[id:"2",name:"cao"]}
+
+<> 2020-08-03T111028.400.html
+
+###
+
+POST http://localhost:8080/param7.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+
+["a","b"]
+
+<> 2020-08-03T110453.200.html
+
+###
+
