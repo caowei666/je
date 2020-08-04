@@ -14,6 +14,6 @@
 <h1>${requestScope.key1}</h1>
 <h1>${key2}</h1>
 <h1>${sessionScope.key1}</h1>
-<h1>dept.name=${dept.name}</h1>
+<h1>name=${name}</h1>
 </body>
 </html>

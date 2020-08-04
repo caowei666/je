@@ -22,4 +22,14 @@
            </list>
         </property>
     </bean>
+    <!--配置jsp模板引擎-->
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="suffix" value=".jsp"/>-->
+        <!--<property name="prefix" value="/"/>-->
+    <!--</bean>-->
+    <!--配置freemarker模板引擎-->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/FTL"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
 </beans>
