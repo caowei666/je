@@ -1,5 +1,6 @@
 package controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,10 @@ import java.util.Map;
 
 @Controller
 public class ParamBindController {
+    @RequestMapping("entity.html")
+    public ResponseEntity<Dept> getDept(){
+
+    }
     @RequestMapping("p1.html")
 //    参数required默认是true
     public String test(@RequestParam(name="num",required = false,defaultValue = "1") Integer num){
