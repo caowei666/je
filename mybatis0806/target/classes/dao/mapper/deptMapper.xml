@@ -1,0 +1,88 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DEPT">
+    <cache></cache>
+    <insert id="addDept" parameterType="Dept" useGeneratedKeys="true" keyProperty="id">
+        insert into dept(name) values (#{name})
+    </insert>
+    <update id="updateDept" parameterType="pojo.Dept">
+        update dept set name=#{name} where id = #{id}
+    </update>
+    <delete id="deleteDept" parameterType="int">
+        delete from dept where id = #{id}
+    </delete>
+    <select id="getDeptList" resultType="Dept">
+        select id,name from dept
+        <where>
+            <if test="list!=null">
+                id in(1,2,3)
+            </if>
+        </where>
+    </select>
+    <resultMap id="deptMap" type="Dept">
+        <id property="id" column="did"/>
+        <result property="name" column="dName"/>
+        <collection property="employees" ofType="Employee" resultMap="EMP.empMap">
+
+        </collection>
+    </resultMap>
+    <sql id="select-dept">select id,name from dept</sql>
+    <select id="getDeptWithEmp" resultMap="deptMap">
+        select d.id did,d.name dName,e.id,e.name,e.salary,e.direDate,e.job from dept d left join employee e on d.id = e.dept
+    </select>
+    <select id="getDeptListwithtiaojian" parameterType="Dept" resultType="Dept">
+        select id,name from dept
+        <where>
+            <if test="id!=null">id=#{id}</if>
+            <if test="name!=null">
+                <!--<bind name="n" value="'%'+name+'%'"/>-->
+                <!--and name like #{n}-->
+                and name like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+    <select id="getDeptListwithtiaojian2" parameterType="list" resultType="Dept">
+        <include refid="select-dept"/>
+        <!--<trim prefix="where" prefixOverrides="and | or ">-->
+            <!--<if test="id!=null">id=#{id}</if>-->
+            <!--<if test="name!=null">and name=#{name}</if>-->
+        <!--</trim>-->
+        <where>
+            <if test="list!=null">
+                id in
+                <foreach collection="list" separator="," open="(" close=")" item="num">
+                    #{num}
+                </foreach>
+            </if>
+        </where>
+    </select>
+    <!--基本类型和string类型传值需要_parameter-->
+    <!--#{}有一个预编译的功能，可以防止sql注入  ${}没有预编译,用于order排序-->
+    <select id="getDeptById" parameterType="int" resultType="Dept">
+        <include refid="select-dept"/>
+        <where>
+            <if test="_parameter!=null">id=#{id}</if>
+        </where>
+    </select>
+
+    <select id="getDeptCount" parameterType="Dept" resultType="int">
+        select count(id) from dept
+        <where>
+            <if test="id!=null">id=#{id}</if>
+            <if test="name!=null">
+                and name=#{name}
+            </if>
+        </where>
+    </select>
+    <select id="getDeptCount1" parameterType="Dept" resultType="Dept">
+        select * from dept
+        <where>
+            <if test="id!=null">id=#{id}</if>
+            <if test="name!=null">
+                and name=#{name}
+            </if>
+        </where>
+        limit #{offset},#{pageSize}
+    </select>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <typeAliases>
+        <package name="pojo" />
+        <!--<typeAlias type="pojo.Dept" alias="Dept"/>-->
+        <!--<typeAlias type="pojo.Employee" alias="Employee"/>-->
+    </typeAliases>
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+            <!-- 分页参数合理化 -->
+            <property name="reasonable" value="false"></property>
+        </plugin>
+    </plugins>
+    <!-- default和id需要一致，不然会出现获取session空指针异常 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 使用jdbc事务管理 -->
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="19940206"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="dao/mapper/DeptMapper.xml"/>
+        <mapper resource="dao/mapper/EmployeeMapper.xml"/>
+        <!--<mapper class="dao.DeptMapper"/>-->
+        <!--<mapper resource="generator/mapper/DeptMapper.xml"/>-->
+    </mappers>
+</configuration>
