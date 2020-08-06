@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-    <mvc:annotation-driven content-negotiation-manager="contentNegotiationManagerFactoryBean"/>
+    <mvc:annotation-driven content-negotiation-manager="contentNegotiationManagerFactoryBean" conversion-service="conversionServiceFactoryBean"/>
     <!--<bean class="controller.IndexController"/>-->
     <context:component-scan base-package="controller">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
@@ -27,6 +27,7 @@
         </property>
     </bean>
 
+
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
            <list>
@@ -41,10 +42,10 @@
         </property>
     </bean>
     <!--配置jsp模板引擎-->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-        <!--<property name="suffix" value=".jsp"/>-->
-        <!--<property name="prefix" value="/"/>-->
-    <!--</bean>-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"/>
+        <property name="prefix" value="/WEB-INF/"/>
+    </bean>
     <!--配置freemarker模板引擎-->
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/FTL"/>
@@ -55,4 +56,46 @@
         <property name="order" value="1"/>
     </bean>
     <bean id="helloView" class="view.HelloView"/>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="1048576"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="resolveLazily" value="true"/>
+    </bean>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**/"/>-->
+            <!--<mvc:exclude-mapping path="/login.html"/>-->
+            <!--<bean class="interceptor.LoginInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+        <!--&lt;!&ndash;定义默认异常处理页面&ndash;&gt;-->
+        <!--<property name="defaultErrorView" value="error.jsp"></property>-->
+        <!--&lt;!&ndash;定义异常处理页面用来获取异常信息的变量名&ndash;&gt;-->
+        <!--<property name="exceptionAttribute" value="ex"></property>-->
+        <!--&lt;!&ndash;定义需要特殊处理的异常程序，用类名或完全路径名作为key,异常页名作为值&ndash;&gt;-->
+        <!--<property name="exceptionMappings">-->
+            <!--<props>-->
+                <!--<prop key="java.lang.NullPointerException">error</prop>-->
+                <!--<prop key="java.lang.ClassCastException">error</prop>-->
+                <!--<prop key="java.lang.IndexOutOfBoundsException">error</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!--配置自定义异常抛出内容-->
+    <bean class="ExHandler"/>
+    <!--配置校验器-->
+    <bean id="validator"
+          class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass"
+                  value="org.hibernate.validator.HibernateValidator"/>
+    </bean>
+    <bean id="conversionServiceFactoryBean"
+          class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="DateConver"></bean>
+            </set>
+        </property>
+    </bean>
 </beans>

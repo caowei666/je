@@ -1,11 +1,11 @@
 package controller;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttribute;
+import org.springframework.web.bind.annotation.*;
 import pojo.Dept;
 import pojo.Employee;
 
@@ -18,9 +18,16 @@ import java.util.Map;
 
 @Controller
 public class ParamBindController {
-    @RequestMapping("entity.html")
-    public ResponseEntity<Dept> getDept(){
-
+    @RequestMapping(method = RequestMethod.GET, value = "entity.html", produces = "application/json")
+    public ResponseEntity<Dept> getEntity(RequestEntity<Dept> requestEntity){
+        String header = requestEntity.getHeaders().getFirst("MyHeader");
+        System.out.println(header);
+        Dept dept = new Dept();
+        dept.setName("bbbb");
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("myRestHeader","aaaaa");
+        ResponseEntity<Dept> responseEntity = new ResponseEntity<>(dept,headers, HttpStatus.OK);
+        return responseEntity;
     }
     @RequestMapping("p1.html")
 //    参数required默认是true

@@ -1,3 +1,203 @@
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+
+<> 2020-08-06T084817.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+
+<> 2020-08-06T084815.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084733.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084723.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084722.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084720.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084029.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T084014.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T083708.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/xml
+
+<> 2020-08-06T083513.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+Content-Type: application/json
+
+<> 2020-08-06T083501.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+
+<> 2020-08-06T083433.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123321
+
+<> 2020-08-06T083258.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+Content-Type: application/json
+MyHeader: 123321
+
+<> 2020-08-06T083244.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+Content-Type: application/json
+MyHeader: 123321
+
+<> 2020-08-06T082924.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+Content-Type: application/json
+MyHeader: 123321
+
+<> 2020-08-06T082615.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+
+<> 2020-08-06T082533.415.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+
+<> 2020-08-06T082525.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123456
+
+<> 2020-08-06T082505.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123456
+
+<> 2020-08-06T082457.415.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+MyHeader: 123456
+
+<> 2020-08-06T082341.406.html
+
+###
+
+GET http://localhost:8080/entity.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+MyHeader: 123456
+
+<> 2020-08-06T082156.406.html
+
+###
+
+POST http://localhost:8080/entity.html
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+MyHeader: 123456
+
+[{ 		"id": 1, 		"name": "张三" 	}, { 		"id": 2, 		"name": "李四" 	}]
+
+<> 2020-08-06T082121.400.html
+
+###
+
 POST http://localhost:8080/param10.html
 Accept: */*
 Cache-Control: no-cache

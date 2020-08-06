@@ -1,10 +1,11 @@
 package pojo;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 @XmlRootElement   //代表当前类可以已xml格式返回
-public class Dept {
+public class Dept implements Serializable {
     private Integer id;
     private String name;
     private List<Employee> employees;
