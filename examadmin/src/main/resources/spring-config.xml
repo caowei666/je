@@ -23,27 +23,39 @@
         <!--需要连接的数据库-->
         <property name="dataSource" ref="dataSource"/>
         <!--给类起别名-->
-        <property name="typeAliasesPackage" value="com.test.pojo"/>
+        <property name="typeAliasesPackage" value="com.test.ssm.exam.pojo"/>
         <!--mapper文件存放的位置-->
-        <property name="mapperLocations" value="classpath:com/test/dao/mapper/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/test/ssm/exam/dao/mapper/*.xml"/>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageHelper">
+                    <property name="properties">
+                        <value>
+                            dialect=mysql
+                            reasonable=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
     <!--可以简写直接调用mapper接口中的方法-->
     <!--<bean id="deptDao" class="com.test.dao.DeptDaoImpl">-->
-        <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
+    <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
     <!--</bean>-->
     <!--<bean id="deptDao class="org.mybatis.spring.mapper.MapperFactoryBean">-->
-        <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
-        <!--<property name="mapperInterface" value="com.test.dao.DeptDAO"/>-->
+    <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
+    <!--<property name="mapperInterface" value="com.test.dao.DeptDAO"/>-->
     <!--</bean>-->
 
     <!--spring自动扫描mapper,会自动帮助实现接口的实现类-->
     <!--mapper中namespace需要是接口的全路径，sql语句的id需要是接口的方法名-->
     <!--接口的mapper文件名在同一个包中且名字一样，该配置可省略-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.test.dao"/>
+        <property name="basePackage" value="com.test.ssm.exam.dao"/>
     </bean>
     <!--扫描service包，并且扫描注解（service注解）-->
-    <context:component-scan base-package="com.test.service">
+    <context:component-scan base-package="com.test.ssm.exam.service">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
     <!--spring的事务管理器-->
@@ -60,7 +72,7 @@
         </tx:attributes>
     </tx:advice>
     <aop:config>
-        <aop:pointcut id="point" expression="execution(* com.test.service..*(..))"/>
+        <aop:pointcut id="point" expression="execution(* com.test.ssm.exam.service..*(..))"/>
         <aop:advisor advice-ref="txAdvice"  pointcut-ref="point"/>
     </aop:config>
 </beans>

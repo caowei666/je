@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5e23b0-d232-45da-a9a0-ef1bcdbde622" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatisspring0809/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisspring0809/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mybatisspring0809/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisspring0809/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatisspring0809/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatisspring0809/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
