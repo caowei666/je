@@ -2,7 +2,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="DEPT">
-    <cache></cache>
+    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>-->
+    <cache type="cache.MyGuavaCache"/>
     <insert id="addDept" parameterType="Dept" useGeneratedKeys="true" keyProperty="id">
         insert into dept(name) values (#{name})
     </insert>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../bin/ehcache.xsd">
+    <diskStore path="D:/tmp"/>
+    <defaultCache
+            eternal="false"
+            overflowToDisk="true"/>
+
+    <cache
+            name="DEPT"
+            eternal="false"
+            maxElementsInMemory="5000"
+            maxElementsOnDisk="10"
+            overflowToDisk="true"
+            diskPersistent="false"
+            timeToIdleSeconds="1800"
+            timeToLiveSeconds="1800"
+            diskExpiryThreadIntervalSeconds="300"
+            diskSpoolBufferSizeMB="100"
+            memoryStoreEvictionPolicy="LRU"/>
+
+</ehcache>

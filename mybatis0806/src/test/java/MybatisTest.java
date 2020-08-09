@@ -194,9 +194,9 @@ public class MybatisTest {
     }
     @Test
     public void testCache2(){
-        //二级缓存 同一个session 相同条件只查询一次(默认的缓存)
+        //二级缓存
         Dept dept = session.selectOne("DEPT.getDeptById",1);
-        session.close();
+        session.close();    //第一个session需要关闭
         SqlSession session2 = sessionFactory.openSession();
         Dept dept2 = session2.selectOne("DEPT.getDeptById",1);
         System.out.println(dept);
