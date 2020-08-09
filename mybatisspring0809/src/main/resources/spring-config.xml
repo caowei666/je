@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/context
+	   					   http://www.springframework.org/schema/context/spring-context.xsd
+	   					   http://www.springframework.org/schema/aop
+           				   http://www.springframework.org/schema/aop/spring-aop.xsd
+	   					   http://www.springframework.org/schema/tx
+	   					   http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:property-placeholder location="jdbc.properties" ignore-unresolvable="true"/>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--需要连接的数据库-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--给类起别名-->
+        <property name="typeAliasesPackage" value="com.test.pojo"/>
+        <!--mapper文件存放的位置-->
+        <property name="mapperLocations" value="classpath:com/test/dao/mapper/*.xml"/>
+    </bean>
+    <!--可以简写直接调用mapper接口中的方法-->
+    <!--<bean id="deptDao" class="com.test.dao.DeptDaoImpl">-->
+        <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
+    <!--</bean>-->
+    <!--<bean id="deptDao class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+        <!--<property name="sqlSessionFactory" ref="sessionFactory"/>-->
+        <!--<property name="mapperInterface" value="com.test.dao.DeptDAO"/>-->
+    <!--</bean>-->
+
+    <!--spring自动扫描mapper,会自动帮助实现接口的实现类-->
+    <!--mapper中namespace需要是接口的全路径，sql语句的id需要是接口的方法名-->
+    <!--接口的mapper文件名在同一个包中且名字一样，该配置可省略-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.test.dao"/>
+    </bean>
+    <!--扫描service包，并且扫描注解（service注解）-->
+    <context:component-scan base-package="com.test.service">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+    <!--spring的事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--aop切面，遇到异常让事务回滚-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="add*" rollback-for="Exception"/>
+            <tx:method name="update*" rollback-for="Exception"/>
+            <tx:method name="delete*" rollback-for="Exception"/>
+            <tx:method name="get*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="point" expression="execution(* com.test.service..*(..))"/>
+        <aop:advisor advice-ref="txAdvice"  pointcut-ref="point"/>
+    </aop:config>
+</beans>
