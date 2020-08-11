@@ -15,11 +15,11 @@
 <div class="layui-container">
     <div class="layui-row">
         <div class="layui-col-md9">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="<%=request.getContextPath()%>/dologin.html" method="post">
                 <div class="layui-form-item">
                     <label class="layui-form-label">输入框</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
+                    <div class="layui-input-inline">
+                        <input type="text" name="account" required lay-verify="required" placeholder="请输入用户名"
                                autocomplete="off"
                                class="layui-input">
                     </div>
@@ -30,7 +30,7 @@
                         <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
                                autocomplete="off" class="layui-input">
                     </div>
-                    <div class="layui-form-mid layui-word-aux">辅助文字</div>
+                    <div class="layui-form-mid layui-word-aux">${message}</div>
                 </div>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
