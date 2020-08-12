@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.test.ssm.exam.dao.UserDAO;
 import com.test.ssm.exam.pojo.User;
 import com.test.ssm.exam.service.UserService;
+import com.test.ssm.exam.util.AjaxResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,16 +29,40 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(User user) {
+    public AjaxResult addUser(User user) {
+        AjaxResult ajaxResult = new AjaxResult();
         if(userDAO.getUserByAccount(user.getAccount()) == null){
             userDAO.addUser(user);
+            ajaxResult.setStatus(true);
+            return ajaxResult;
         }else{
-//            提示用户名已存在
+            ajaxResult.setMessage("用户名已存在");
+            return ajaxResult;
         }
     }
 
     @Override
-    public void updateUser(User user) {
-        userDAO.updateUser(user);
+    public AjaxResult updateUser(User user) {
+        AjaxResult ajaxResult = new AjaxResult();
+        try {
+            userDAO.updateUser(user);
+            ajaxResult.setStatus(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            ajaxResult.setStatus(false);
+            ajaxResult.setMessage("用户名已存在");
+        }
+        return ajaxResult;
+    }
+
+    //此处不能try() catch() 异常不扔出去事务无法回滚
+    @Override
+    public AjaxResult deleteUser(int[] ids) {
+        AjaxResult ajaxResult = new AjaxResult();
+        for(int id:ids){
+            userDAO.deleteUser(id);
+        }
+        ajaxResult.setStatus(true);
+        return ajaxResult;
     }
 }

@@ -12,12 +12,16 @@
         update user
         <set>
             <if test="password!=null and password != ''">password=#{password},</if>
-            <if test="nickname!=null and nickname != ''">nickname=#{nickname32}</if>
+            <if test="nickname!=null and nickname != ''">nickname=#{nickname},</if>
+            <if test="status!=null">status=#{status}</if>
         </set>
         where id = #{id}
     </update>
+    <update id="deleteUser" parameterType="int">
+        update user set status=0 where id = #{id}
+    </update>
     <select id="getUserList" parameterType="User" resultType="User">
-        select id,account password nickname from user
+        select id,account,password,nickname,status from user
         <where>
             <if test="nickname != null and nickname != ''">and nickname like concat('%',#{nickname},'%')</if>
             <if test="account != null and account != ''">

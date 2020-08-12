@@ -8,4 +8,5 @@ public class User {
     private String account;
     private String password;
     private String nickname;
+    private Integer status;
 }

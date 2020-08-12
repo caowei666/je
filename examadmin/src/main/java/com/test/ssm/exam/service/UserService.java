@@ -2,6 +2,7 @@ package com.test.ssm.exam.service;
 
 import com.github.pagehelper.PageInfo;
 import com.test.ssm.exam.pojo.User;
+import com.test.ssm.exam.util.AjaxResult;
 
 import java.util.List;
 
@@ -10,7 +11,9 @@ public interface UserService {
 
     PageInfo<User> getUserList(User user,int pageNum, int pageSize);
 
-    void  addUser(User user);
+    AjaxResult addUser(User user);
 
-    void updateUser(User user);
+    AjaxResult updateUser(User user);
+
+    AjaxResult deleteUser(int[] ids);
 }
