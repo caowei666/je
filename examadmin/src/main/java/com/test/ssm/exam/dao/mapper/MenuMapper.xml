@@ -3,6 +3,23 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.test.ssm.exam.dao.MenuDAO">
     <select id="getAllMenu" resultType="Menu">
-        select id,name,url,parent_id parentId from menu
+        select id,name,url,parent_id parentId,type from menu
     </select>
+    <insert id="addMenu" parameterType="Menu">
+        insert into menu(name,url,parent_id,type)
+        values(#{name},#{url},#{paremtId,#{type})
+    </insert>
+    <update id="updateMenu" parameterType="Menu">
+        update menu
+        <set>
+            <if test="name!=null and name!=''">name=#{name},</if>
+            <if test="url!=null">url=#{url},</if>
+            <if test="paremtId!=null">paremt_id=#{parent_id},</if>
+            <if test="type!=null">type=#{type},</if>
+        </set>
+        where ID=#{id}
+    </update>
+    <delete id="deleteMenu" parameterType="int">
+        delete from menu where id=#{id}
+    </delete>
 </mapper>

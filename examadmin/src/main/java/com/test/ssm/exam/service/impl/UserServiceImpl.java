@@ -6,8 +6,10 @@ import com.test.ssm.exam.dao.UserDAO;
 import com.test.ssm.exam.pojo.User;
 import com.test.ssm.exam.service.UserService;
 import com.test.ssm.exam.util.AjaxResult;
+import com.test.ssm.exam.util.ExamConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -15,6 +17,7 @@ public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
     @Override
     public User doLogin(String account, String password) {
+        password = DigestUtils.md5DigestAsHex((password+ ExamConstants.PASSWORD_SALT).getBytes());
         User user = userDAO.getUserByAccount(account);
         if(user == null || !user.getPassword().equals(password)){
             return null;    //用户名或密码错误
@@ -32,6 +35,7 @@ public class UserServiceImpl implements UserService {
     public AjaxResult addUser(User user) {
         AjaxResult ajaxResult = new AjaxResult();
         if(userDAO.getUserByAccount(user.getAccount()) == null){
+            user.setPassword( DigestUtils.md5DigestAsHex((user.getPassword()+ ExamConstants.PASSWORD_SALT).getBytes()));
             userDAO.addUser(user);
             ajaxResult.setStatus(true);
             return ajaxResult;
@@ -45,6 +49,7 @@ public class UserServiceImpl implements UserService {
     public AjaxResult updateUser(User user) {
         AjaxResult ajaxResult = new AjaxResult();
         try {
+            user.setPassword( DigestUtils.md5DigestAsHex((user.getPassword()+ ExamConstants.PASSWORD_SALT).getBytes()));
             userDAO.updateUser(user);
             ajaxResult.setStatus(true);
         } catch (Exception e) {

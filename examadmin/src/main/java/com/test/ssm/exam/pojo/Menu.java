@@ -12,5 +12,9 @@ public class Menu {
     private String url;
     private Integer parentId;
     private Integer sort;
+    private Integer type;
     private List<Menu> children = new ArrayList<>();
+    public String getText(){
+        return this.name;
+    }
 }

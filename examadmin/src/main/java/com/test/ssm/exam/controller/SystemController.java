@@ -28,7 +28,7 @@ public class SystemController {
 
     @RequestMapping("index.html")
     public String index(Model model){
-        List<Menu> menuTree = menuService.getMenuTree();
+        List<Menu> menuTree = menuService.getMenuTree(false);
         model.addAttribute("menuList",menuTree);
         System.out.println(menuTree);
         return "index";

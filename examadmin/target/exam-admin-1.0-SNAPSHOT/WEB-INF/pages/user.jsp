@@ -122,6 +122,7 @@
                     , success: function (layero, index) {
                         console.log(data);
                         form.val("editForm", data[0]);
+                        form.val("editForm",{status:data[0].status+"",password:""});
                         form.render();
                     }
                 });
@@ -143,7 +144,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">密码</label>
             <div class="layui-input-inline">
-                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                <input type="password" name="password" placeholder="请输入密码"
                        autocomplete="off" class="layui-input">
             </div>
         </div>
