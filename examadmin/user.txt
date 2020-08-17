@@ -1,0 +1,6 @@
+"id"	"account"	"qq"	"password"	"email"	"salt"	"nickname"	"status"
+"1"	"caowei"		"1143935d807f51e397d72b6759c8df91"			"cao"	"1"
+"2"	"awei"		"1143935d807f51e397d72b6759c8df91"			"www"	"1"
+"3"	"test"		"123456"			"ttt"	"0"
+"4"	"test1"		"1143935d807f51e397d72b6759c8df91"			"wangnini"	"0"
+"5"			"a2e0449ec961155f6116e6c265dba855"				
