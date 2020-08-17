@@ -1,6 +1,7 @@
 package com.test.ssm.exam.service.impl;
 
 import com.test.ssm.exam.dao.MenuDAO;
+import com.test.ssm.exam.dao.PremissionDAO;
 import com.test.ssm.exam.pojo.Menu;
 import com.test.ssm.exam.service.MenuService;
 import com.test.ssm.exam.util.AjaxResult;
@@ -19,9 +20,17 @@ import java.util.Map;
 public class MenuServiceImpl implements MenuService {
     @Autowired
     private MenuDAO menuDAO;
+
+    @Autowired
+    private PremissionDAO premissionDAO;
+
     @Override
     public List<Menu> getMenuTree(boolean needButton) {
         List<Menu> allMenu = menuDAO.getAllMenu();
+        return makeMenuTree(needButton,allMenu);
+    }
+
+    public List<Menu> makeMenuTree(boolean needButton, List<Menu> allMenu){
         List<Menu> firseMenu=new ArrayList<>();
         Map<Integer,Menu> menuMap = new HashMap<>();
         for (Menu m:allMenu){
@@ -57,5 +66,10 @@ public class MenuServiceImpl implements MenuService {
         for (int id:ids){
             menuDAO.deleteMenu(id);
         }
+    }
+
+    @Override
+    public List<Menu> getUserMenuList(Integer userId) {
+        return makeMenuTree(false,premissionDAO.getUserMenuList(userId));
     }
 }

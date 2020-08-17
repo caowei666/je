@@ -9,4 +9,5 @@ public interface MenuService {
     void addMenu(Menu menu);
     void updateMenu(Menu menu);
     void deleteMenu(int[] ids);
+    List<Menu> getUserMenuList(Integer userId);
 }

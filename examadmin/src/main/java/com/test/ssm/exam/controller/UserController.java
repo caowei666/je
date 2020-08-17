@@ -1,6 +1,8 @@
 package com.test.ssm.exam.controller;
 
 import com.github.pagehelper.PageInfo;
+import com.test.ssm.exam.pojo.Role;
+import com.test.ssm.exam.service.RoleService;
 import com.test.ssm.exam.util.AjaxResult;
 import com.test.ssm.exam.util.TableData;
 import com.test.ssm.exam.pojo.User;
@@ -11,11 +13,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/sys/user.html")
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RoleService roleService;
     
     @RequestMapping
     public String page(){
@@ -49,5 +56,32 @@ public class UserController {
             ajaxResult.setMessage(e.getMessage());
             return ajaxResult;
         }
+    }
+
+    @RequestMapping(params = "act=roles")
+    @ResponseBody
+    public List<Role> roleList(){
+        return roleService.getRoleList();
+    }
+
+    @RequestMapping(params = "act=assign")
+    @ResponseBody
+    public AjaxResult tree(Integer userId,int[] roleIds) {
+        AjaxResult res = new AjaxResult();
+        try {
+            userService.addUserRole(userId,roleIds);
+            res.setStatus(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            res.setStatus(false);
+            res.setMessage(e.getMessage());
+        }
+        return res;
+    }
+
+    @RequestMapping(params = "act=user_role")
+    @ResponseBody
+    public List<Integer> userRole(Integer userId){
+        return userService.getUserRole(userId);
     }
 }

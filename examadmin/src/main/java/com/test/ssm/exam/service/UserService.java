@@ -1,6 +1,7 @@
 package com.test.ssm.exam.service;
 
 import com.github.pagehelper.PageInfo;
+import com.test.ssm.exam.pojo.Menu;
 import com.test.ssm.exam.pojo.User;
 import com.test.ssm.exam.util.AjaxResult;
 
@@ -16,4 +17,8 @@ public interface UserService {
     AjaxResult updateUser(User user);
 
     AjaxResult deleteUser(int[] ids);
+
+    void addUserRole(Integer userId,int[] roleIds);
+
+    List<Integer> getUserRole(Integer userId);
 }

@@ -1,0 +1,8 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.ssm.exam.dao.RoleDAO">
+    <select id="getRoleList" resultType="Role">
+        select id,name,remark,status from role
+    </select>
+</mapper>

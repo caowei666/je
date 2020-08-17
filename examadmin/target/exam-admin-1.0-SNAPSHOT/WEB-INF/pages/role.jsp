@@ -1,35 +1,35 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <script src="media/jquery.easyui.min.js"></script>
 <link href="media/easyui.css" rel="stylesheet">
-<div class="layui-form-item">
-    <form class="layui-form" method="post">
-        <div class="layui-inline">
-            <label class="layui-form-label">账号</label>
-            <div class="layui-input-inline">
-                <input type="text" name="account" autocomplete="off" class="layui-input">
-            </div>
-        </div>
-        <div class="layui-inline">
-            <label class="layui-form-label">昵称</label>
-            <div class="layui-input-inline">
-                <input type="text" name="nickname" autocomplete="off" class="layui-input">
-            </div>
-        </div>
-        <div class="layui-inline">
-            <button class="layui-btn" lay-submit lay-filter="searchForm">查询</button>
-        </div>
-    </form>
-</div>
-<table id="userTable" lay-filter="test"></table>
-<script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-xs" lay-event="assign">授权</a>
-</script>
+<%--<div class="layui-form-item">--%>
+    <%--<form class="layui-form" method="post">--%>
+        <%--<div class="layui-inline">--%>
+            <%--<label class="layui-form-label">账号</label>--%>
+            <%--<div class="layui-input-inline">--%>
+                <%--<input type="text" name="account" autocomplete="off" class="layui-input">--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<div class="layui-inline">--%>
+            <%--<label class="layui-form-label">昵称</label>--%>
+            <%--<div class="layui-input-inline">--%>
+                <%--<input type="text" name="nickname" autocomplete="off" class="layui-input">--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<div class="layui-inline">--%>
+            <%--<button class="layui-btn" lay-submit lay-filter="searchForm">查询</button>--%>
+        <%--</div>--%>
+    <%--</form>--%>
+<%--</div>--%>
+<table id="roleTable" lay-filter="test"></table>
 <script type="text/html" id="headTool">
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
         <button class="layui-btn layui-btn-sm" lay-event="delete">删除</button>
         <button class="layui-btn layui-btn-sm" lay-event="update">编辑</button>
     </div>
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="assign">授权</a>
 </script>
 <script>
     layui.use(['table', 'form'], function () {
@@ -38,16 +38,16 @@
         //第一个实例
         table.render({
             id: 'userTable',
-            elem: '#userTable'
+            elem: '#roleTable'
             , toolbar: '#headTool'
             , height: 312
-            , url: '/sys/user.html?act=table' //数据接口
+            , url: '/sys/role.html?act=table' //数据接口
             , page: true //开启分页
             , cols: [[ //表头
                 {type: 'checkbox', fixed: 'left'}
                 , {field: 'id', title: 'ID'}
-                , {field: 'account', title: '账号'}
-                , {field: 'nickname', title: '昵称'}
+                , {field: 'name', title: '角色'}
+                , {field: 'remark', title: '备注'}
                 , {field: 'status', title: '状态'}
                 ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
             ]]
@@ -59,22 +59,22 @@
             });
             return false;
         })
-        function openMenuLayer(id) {
+        function openEditLayer(data) {
             layer.open({
                 type: 1,
                 content: $("#tree").html() //这里content是一个普通的String
                 , btn: ['提交', '取消']
                 , yes: function (index, layero) {
                     var nodes = $('#tt').tree('getChecked', ['checked','indeterminate']);
-                    var roleIds = new Array();
+                    var ids = new Array();
                     for(var i = 0;i<nodes.length;i++){
-                        roleIds.push(nodes[i].id);
+                        ids.push(nodes[i].id);
                     }
-                    console.log(roleIds);
+                    console.log(ids);
                     $.ajax({
-                        url: "/sys/user.html?act=assign",
+                        url: "/sys/role.html?act=assign",
                         method: "post",
-                        data: "roleIds="+roleIds+"&userId="+id,
+                        data: "menuIds="+ids+"&roleId="+data,
                         success: function (res) {
                             if (res.status) {
                                 layer.close(index);
@@ -89,16 +89,16 @@
                 }
                 , success: function (layero, index) {
                     $.ajax({
-                        url: "/sys/user.html?act=user_role",
-                        data: "userId="+id,
+                        url: "/sys/role.html?act=menu",
+                        data: "roleId="+data,
                         success: function (res) {
                             $('#tt').tree({
-                                url: "/sys/user.html?act=roles",
+                                url: "/sys/menu.html?act=tree&needButton=true",
                                 checkbox:true,
                                 onLoadSuccess:function(node,data){
                                     $.each(res,function (i, obj) {
                                         var node = $('#tt').tree('find', obj);
-                                        if(node!=null){
+                                        if(node!=null && $('#tt').tree('isLeaf',node.target)){
                                             $('#tt').tree('check', node.target);
                                         }
                                     })
@@ -113,7 +113,7 @@
             var data = obj.data;
             //console.log(obj)
             if(obj.event === 'assign'){
-                openMenuLayer(data.id);
+                openEditLayer(data.id);
             }
         });
         table.on('toolbar(test)', function (obj) {
@@ -156,45 +156,8 @@
                     break;
             }
             ;
-
-            function openEditLayer(data) {
-                layer.open({
-                    type: 1,
-                    content: $("#editFormLayer").html() //这里content是一个普通的String
-                    , btn: ['提交', '取消']
-                    , yes: function (index, layero) {
-                        var data1 = $("#editForm").serialize();
-                        console.log(data1);
-                        $.ajax({
-                            url: "/sys/user.html?act=edit",
-                            method: "post",
-                            data: $("#editForm").serialize(),
-                            success: function (res) {
-                                if (res.status) {
-                                    table.reload("userTable", {})
-                                    layer.close(index);
-                                } else {
-                                    layer.msg(res.message);
-                                }
-                            }
-                        })
-                    }
-                    , btn2: function (index, layero) {
-                        layer.close(index);
-                    }
-                    , success: function (layero, index) {
-                        console.log(data);
-                        form.val("editForm", data[0]);
-                        form.val("editForm",{status:data[0].status+"",password:""});
-                        form.render();
-                    }
-                });
-            }
         });
     });
-</script>
-<script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-xs" lay-event="assign">授权</a>
 </script>
 <script type="text/html" id="tree">
     <ul id="tt" class="easyui-tree"></ul>

@@ -7,14 +7,14 @@
     </select>
     <insert id="addMenu" parameterType="Menu">
         insert into menu(name,url,parent_id,type)
-        values(#{name},#{url},#{paremtId,#{type})
+        values(#{name},#{url},#{parentId},#{type})
     </insert>
     <update id="updateMenu" parameterType="Menu">
         update menu
         <set>
             <if test="name!=null and name!=''">name=#{name},</if>
             <if test="url!=null">url=#{url},</if>
-            <if test="paremtId!=null">paremt_id=#{parent_id},</if>
+            <if test="parentId!=null">parent_id=#{parentId},</if>
             <if test="type!=null">type=#{type},</if>
         </set>
         where ID=#{id}

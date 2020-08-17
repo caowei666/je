@@ -21,16 +21,23 @@ public class SystemController {
     @Autowired
     private MenuService menuService;
 
+    @RequestMapping("error.html")
+    public String error(){
+        return "error";
+    }
+
     @RequestMapping("login.html")
     public String login(){
         return "login";
     }
 
     @RequestMapping("index.html")
-    public String index(Model model){
-        List<Menu> menuTree = menuService.getMenuTree(false);
+    public String index(Model model,HttpSession session){
+        User user = (User)session.getAttribute(ExamConstants.SESSIONUSER);
+        List<Menu> menuTree = menuService.getUserMenuList(user.getId());
         model.addAttribute("menuList",menuTree);
         System.out.println(menuTree);
+        session.setAttribute(ExamConstants.USER_MENU,menuTree);
         return "index";
     }
 

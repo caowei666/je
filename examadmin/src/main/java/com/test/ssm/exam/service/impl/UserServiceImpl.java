@@ -2,6 +2,7 @@ package com.test.ssm.exam.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.test.ssm.exam.dao.PremissionDAO;
 import com.test.ssm.exam.dao.UserDAO;
 import com.test.ssm.exam.pojo.User;
 import com.test.ssm.exam.service.UserService;
@@ -11,10 +12,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDAO userDAO;
+
+    @Autowired
+    private PremissionDAO premissionDAO;
     @Override
     public User doLogin(String account, String password) {
         password = DigestUtils.md5DigestAsHex((password+ ExamConstants.PASSWORD_SALT).getBytes());
@@ -69,5 +75,18 @@ public class UserServiceImpl implements UserService {
         }
         ajaxResult.setStatus(true);
         return ajaxResult;
+    }
+
+    @Override
+    public void addUserRole(Integer userId, int[] roleIds) {
+        premissionDAO.deleteUserRoleById(userId);
+        for (int roleId : roleIds) {
+            premissionDAO.addUserRole(roleId,userId);
+        }
+    }
+
+    @Override
+    public List<Integer> getUserRole(Integer userId) {
+        return premissionDAO.getUserRoleByUserId(userId);
     }
 }

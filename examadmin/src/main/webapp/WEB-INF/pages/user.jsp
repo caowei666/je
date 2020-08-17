@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<script src="media/jquery.easyui.min.js"></script>
+<link href="media/easyui.css" rel="stylesheet">
 <div class="layui-form-item">
     <form class="layui-form" method="post">
         <div class="layui-inline">
@@ -19,6 +21,9 @@
     </form>
 </div>
 <table id="userTable" lay-filter="test"></table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="assign">授权</a>
+</script>
 <script type="text/html" id="headTool">
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
@@ -44,6 +49,7 @@
                 , {field: 'account', title: '账号'}
                 , {field: 'nickname', title: '昵称'}
                 , {field: 'status', title: '状态'}
+                ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
             ]]
         });
         form.on('submit(searchForm)', function (data) {
@@ -53,6 +59,63 @@
             });
             return false;
         })
+        function openMenuLayer(id) {
+            layer.open({
+                type: 1,
+                content: $("#tree").html() //这里content是一个普通的String
+                , btn: ['提交', '取消']
+                , yes: function (index, layero) {
+                    var nodes = $('#tt').tree('getChecked', ['checked','indeterminate']);
+                    var roleIds = new Array();
+                    for(var i = 0;i<nodes.length;i++){
+                        roleIds.push(nodes[i].id);
+                    }
+                    console.log(roleIds);
+                    $.ajax({
+                        url: "/sys/user.html?act=assign",
+                        method: "post",
+                        data: "roleIds="+roleIds+"&userId="+id,
+                        success: function (res) {
+                            if (res.status) {
+                                layer.close(index);
+                            } else {
+                                layer.msg(res.message);
+                            }
+                        }
+                    })
+                }
+                , btn2: function (index, layero) {
+                    layer.close(index);
+                }
+                , success: function (layero, index) {
+                    $.ajax({
+                        url: "/sys/user.html?act=user_role",
+                        data: "userId="+id,
+                        success: function (res) {
+                            $('#tt').tree({
+                                url: "/sys/user.html?act=roles",
+                                checkbox:true,
+                                onLoadSuccess:function(node,data){
+                                    $.each(res,function (i, obj) {
+                                        var node = $('#tt').tree('find', obj);
+                                        if(node!=null){
+                                            $('#tt').tree('check', node.target);
+                                        }
+                                    })
+                                }
+                            })
+                        }
+                    })
+                }
+            });
+        }
+        table.on('tool(test)', function(obj){
+            var data = obj.data;
+            //console.log(obj)
+            if(obj.event === 'assign'){
+                openMenuLayer(data.id);
+            }
+        });
         table.on('toolbar(test)', function (obj) {
             console.log(obj);
             var checkStatus = table.checkStatus(obj.config.id);
@@ -129,6 +192,12 @@
             }
         });
     });
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="assign">授权</a>
+</script>
+<script type="text/html" id="tree">
+    <ul id="tt" class="easyui-tree"></ul>
 </script>
 <script type="text/html" id="editFormLayer">
     <form class="layui-form" action="" id="editForm" lay-filter="editForm">

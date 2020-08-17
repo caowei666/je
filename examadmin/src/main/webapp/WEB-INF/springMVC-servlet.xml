@@ -40,6 +40,10 @@
             <mvc:exclude-mapping path="/dologin.html"/>
             <bean class="com.test.ssm.exam.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/sys/*"/>
+            <bean class="com.test.ssm.exam.interceptor.Menuinterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
     <bean id="contentNegotiationManagerFactoryBean" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
         <!--是否支持后缀匹配-->
