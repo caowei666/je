@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca405b7a-6e53-4fbd-ae1f-b897853a23a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../examadmin/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/pojo/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/java/com/test/ssm/exam/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/springMVC-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis0806/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis0806/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/TestBootStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/dao/DeptDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/dao/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/pojo/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/java/com/test/boot/service/Impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/resources/application-online.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/resources/config/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/resources/test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot0823/src/main/webapp/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -75,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -88,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -135,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/dao/mapper/DeptMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="190">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -193,10 +196,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1067" />
-    <option name="y" value="23" />
-    <option name="width" value="953" />
-    <option name="height" value="974" />
+    <option name="x" value="677" />
+    <option name="y" value="177" />
+    <option name="width" value="1060" />
+    <option name="height" value="945" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,7 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,7 +302,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,6 +367,9 @@
       <updated>1596951627629</updated>
       <workItem from="1596951632973" duration="13682000" />
       <workItem from="1596993386014" duration="324000" />
+      <workItem from="1598192321941" duration="12000" />
+      <workItem from="1598201116329" duration="45000" />
+      <workItem from="1598201656710" duration="64000" />
     </task>
     <servers />
   </component>
@@ -400,13 +406,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14006000" />
+    <option name="totallyTimeSpent" value="14127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2869898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29490617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -475,6 +481,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SpringMybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -511,22 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/dao/mapper/DeptMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="190">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
