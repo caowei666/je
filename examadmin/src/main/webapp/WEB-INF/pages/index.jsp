@@ -12,7 +12,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>考试管理系统</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/media/layui/css/layui.css">
+    <link rel="stylesheet" href="http://static.vm.com/media/layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -77,8 +77,8 @@
         © layui.com - 底部固定区域
     </div>
 </div>
-<script src="<%=request.getContextPath()%>/media/layui/layui.js"></script>
-<script src="<%=request.getContextPath()%>/media/jquery-3.5.1.min.js"></script>
+<script src="http://static.vm.com/media/layui/layui.js"></script>
+<script src="http://static.vm.com/media/jquery-3.5.1.min.js"></script>
 <script>
     //JavaScript代码区域
     layui.use('element', function () {

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.DefaultApplicationArguments;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -17,6 +18,9 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @SpringBootApplication
+//相当于三个注解@Configuration @EnableAutoConfiguration @ComponentSacn
+//@Configuration相当于创建了spring-config.xml文件
+//@ComponentSacn自动扫描当前类所在包及其子包（可以指定扫描范围）
 //@ComponentScan(basePackages = "com.test.boot.controller")
 @PropertySource("classpath:test.properties")   //加载自定义的配置文件
 @EnableTransactionManagement //开启事务管理
@@ -32,6 +36,7 @@ public class TestBootStarter {
     private DataSource dataSource;
 
     //声明式事务
+    @Bean
     public DefaultPointcutAdvisor defaultPointcutAdvisor(){
         AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();
         pointcut.setExpression(transactionExcution);
@@ -46,4 +51,7 @@ public class TestBootStarter {
         advisor.setAdvice(txAdvice);
         return advisor;
     }
+
+//    @Bean  //如果某个类或某个框架没有与SpringBoot整合  手动写它的bean
+
 }

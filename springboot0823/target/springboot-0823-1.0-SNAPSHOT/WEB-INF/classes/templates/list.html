@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<span th:utext="${message}">aaa</span>
+<span th:text="${#dates.format(today,'yyyy-MM-dd HH:mm:ss')}">aaa</span>
+<div th:if="${num == 1}">
+    <a th:each="d:${list}" th:text="${d.name}" th:href="${'detail.html?id='+d.id}"></a>
+</div>
+
+</body>
+</html>

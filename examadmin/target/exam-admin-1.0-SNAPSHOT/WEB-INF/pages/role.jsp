@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script src="media/jquery.easyui.min.js"></script>
-<link href="media/easyui.css" rel="stylesheet">
+<script src="http://static.vm.com/media/jquery.easyui.min.js"></script>
+<link href="http://static.vm.com/media/easyui.css" rel="stylesheet">
 <%--<div class="layui-form-item">--%>
     <%--<form class="layui-form" method="post">--%>
         <%--<div class="layui-inline">--%>
@@ -41,7 +41,7 @@
             elem: '#roleTable'
             , toolbar: '#headTool'
             , height: 312
-            , url: '/sys/role.html?act=table' //数据接口
+            , url: '<%=request.getContextPath()%>/sys/role.html?act=table' //数据接口
             , page: true //开启分页
             , cols: [[ //表头
                 {type: 'checkbox', fixed: 'left'}
@@ -72,7 +72,7 @@
                     }
                     console.log(ids);
                     $.ajax({
-                        url: "/sys/role.html?act=assign",
+                        url: "<%=request.getContextPath()%>/sys/role.html?act=assign",
                         method: "post",
                         data: "menuIds="+ids+"&roleId="+data,
                         success: function (res) {
@@ -89,11 +89,11 @@
                 }
                 , success: function (layero, index) {
                     $.ajax({
-                        url: "/sys/role.html?act=menu",
+                        url: "<%=request.getContextPath()%>/sys/role.html?act=menu",
                         data: "roleId="+data,
                         success: function (res) {
                             $('#tt').tree({
-                                url: "/sys/menu.html?act=tree&needButton=true",
+                                url: "<%=request.getContextPath()%>/sys/menu.html?act=tree&needButton=true",
                                 checkbox:true,
                                 onLoadSuccess:function(node,data){
                                     $.each(res,function (i, obj) {
@@ -133,7 +133,7 @@
                             ids.push(data[i].id);
                         }
                         $.ajax({
-                            url: "/sys/user.html?act=delete",
+                            url: "<%=request.getContextPath()%>/sys/user.html?act=delete",
                             method: "post",
                             data: "ids=" + ids,
                             success: function (res) {

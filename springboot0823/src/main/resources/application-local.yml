@@ -9,6 +9,12 @@ spring:
     username: root
     password: 19940206
     driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      suffix: .html
+      prefix:
+  thymeleaf:
+    mode: LEGACYHTML5
 server:
   port: 8080
 mybatis:

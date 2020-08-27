@@ -9,13 +9,13 @@
 <html>
 <head>
     <title>登录页</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/media/layui/css/layui.css">
+    <link rel="stylesheet" href="http://static.vm.com/media/layui/css/layui.css">
 </head>
 <body>
 <div class="layui-container">
     <div class="layui-row">
         <div class="layui-col-md9">
-            <form class="layui-form" action="<%=request.getContextPath()%>/dologin.html" method="post">
+            <form class="layui-form" action="dologin.html" method="post">
                 <div class="layui-form-item">
                     <label class="layui-form-label">输入框</label>
                     <div class="layui-input-inline">

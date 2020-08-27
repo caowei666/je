@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script src="media/jquery.easyui.min.js"></script>
-<link href="media/easyui.css" rel="stylesheet">
+<script src="http://static.vm.com/media/jquery.easyui.min.js"></script>
+<link href="http://static.vm.com/media/easyui.css" rel="stylesheet">
 <button class="layui-btn layui-btn-sm" id="addBtn">添加</button>
 <button class="layui-btn layui-btn-sm" id="delBtn">删除</button>
 <ul id="tt" class="easyui-tree"></ul>
@@ -10,7 +10,7 @@
     layui.use(['form'], function () {
         var form = layui.form;
         $('#tt').tree({
-            url: "/sys/menu.html?act=tree&needButton=true",
+            url: "<%=request.getContextPath()%>/sys/menu.html?act=tree&needButton=true",
             onClick:function (node) {
                 openEditLayer(node);
             },
@@ -32,7 +32,7 @@
                     ids.push(nodes[i].id);
                 }
                 $.ajax({
-                    url:"/sys/menu.html?act=delete",
+                    url:"<%=request.getContextPath()%>/sys/menu.html?act=delete",
                     method:"post",
                     data:"ids="+ids,
                     success:function (res) {
@@ -56,7 +56,7 @@
                 , yes: function (index, layero) {
                     var data1 = $("#editForm").serialize();
                     $.ajax({
-                        url: "/sys/menu.html?act=edit",
+                        url: "<%=request.getContextPath()%>/sys/menu.html?act=edit",
                         method: "post",
                         data: $("#editForm").serialize(),
                         success: function (res) {
@@ -79,7 +79,7 @@
                     }
                     form.render();
                     $('#parentId').combotree({
-                        url: '/sys/menu.html?act=tree&needButton=false',
+                        url: '<%=request.getContextPath()%>/sys/menu.html?act=tree&needButton=false',
                         required: true
                     });
                 }

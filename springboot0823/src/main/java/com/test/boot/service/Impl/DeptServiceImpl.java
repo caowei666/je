@@ -5,6 +5,7 @@ import com.test.boot.pojo.Dept;
 import com.test.boot.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class DeptServiceImpl implements DeptService{
     public List<Dept> getDeptList() {
         return deptDAO.getDeptList();
     }
-
+//    @Transactional  用于事务回滚
     @Override
     public void addDept(Dept dept) {
         deptDAO.addDept(dept);
