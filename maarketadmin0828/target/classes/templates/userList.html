@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="u:${adminUsers}">
+        <td th:text="${u.code}"></td>
+        <td th:text="${u.name}"></td>
+        <td th:text="${u.gender}"></td>
+        <td th:text="${u.age}"></td>
+        <td th:text="${u.mobile}"></td>
+        <td th:text="${u.type}"></td>
+    </tr>
+</table>
+</body>
+</html>
