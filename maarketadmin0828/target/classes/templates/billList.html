@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p th:each="p:${providers}" th:text="${p.name}"></p>
+
+    <tr th:each="b:${pageInfo.list}">
+        <td th:text="${b.id}"></td>
+        <td th:text="${b.goodsName}"></td>
+        <td th:text="${b.providerName}"></td>
+        <td th:text="${b.price}"></td>
+    </tr>
+</body>
+</html> 

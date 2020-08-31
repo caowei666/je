@@ -1,0 +1,37 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.ssm.dao.ProviderDao">
+    <resultMap id="allColumnMap" type="Provider">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+    <insert id="insert" parameterType="Provider" useGeneratedKeys="true" keyProperty="id">
+        insert into provider(code,name,linkman,phone,fax,createdDate)
+        values (#{code},#{name},#{linkman},#{phone},#{fax},#{createdDate})
+    </insert>
+    <update id="update" parameterType="Provider">
+        update provider
+        <set>
+            <if test="code!=null and code!=''">code=#{code}</if>
+            <if test="name!=null and name!=''">name=#{name}</if>
+            <if test="linkman!=null and linkman!=''">linkman=#{linkman}</if>
+            <if test="phone!=null and phone!=''">phone=#{phone}</if>
+            <if test="fax!=null and fax!=''">fax=#{fax}</if>
+        </set>
+        where id=#{id}
+    </update>
+    <select id="getProviderList" parameterType="String" resultType="Provider">
+        select * from provider
+        <where>
+            <if test="_parameter != null and _parameter!= ''">
+                <bind name="temp" value="'%'+_parameter+'%'"></bind>
+                name like #{temp}
+            </if>
+        </where>
+    </select>
+
+    <select id="getProName" resultMap="allColumnMap">
+        select id,name from provider
+    </select>
+</mapper>

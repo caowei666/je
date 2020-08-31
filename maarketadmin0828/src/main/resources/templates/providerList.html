@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <form action="providerList.html" method="post">
+        <span>供应商名称：</span>
+        <input type="text" placeholder="请输入供应商" name="name">
+        <input type="submit" value="查询">
+    </form>
+    <tr th:each="u:${providers}">
+        <td th:text="${u.code}"></td>
+        <td th:text="${u.name}"></td>
+        <td th:text="${u.linkman}"></td>
+        <td th:text="${u.phone}"></td>
+        <td th:text="${u.fax}"></td>
+        <td th:text="${#dates.format(u.createdDate,'yyyy-MM-dd HH:mm:ss')}"></td>
+    </tr>
+</table>
+</body>
+</html>

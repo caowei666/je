@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="321133ec-8c60-452f-8b10-bfe04e340a0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maarketadmin0828.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/MarketStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/AdminUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/AdminUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/AdminUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/AdminUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/AdminUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/AdminUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/util/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot0823/.idea/springboot0823.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot0823/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot0823/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/BillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/ProviderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/BillDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/ProviderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/BillDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/ProviderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/BillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/ProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/BillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/ProviderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/billEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/billList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/proEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/providerList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/ssm/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/ssm/filter/LoginFilter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,76 +56,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Bill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+            <state relative-caret-position="247">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1134#1135#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/MarketStart.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/BillService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/SystemController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/AdminUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/filter/LoginFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/BillServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="190">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1034#1035#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/BillController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,42 +146,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/localMaven/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/billList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="201" selection-start-line="201" selection-end-line="201" />
+            <state relative-caret-position="247">
+              <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/AdminUserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/ProviderDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+            <state relative-caret-position="322">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/ProviderDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1256#1257#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/ProviderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/AdminUserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/ProviderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/BillDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -183,10 +215,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="mapper" />
         <option value="mapper.xml" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -220,6 +252,22 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/SystemController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Provider.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/providerList.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/proEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/ProviderController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/billEdit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/BillDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Bill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/service/BillService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/BillDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/BillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/ProviderDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/dao/ProviderDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/service/ProviderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/ProviderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/ssm/controller/BillController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/billList.html" />
       </list>
     </option>
   </component>
@@ -237,10 +285,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="413" />
-    <option name="y" value="58" />
-    <option name="width" value="1515" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1196" />
+    <option name="y" value="167" />
+    <option name="width" value="1034" />
     <option name="height" value="945" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -251,8 +299,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,7 +359,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maarketadmin0828" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maarketadmin0828" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="maarketadmin0828" type="b2602c69:ProjectViewProjectNode" />
@@ -362,10 +420,15 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598794324187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598891887525" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaee\maarketadmin0828\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RestServicesNavigator">
     <treeState>
@@ -419,18 +482,19 @@
       <workItem from="1598548459289" duration="106000" />
       <workItem from="1598548586121" duration="307000" />
       <workItem from="1598760163447" duration="5628000" />
-      <workItem from="1598766753680" duration="14011000" />
+      <workItem from="1598766753680" duration="15389000" />
+      <workItem from="1598881226933" duration="9494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22275000" />
+    <option name="totallyTimeSpent" value="33147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="957" y="134" width="827" height="756" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15013404" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.5924933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -440,7 +504,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3526912" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26121795" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37677053" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,6 +560,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/localMaven/org/springframework/spring-expression/5.1.4.RELEASE/spring-expression-5.1.4.RELEASE-sources.jar!/org/springframework/expression/spel/ast/PropertyOrFieldReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/localMaven/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.14/tomcat-embed-websocket-9.0.14-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+          <folding>
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/localMaven/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3211">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/AdminUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -505,6 +627,18 @@
             <element signature="e#326#327#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
             <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/AdminUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,15 +655,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/AdminUserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="190">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Provider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userList.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/providerList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/proEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/ProviderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -540,72 +762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/AdminUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/AdminUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/localMaven/org/springframework/spring-expression/5.1.4.RELEASE/spring-expression-5.1.4.RELEASE-sources.jar!/org/springframework/expression/spel/ast/PropertyOrFieldReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
-          <folding>
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/MarketStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="228">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -614,48 +774,159 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/localMaven/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.14/tomcat-embed-websocket-9.0.14-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/billEdit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/localMaven/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/BillDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/SystemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="263">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/filter/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/pojo/Bill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="247">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/BillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/BillDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/mapper/ProviderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/ProviderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/dao/ProviderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/ProviderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/controller/BillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/billList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/ssm/service/impl/BillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
           </folding>
         </state>
       </provider>

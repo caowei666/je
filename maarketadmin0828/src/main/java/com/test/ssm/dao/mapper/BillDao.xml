@@ -1,0 +1,59 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.ssm.dao.BillDao">
+    <resultMap id="allColumnMap" type="Bill">
+        <result column="id" property="id"/>
+        <result column="goodsName" property="goodsName"/>
+        <result column="unit" property="unit"/>
+        <result column="amount" property="amount"/>
+        <result column="price" property="price"/>
+        <result column="providerId" property="providerId"/>
+        <result column="providerName" property="providerName"/>
+        <result column="status" property="status"/>
+        <result column="createdDate" property="createdDate"/>
+    </resultMap>
+    <insert id="insert" parameterType="Bill" useGeneratedKeys="true" keyProperty="id">
+        insert into Bill(goodsName,unit,amount,price,providerId,status,createdDate)
+        values (#{goodsName},#{unit},#{amount},#{price},#{providerId},#{status},#{createdDate})
+    </insert>
+    <update id="update" parameterType="Bill">
+        update provider
+        <set>
+            <if test="goodsName!=null and goodsName!=''">goodsName=#{goodsName}</if>
+            <if test="unit!=null and unit!=''">unit=#{unit}</if>
+            <if test="amount!=null">amount=#{amount}</if>
+            <if test="price!=null and price!=''">price=#{price}</if>
+            <if test="providerId!=null">providerId=#{providerId}</if>
+            <if test="status!=null">status=#{status}</if>
+        </set>
+        where id=#{id}
+    </update>
+    <select id="getProviderList" parameterType="String" resultType="Provider">
+        select * from provider
+        <where>
+            <if test="_parameter != null and _parameter!= ''">
+                <bind name="temp" value="'%'+_parameter+'%'"></bind>
+                name like #{temp}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteById" parameterType="Integer">
+        delete from bill where id = #{id}
+    </delete>
+
+    <select id="getBillById" resultType="Bill" parameterType="int">
+      select * from bill where id = #{id}
+    </select>
+
+    <select id="getBillList" resultMap="allColumnMap" parameterType="Bill">
+        select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,p.name providerName
+        from bill b inner join provider p on b.providerId = p.id
+        <where>
+            <if test="goodsName != null and goodsName != ''">goodsName=#{goodsName}</if>
+            <if test="providerId != null">providerId=#{providerId}</if>
+            <if test="status != null">status=#{status}</if>
+        </where>
+    </select>
+</mapper>
