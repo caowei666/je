@@ -12,20 +12,21 @@
         <result column="providerName" property="providerName"/>
         <result column="status" property="status"/>
         <result column="createdDate" property="createdDate"/>
+        <result column="createdPerson" property="createdPerson"/>
     </resultMap>
     <insert id="insert" parameterType="Bill" useGeneratedKeys="true" keyProperty="id">
-        insert into Bill(goodsName,unit,amount,price,providerId,status,createdDate)
-        values (#{goodsName},#{unit},#{amount},#{price},#{providerId},#{status},#{createdDate})
+        insert into Bill(goodsName,unit,amount,price,providerId,status,createdDate,createdPerson)
+        values (#{goodsName},#{unit},#{amount},#{price},#{providerId},#{status},#{createdDate},#{createdPerson})
     </insert>
     <update id="update" parameterType="Bill">
-        update provider
+        update Bill
         <set>
-            <if test="goodsName!=null and goodsName!=''">goodsName=#{goodsName}</if>
-            <if test="unit!=null and unit!=''">unit=#{unit}</if>
-            <if test="amount!=null">amount=#{amount}</if>
-            <if test="price!=null and price!=''">price=#{price}</if>
-            <if test="providerId!=null">providerId=#{providerId}</if>
-            <if test="status!=null">status=#{status}</if>
+            <if test="goodsName!=null and goodsName!=''">goodsName=#{goodsName}, </if>
+            <if test="unit!=null and unit!=''">unit=#{unit}, </if>
+            <if test="amount!=null">amount=#{amount}, </if>
+            <if test="price!=null and price!=''">price=#{price}, </if>
+            <if test="providerId!=null">providerId=#{providerId}, </if>
+            <if test="status!=null">status=#{status}, </if>
         </set>
         where id=#{id}
     </update>
@@ -39,21 +40,26 @@
         </where>
     </select>
 
-    <delete id="deleteById" parameterType="Integer">
+    <delete id="deleteById"  parameterType="Integer">
         delete from bill where id = #{id}
     </delete>
 
-    <select id="getBillById" resultType="Bill" parameterType="int">
-      select * from bill where id = #{id}
+    <!--select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,b.createdPerson,p.name providerName-->
+    <!--from bill b inner join provider p on b.providerId = p.id where b.id = #{id}-->
+    <select id="getBillById" resultMap="allColumnMap" parameterType="int">
+      select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,a.name createdPerson,p.name providerName
+    from bill b left join provider p on  b.providerId = p.id left join admin_user a on b.createdPerson = a.id where b.id = #{id}
     </select>
-
+    <!--select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,b.createdPerson,p.name providerName-->
+    <!--from bill b inner join provider p on b.providerId = p.id-->
     <select id="getBillList" resultMap="allColumnMap" parameterType="Bill">
-        select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,p.name providerName
-        from bill b inner join provider p on b.providerId = p.id
+        select b.id,b.goodsName,b.unit,b.amount,b.price,b.providerId,b.status,b.createdDate,a.name createdPerson,p.name providerName
+        from bill b left join provider p on  b.providerId = p.id left join admin_user a on b.createdPerson = a.id
         <where>
             <if test="goodsName != null and goodsName != ''">goodsName=#{goodsName}</if>
-            <if test="providerId != null">providerId=#{providerId}</if>
-            <if test="status != null">status=#{status}</if>
+            <if test="providerId != null">and providerId=#{providerId}</if>
+            <if test="status != null">and status=#{status}</if>
+            <if test="createdPerson != null">and createdPerson=#{createdPerson}</if>
         </where>
     </select>
 </mapper>

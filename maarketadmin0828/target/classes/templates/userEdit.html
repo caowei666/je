@@ -1,11 +1,65 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<head>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
 </head>
 <body>
-<p th:text="${adminUser.name}"></p>
+<div th:include="header.html"></div>
+<!--主体内容-->
+    <section class="publicMian ">
+        <div th:replace="left(type=3)"></div>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>用户管理</span>
+            </div>
+            <div class="providerAdd">
+                <form action="doUserEdit.html" method="post">
+                    <input type="hidden" name="id" th:value="${adminUser!=null?adminUser.id:''}">
+                    <!--div的class 为error是验证错误，ok是验证成功-->
+                    <div class="">
+                        <label>用户编码：</label>
+                        <input type="text" name="code" required th:value="${adminUser!=null?adminUser.code:''}"/>
+                    </div>
+                    <div class="">
+                        <label>用户名称：</label>
+                        <input type="text" name="name"  th:value="${adminUser!=null?adminUser.name:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>用户密码：</label>
+                        <input type="password" name="password"  th:value="${adminUser!=null?adminUser.password:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>年龄：</label>
+                        <input type="text" name="age"  th:value="${adminUser!=null?adminUser.age:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>性别：</label>
+                        <input type="radio" name="gender" value="1" th:checked="${adminUser!=null?adminUser.gender==1:false}">男 <input type="radio" name="gender" value="2" th:checked="${adminUser!=null?adminUser.gender==2:false}">女
+                    </div>
+                    <div class="">
+                        <label>电话：</label>
+                        <input type="text" name="mobile"  th:value="${adminUser!=null?adminUser.mobile:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>用户类型：</label>
+                        <input type="radio" name="type" value="1" th:checked="${adminUser!=null?adminUser.type==1:false}">管理员
+                        <input type="radio" name="type" value="2" th:checked="${adminUser!=null?adminUser.type==2:false}">经理
+                        <input type="radio" name="type" value="3" th:checked="${adminUser!=null?adminUser.type==3:false}">员工
+                    </div>
+                    <div class="providerAddBtn">
+                        <!--<a href="#">保存</a>-->
+                        <input type="submit" value="保存"/><span th:text="${message}"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+<script src="js/time.js"></script>
+
 </body>
-</html> 
+</html>

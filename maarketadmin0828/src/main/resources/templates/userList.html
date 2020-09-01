@@ -1,20 +1,75 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<head>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
 </head>
 <body>
-<table>
-    <tr th:each="u:${adminUsers}">
-        <td th:text="${u.code}"></td>
-        <td th:text="${u.name}"></td>
-        <td th:text="${u.gender}"></td>
-        <td th:text="${u.age}"></td>
-        <td th:text="${u.mobile}"></td>
-        <td th:text="${u.type}"></td>
-    </tr>
-</table>
+<div th:replace="header.html"></div>
+<!--主体内容-->
+<section class="publicMian ">
+    <div th:replace="left(type=3)"></div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>用户管理页面</span>
+        </div>
+        <div class="search">
+            <form action="userList.html" method="post" id="userForm">
+                <span>用户名：</span>
+                <input type="text" placeholder="请输入用户名" name="name" th:value="${param.name}"/>
+                <input type="button" value="查询" onclick="$('#userForm').submit()"/>
+                <a href="userEdit.html">添加用户</a>
+            </form>
+        </div>
+        <!--用户-->
+        <table class="providerTable" cellpadding="0" cellspacing="0">
+            <tr class="firstTr">
+                <th width="10%">用户编码</th>
+                <th width="20%">用户名称</th>
+                <th width="10%">性别</th>
+                <th width="10%">年龄</th>
+                <th width="10%">电话</th>
+                <th width="10%">用户类型</th>
+                <th width="30%">操作</th>
+            </tr>
+            <tr th:each="u:${adminUsers}">
+                <td th:text="${u.code}">hanlu</td>
+                <td th:text="${u.name}">韩露</td>
+                <td th:text="${u.gender==1?'男':'女'}">女</td>
+                <td th:text="${u.age}">20</td>
+                <td th:text="${u.mobile}">15918230478</td>
+                <td th:if="${u.type==1}">管理员</td>
+                <td th:if="${u.type==2}">经理</td>
+                <td th:if="${u.type==3}">员工</td>
+                <td>
+                    <a href="userView.html"><img src="img/read.png" alt="查看" title="查看"/></a>
+                    <a th:href="@{goUserEdit.html?id={id}(id=${u.id})}"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+<!--点击删除按钮后弹出的页面-->
+<div class="zhezhao"></div>
+<div class="remove" id="removeUse">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该用户吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+</footer>
+
+
 </body>
 </html>

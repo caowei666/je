@@ -1,35 +1,55 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<head>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
 </head>
 <body>
-    <span>供应商管理</span>
-    <form action="doProEdit.html" method="post">
-        <input type="hidden" name="id">
-        <div>
-            <label>编码：</label>
-            <input type="text" name="code" required>
+<div th:include="header.html"></div>
+<!--主体内容-->
+    <section class="publicMian ">
+        <div th:replace="left(type=3)"></div>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>供应商管理</span>
+            </div>
+            <div class="providerAdd">
+                <form action="doProEdit.html" method="post">
+                    <input type="hidden" name="id" th:value="${provider!=null?provider.id:''}">
+                    <!--div的class 为error是验证错误，ok是验证成功-->
+                    <div class="">
+                        <label>供应商编码：</label>
+                        <input type="text" name="code" required th:value="${provider!=null?provider.code:''}"/>
+                    </div>
+                    <div class="">
+                        <label>供应商名称：</label>
+                        <input type="text" name="name"  th:value="${provider!=null?provider.name:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>联系人：</label>
+                        <input type="text" name="linkman"  th:value="${provider!=null?provider.linkman:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>电话：</label>
+                        <input type="text" name="phone"  th:value="${provider!=null?provider.phone:''}" required/>
+                    </div>
+                    <div class="">
+                        <label>传真：</label>
+                        <input type="text" name="fax"  th:value="${provider!=null?provider.fax:''}" required/>
+                    </div>
+                    <div class="providerAddBtn">
+                        <!--<a href="#">保存</a>-->
+                        <input type="submit" value="保存"/><span th:text="${message}"></span>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <label>名称：</label>
-            <input type="text" name="name" required>
-        </div>
-        <div>
-            <label>联系人：</label>
-            <input type="text" name="linkman" required>
-        </div>
-        <div>
-            <label>手机：</label>
-            <input type="text" name="phone" required>
-        </div>
-        <div>
-            <label>fax：</label>
-            <input type="text" name="fax" required>
-        </div>
-        <input type="submit" value="提交">
-    </form>
+    </section>
+    <footer class="footer">
+    </footer>
+<script src="js/time.js"></script>
+
 </body>
-</html> 
+</html>

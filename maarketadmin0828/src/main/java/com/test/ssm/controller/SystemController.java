@@ -15,6 +15,12 @@ public class SystemController {
     @Autowired
     private AdminUserService adminUserService;
 
+
+    @RequestMapping("/")
+    public String view(){
+        return "login";
+    }
+
     @RequestMapping("{page}.html")
     public String index(@PathVariable String page,HttpSession httpSession){
         System.out.println(httpSession.getAttribute("adminUser"));
@@ -27,13 +33,12 @@ public class SystemController {
             model.addAttribute("message","用户名或密码错误");
             return "login";
         }
-        httpSession.setAttribute("adminUser",name);
+        httpSession.setAttribute("adminUser",userByName);
         return "redirect:index.html";
     }
 
     @RequestMapping("doLoginOut.html")
     public String louOut(HttpSession session){
-        System.out.println("loginout");
         session.invalidate();
         return "redirect:login.html";
     }

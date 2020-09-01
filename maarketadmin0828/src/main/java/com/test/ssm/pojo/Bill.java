@@ -12,6 +12,15 @@ public class Bill {
     private String providerName;
     private Integer status;
     private Date createdDate;
+    private String  createdPerson;
+
+    public String getCreatedPerson() {
+        return createdPerson;
+    }
+
+    public void setCreatedPerson(String createdPerson) {
+        this.createdPerson = createdPerson;
+    }
 
     public String getProviderName() {
         return providerName;

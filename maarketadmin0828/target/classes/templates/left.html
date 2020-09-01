@@ -1,0 +1,12 @@
+<div class="left" th:fragment="left" xmlns:th="http://www.w3.org/1999/xhtml">
+    <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+    <nav>
+        <ul class="list">
+            <li th:id="${type==1?'active':''}"><a href="billList.html">账单管理</a></li>
+            <li th:id="${type==2?'active':''}"><a href="providerList.html">供应商管理</a></li>
+            <li th:id="${type==3?'active':''}"><a href="userList.html">用户管理</a></li>
+            <li th:id="${type==4?'active':''}"><a href="password.html">密码修改</a></li>
+            <li><a href="doLoginOut.html">退出系统</a></li>
+        </ul>
+    </nav>
+</div>

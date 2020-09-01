@@ -1,25 +1,73 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<head>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
 </head>
 <body>
-<table>
-    <form action="providerList.html" method="post">
-        <span>供应商名称：</span>
-        <input type="text" placeholder="请输入供应商" name="name">
-        <input type="submit" value="查询">
-    </form>
-    <tr th:each="u:${providers}">
-        <td th:text="${u.code}"></td>
-        <td th:text="${u.name}"></td>
-        <td th:text="${u.linkman}"></td>
-        <td th:text="${u.phone}"></td>
-        <td th:text="${u.fax}"></td>
-        <td th:text="${#dates.format(u.createdDate,'yyyy-MM-dd HH:mm:ss')}"></td>
-    </tr>
-</table>
+<div th:replace="header.html"></div>
+<!--主体内容-->
+<section class="publicMian ">
+    <div th:replace="left(type=2)"></div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>供应商管理页面</span>
+        </div>
+        <div class="search">
+            <form action="providerList.html" method="post" id="userForm">
+                <span>供应商名称：</span>
+                <input type="text" placeholder="请输入供应商名称" name="name" th:value="${param.name}"/>
+                <input type="button" value="查询" onclick="$('#userForm').submit()"/>
+                <a href="goProEdit.html">添加供应商</a>
+            </form>
+        </div>
+        <!--用户-->
+        <table class="providerTable" cellpadding="0" cellspacing="0">
+            <tr class="firstTr">
+                <th width="10%">供应商编码</th>
+                <th width="20%">供应商名称</th>
+                <th width="10%">联系人</th>
+                <th width="10%">联系电话</th>
+                <th width="10%">传真</th>
+                <th width="10%">创建时间</th>
+                <th width="30%">操作</th>
+            </tr>
+            <tr th:each="u:${providers}">
+                <td th:text="${u.code}">hanlu</td>
+                <td th:text="${u.name}">韩露</td>
+                <td th:text="${u.linkman}">女</td>
+                <td th:text="${u.phone}">20</td>
+                <td th:text="${u.fax}">15918230478</td>
+                <td th:text="${#dates.format(u.createdDate, 'yyyy-MM-dd')}">管理员</td>
+                <td>
+                    <a href="userView.html"><img src="img/read.png" alt="查看" title="查看"/></a>
+                    <a th:href="@{goProEdit.html?id={id}(id=${u.id})}"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a th:href="@{delPro.html?id={id}(id=${u.id})}" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+<!--点击删除按钮后弹出的页面-->
+<div class="zhezhao"></div>
+<div class="remove" id="removeUse">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该用户吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+</footer>
+
+
 </body>
 </html>

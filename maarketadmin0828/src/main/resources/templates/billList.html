@@ -1,18 +1,105 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
-<head>
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
 </head>
 <body>
-    <p th:each="p:${providers}" th:text="${p.name}"></p>
+<div th:replace="header.html"></div>
+<!--主体内容-->
+<section class="publicMian ">
+    <div th:replace="left(type=1)"></div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>账单管理页面</span>
+        </div>
+        <div class="search">
+            <form action="billList.html" method="post" id="billForm">
+                <input type="hidden" name="pageNum" id="pageNum">
+                <span>商品名称：</span>
+                <input type="text" name="goodsName" placeholder="请输入商品的名称" th:value="${bill!=null?bill.goodsName:''}"/>
 
-    <tr th:each="b:${pageInfo.list}">
-        <td th:text="${b.id}"></td>
-        <td th:text="${b.goodsName}"></td>
-        <td th:text="${b.providerName}"></td>
-        <td th:text="${b.price}"></td>
-    </tr>
+                <span>供应商：</span>
+                <select name="providerId">
+                    <option value="">--请选择--</option>
+                    <option th:each="p:${providers}" th:value="${p.id}" th:text="${p.name}"
+                            th:selected="${bill!=null?bill.providerId==p.id:false}"></option>
+                </select>
+
+                <span>是否付款：</span>
+                <select name="status">
+                    <option value="">--请选择--</option>
+                    <option value="2" th:selected="${bill!=null?bill.status==2:false}">已付款</option>
+                    <option value="1" th:selected="${bill!=null?bill.status==1:false}">未付款</option>
+                </select>
+
+                <input type="button" value="查询" onclick="$('#billForm').submit()"/>
+                <a href="goBillEdit.html">添加订单</a>
+            </form>
+        </div>
+        <!--账单表格 样式和供应商公用-->
+        <table class="providerTable" cellpadding="0" cellspacing="0">
+            <tr class="firstTr">
+                <th width="10%">账单id</th>
+                <th width="20%">商品名称</th>
+                <th width="10%">供应商</th>
+                <th width="10%">账单金额</th>
+                <th width="10%">是否付款</th>
+                <th width="10%">创建时间</th>
+                <th width="10%">创建人</th>
+                <th width="30%">操作</th>
+            </tr>
+            <tr th:each="d:${pageInfo.list}">
+                <td th:text="${d.id}">1</td>
+                <td th:text="${d.goodsName}">花生油</td>
+                <td th:text="${d.providerName}">北京市粮油总公司</td>
+                <td th:text="${d.price}">22.00</td>
+                <td th:text="${d.status==1?'未付款':'已付款'}">未付款</td>
+                <td th:text="${#dates.format(d.createdDate, 'yyyy-MM-dd')}">2015-11-12</td>
+                <td th:text="${d.createdPerson}"></td>
+                <td>
+                    <a th:href="@{billView.html?id={id}(id=${d.id})}"><img src="img/read.png" alt="查看" title="查看"/></a>
+                    <a th:href="@{goBillEdit.html?id={id}(id=${d.id})}"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a th:href="@{delBill.html?id={id}(id=${d.id})}" class="removeUser"><img src="img/schu.png" alt="删除"
+                                                                                             title="删除"/></a>
+                </td>
+            </tr>
+        </table>
+        <div style="float:right;padding:10px">
+            <a href="javascript:void(0)" onclick="goPage(1)">首页</a>
+            <a href="javascript:void(0)"  th:onclick="goPage([[${pageInfo.prePage}]])">上一页</a>
+            <a href="javascript:void(0)"  th:onclick="goPage([[${pageInfo.nextPage}]])">下一页</a>
+            <a href="javascript:void(0)" th:onclick="goPage([[${pageInfo.pages}]])">尾页</a>
+        </div>
+    </div>
+</section>
+<script>
+function goPage(pn) {
+    $("#pageNum").val(pn);
+    $("#billForm").submit()
+}
+</script>
+<!--点击删除按钮后弹出的页面-->
+<div class="zhezhao"></div>
+<div class="remove" id="removeBi">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该订单吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script src="js/time.js"></script>
+
 </body>
-</html> 
+</html>

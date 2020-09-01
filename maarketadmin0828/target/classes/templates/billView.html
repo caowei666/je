@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>超市账单管理系统</title>
+    <div th:replace="css.html"></div>
+</head>
+<body>
+<div th:replace="header.html"></div>
+<!--主体内容-->
+<section class="publicMian ">
+    <div th:replace="left(type=1)"></div>
+    <p th:text="${billItem.goodsName}"></p>
+    <p th:text="${billItem.providerName}"></p>
+</section>
+</body>
+</html>
