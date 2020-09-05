@@ -18,5 +18,6 @@
 </shiro:hasRole>
 
 <a href="/menu/user.html">菜单管理</a>
+<a href="/menu/list.html">菜单管理2</a>
 </body>
 </html>

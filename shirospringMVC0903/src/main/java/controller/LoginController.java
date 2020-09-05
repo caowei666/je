@@ -3,6 +3,7 @@ package controller;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,11 @@ public class LoginController {
     @RequestMapping("/gologin.html")
     public String gologin(){
         return "login";
+    }
+
+    @RequestMapping("/error.html")
+    public String error(){
+        return "error";
     }
 
     @RequestMapping("/index.html")
@@ -28,6 +34,12 @@ public class LoginController {
 
     @RequestMapping("/menu/user.html")
     public String user(){
+        return "menu";
+    }
+
+    @RequiresPermissions("menu:edit")
+    @RequestMapping("/menu/list.html")
+    public String list(){
         return "menu";
     }
 

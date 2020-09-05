@@ -15,7 +15,7 @@
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="realm" ref="iniRealm" />
     </bean>
-    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+    <bean id="shiroFilter" class="filter.MyShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <!--去登录的地址-->
         <property name="loginUrl" value="/gologin.html" />
@@ -29,15 +29,32 @@
                 /login.html=anon
                 /index.html=authc
                 /role.html=authc,roles[admin]
-                /menu/**=authc,roles[admin],perms[menu:*]
             </value>
         </property>
+        <property name="filters">
+            <map>
+                <entry key="roles">
+                    <bean class="filter.MyRoleFilter"/>
+                </entry>
+                <entry key="perms">
+                    <bean class="filter.MyPermFilter"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <!--开启shiro使用注解权限-->
+    <bean id="lifecycleBeanPostProcess" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+          depends-on="lifecycleBeanPostProcess"/>
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
     </bean>
     <!--开启扫描-->
     <mvc:annotation-driven />
     <!--扫描controller包-->
-    <context:component-scan base-package="controller">
+    <context:component-scan base-package="controller,filter">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+        <context:include-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice" />
     </context:component-scan>
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
