@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script src="http://static.vm.com/media/jquery.easyui.min.js"></script>
-<link href="http://static.vm.com/media/easyui.css" rel="stylesheet">
+<script src="<%=request.getContextPath()%> /media/jquery.easyui.min.js"></script>
+<link href="<%=request.getContextPath()%> /media/easyui.css" rel="stylesheet">
 <button class="layui-btn layui-btn-sm" id="addBtn">添加</button>
 <button class="layui-btn layui-btn-sm" id="delBtn">删除</button>
 <ul id="tt" class="easyui-tree"></ul>

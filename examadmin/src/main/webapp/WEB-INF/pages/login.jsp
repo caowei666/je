@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>登录页</title>
-    <link rel="stylesheet" href="http://static.vm.com/media/layui/css/layui.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%> /media/layui/css/layui.css">
 </head>
 <body>
 <div class="layui-container">

@@ -7,23 +7,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b0e542-9e22-4636-b537-475397eeb369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/AuthExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/MyPermFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/MyRoleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/MyShiroFilterFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/springbootexamadmin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/StartApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/SystemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/PremissionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/RoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/PremissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/MenuInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyRealml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyShiroFilterFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/AjaxResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/ExamConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/TableData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shiro.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shiro.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/classes/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/classes/shiro.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/classes/shiro.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/springMVC-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-springMVC-0903-1.0-SNAPSHOT/WEB-INF/springMVC-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyRoleFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
+            <state relative-caret-position="285">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            <state relative-caret-position="350">
+              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -86,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/filter/AuthExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="76">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="171">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,7 +171,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="380">
               <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
             </state>
           </provider>
@@ -164,9 +204,9 @@
         <option value="$PROJECT_DIR$/src/main/java/filter/AuthExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ControllerAdvice.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/filter/MyShiroFilterFactoryBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" />
       </list>
     </option>
   </component>
@@ -191,11 +231,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="857" />
-    <option name="y" value="-20" />
-    <option name="width" value="934" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -205,6 +245,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,14 +314,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599322090693" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599322106811" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -453,18 +493,19 @@
       <option name="presentableId" value="Default" />
       <updated>1599147764929</updated>
       <workItem from="1599147770678" duration="3987000" />
-      <workItem from="1599315958158" duration="6096000" />
+      <workItem from="1599315958158" duration="6192000" />
+      <workItem from="1599499931225" duration="109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10083000" />
+    <option name="totallyTimeSpent" value="10288000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37868634" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27211797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -474,7 +515,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38526914" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38526914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -603,13 +644,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/menu.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyPermFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/localMaven/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -631,48 +665,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyRoleFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ControllerAdvice.java" />
     <entry file="jar://D:/localMaven/org/apache/shiro/shiro-spring/1.4.0/shiro-spring-1.4.0.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyPermFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyRoleFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -683,20 +697,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/AuthExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        <state relative-caret-position="76">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="171">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -710,13 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filter/AuthExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
         </state>
       </provider>
     </entry>

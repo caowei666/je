@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/exam_code?serverTimezone=UTC
+    username: root
+    password: 19940206
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+server:
+  port: 8080
+mybatis:
+  type-aliases-package: com.test.boot.pojo
+  mapper-locations: classpath:com/test/boot/dao/mapper/*.xml
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

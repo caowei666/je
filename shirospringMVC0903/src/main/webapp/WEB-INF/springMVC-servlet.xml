@@ -26,6 +26,7 @@
         <!--定义过滤的规则-->
         <property name="filterChainDefinitions">
             <value>
+                /=authc
                 /login.html=anon
                 /index.html=authc
                 /role.html=authc,roles[admin]
