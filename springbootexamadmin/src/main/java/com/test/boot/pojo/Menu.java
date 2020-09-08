@@ -10,6 +10,7 @@ public class Menu {
     private Integer id;
     private String name;
     private String url;
+    private String perms;
     private Integer parentId;
     private Integer sort;
     private Integer type;

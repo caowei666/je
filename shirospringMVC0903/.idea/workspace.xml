@@ -7,63 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b0e542-9e22-4636-b537-475397eeb369" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/springbootexamadmin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/ShiroConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/PremissionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/RoleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/PremissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/MenuInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyRealml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyShiroFilterFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/AjaxResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/ExamConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/TableData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyRoleFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot0823/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/MenuDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/MenuDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/PremissionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/PremissionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/PremissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/PremissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyRealml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyRealml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyShiroFilterFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/shiro/MyShiroFilterFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/dao/MenuDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/dao/MenuDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/dao/PremissionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/dao/PremissionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/shiro/MyRealml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/shiro/MyRealml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/shiro/MyShiroFilterFactoryBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootexamadmin/target/classes/com/test/boot/shiro/MyShiroFilterFactoryBean.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -108,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyShiroFilterFactoryBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="247">
               <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -232,10 +190,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="1116" />
+    <option name="width" value="1460" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -495,17 +452,18 @@
       <workItem from="1599147770678" duration="3987000" />
       <workItem from="1599315958158" duration="6192000" />
       <workItem from="1599499931225" duration="109000" />
+      <workItem from="1599605191586" duration="613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10288000" />
+    <option name="totallyTimeSpent" value="10901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27211797" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -690,6 +648,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyShiroFilterFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/localMaven/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/util/CollectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -738,20 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filter/MyShiroFilterFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springMVC-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
         </state>
       </provider>
     </entry>

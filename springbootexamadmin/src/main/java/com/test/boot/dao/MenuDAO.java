@@ -1,9 +1,11 @@
 package com.test.boot.dao;
 
 import com.test.boot.pojo.Menu;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface MenuDAO {
     List<Menu> getAllMenu();
 

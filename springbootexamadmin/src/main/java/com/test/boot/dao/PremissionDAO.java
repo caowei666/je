@@ -2,9 +2,12 @@ package com.test.boot.dao;
 
 import com.test.boot.pojo.Menu;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface PremissionDAO {
     void deleteRoleMenuByRoleId(Integer roleId);
     void addRoleMenu(@Param("roleId") Integer roleId, @Param("menuId") Integer menuId);

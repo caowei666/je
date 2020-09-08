@@ -7,6 +7,7 @@ import com.test.boot.service.RoleService;
 import com.test.boot.service.UserService;
 import com.test.boot.util.AjaxResult;
 import com.test.boot.util.TableData;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +35,7 @@ public class UserController {
         return new TableData(pageInfo.getTotal(),pageInfo.getList());
     }
 
+    @RequiresPermissions("sys:user:add")
     @RequestMapping(params = "act=edit")
     @ResponseBody
     public AjaxResult edit(User user){

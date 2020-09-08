@@ -24,9 +24,11 @@ public class MyShiroFilterFactoryBean extends ShiroFilterFactoryBean {
         }
         List<Menu> menus = menuDAO.getAllMenu();
         for (Menu menu : menus) {
-            if(StringUtils.isEmpty(menu.getUrl())){
+            if(!StringUtils.isEmpty(menu.getUrl())){
                 List<String> roleIds = premissionDAO.getRoleIdsByMenuId(menu.getId());
-                section.put(menu.getUrl(),"roles"+roleIds);
+                if(roleIds!=null&&roleIds.size()>0){
+                    section.put(menu.getUrl(),"roles"+roleIds);
+                }
             }
         }
         //section.put("/menu/**","roles[admin]");

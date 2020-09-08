@@ -23,7 +23,7 @@
     </select>
 
     <select id="getUserMenuList" parameterType="int" resultType="Menu">
-        select id,name,url,parent_id parentId,type from menu m
+        select id,name,url,parent_id parentId,type,perms from menu m
           inner join role_menu rm on m.id = rm.MENU_ID
           inner join user_role ur on ur.ROLE_ID = rm.ROLE_ID
           where ur.USER_ID = #{userId}
