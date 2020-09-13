@@ -10,6 +10,7 @@
         <module name="mysearch" />
         <module name="myserver1" />
         <module name="myserver2" />
+        <module name="myzuul" />
         <module name="springcloud0913" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="mysearch" options="-parameters" />
       <module name="myserver1" options="-parameters" />
       <module name="myserver2" options="-parameters" />
+      <module name="myzuul" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,23 @@
+server:
+  port: 80
+spring:
+  application:
+    name: ZULL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:root@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+zuul:
+  #ignored-services: search  #忽略search下的所有服务 不转发 actuator下看不到
+  #ignored-patterns: /**/search/**   #禁止转发包含search路径的服务 actuator下仍然看的到
+  routes:
+    cx:
+      path: /cx/**
+      serviceId: search    #输入cx会转到search服务

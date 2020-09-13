@@ -2,29 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423ce5c7-08ab-4e43-be9c-ab6ed5d0cf88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/test/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/config/MyWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myserver1/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myserver2/src/main/java/com/qf/myserver2/config/MyWebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myserver2/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springMVC0727/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springMVC0727/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zookeeper0909/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zookeeper0909/src/main/java/ZkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/src/main/java/ZkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myzuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycustomer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mycustomer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycustomer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mycustomer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myserver1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myserver1/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,6 +28,7 @@
     <ignored path="$PROJECT_DIR$/mysearch/target/" />
     <ignored path="$PROJECT_DIR$/mycustomer/target/" />
     <ignored path="$PROJECT_DIR$/myserver2/target/" />
+    <ignored path="$PROJECT_DIR$/myzuul/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +38,76 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myserver2/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/myzuul/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="266">
+              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/MyzuulApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myzuul/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myserver1/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/Myserver1Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myserver1/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -52,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="246">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,20 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mycustomer/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -85,64 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysearch/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/MysearchApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myserver2/src/main/java/com/qf/myserver2/Myserver2Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/Myserver1Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myserver1/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="76">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -152,6 +147,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -164,17 +160,28 @@
       <list>
         <option value="$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/Myserver1Application.java" />
         <option value="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/MysearchApplication.java" />
-        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java" />
-        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/myserver1/pom.xml" />
-        <option value="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/config/MyWebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/mycustomer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/myserver2/src/main/java/com/qf/myserver2/config/MyWebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/myserver2/src/main/java/com/qf/myserver2/Myserver2Application.java" />
-        <option value="$PROJECT_DIR$/myserver1/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/myserver2/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/myserver1/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mysearch/pom.xml" />
+        <option value="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/bean/Customer.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/bean/Customer.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallback.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/mycustomer/pom.xml" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java" />
+        <option value="$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/MyzuulApplication.java" />
+        <option value="$PROJECT_DIR$/myzuul/pom.xml" />
+        <option value="$PROJECT_DIR$/myzuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java" />
       </list>
     </option>
   </component>
@@ -197,17 +204,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myserver1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="mycustomer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mycustomer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="937" />
-    <option name="y" value="25" />
-    <option name="width" value="900" />
-    <option name="height" value="995" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="750" />
+    <option name="y" value="28" />
+    <option name="width" value="988" />
+    <option name="height" value="993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,16 +278,6 @@
               <item name="mycustomer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mycustomer" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="mycustomer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,31 +304,82 @@
               <item name="mysearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="mysearch" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="mysearch" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysearch" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="myserver1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="mysearch" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
+              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -345,13 +398,17 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600005301364" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600015028272" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qf.mycustomer.bean" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaee\springcloud0913\myzuul\src\main\resources" />
       <recent name="D:\javaee\springcloud0913\myserver2\src\main\java\com\qf\myserver2" />
       <recent name="D:\javaee\springcloud0913\myserver2\src\main\resources" />
     </key>
@@ -368,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MycustomerApplication">
+  <component name="RunManager" selected="Spring Boot.MyzuulApplication">
     <configuration name="MycustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mycustomer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.mycustomer.MycustomerApplication" />
@@ -376,9 +433,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MysearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="MysearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="mysearch" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.mysearch.MysearchApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -404,6 +462,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyzuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myzuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.myzuul.MyzuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MycustomerApplication" />
+      <item itemvalue="Spring Boot.MysearchApplication" />
+      <item itemvalue="Spring Boot.Myserver1Application" />
+      <item itemvalue="Spring Boot.Myserver1Application (1)" />
+      <item itemvalue="Spring Boot.Myserver2Application" />
+      <item itemvalue="Spring Boot.MyzuulApplication" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -415,16 +488,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599963353720</updated>
-      <workItem from="1599963357561" duration="9912000" />
+      <workItem from="1599963357561" duration="19725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9912000" />
+    <option name="totallyTimeSpent" value="19725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="600" y="23" width="790" height="794" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -432,7 +504,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18565683" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36885247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
@@ -444,12 +516,12 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2719547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39879155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" weight="0.329235" />
       <window_info anchor="right" id="RestServices" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -470,23 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mycustomer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myserver1/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -522,23 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/Myserver1Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myserver1/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myserver2/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -553,20 +591,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java">
+    <entry file="file://$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/bean/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysearch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/bean/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/util/SearchServiceFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="9" column="76" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="261">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver1/src/main/java/com/qf/myserver1/Myserver1Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycustomer/src/main/java/com/qf/mycustomer/MycustomerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -575,24 +726,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mycustomer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="209">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysearch/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java">
+    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/MyzuulApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="114">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myserver1/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
           </folding>
         </state>
       </provider>

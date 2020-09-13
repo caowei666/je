@@ -2,12 +2,13 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: qf1
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://root:root@qf2:8762/eureka
+      #defaultZone: http://root:root@qf2:8762/eureka
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
   server:
     #不要保护模式
     enable-self-preservation: false
