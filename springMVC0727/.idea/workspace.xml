@@ -7,12 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a559b6cd-3de0-458f-ad66-b3fa6b1da41d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../shirospringMVC0903/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shirospringMVC0903/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shirospringMVC0903/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shirospringMVC0903/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shirospringMVC0903/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shiro0902/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shiro0902/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zookeeper0909/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zookeeper0909/src/main/java/ZkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/src/main/java/ZkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zookeeper0909/target/classes/ZkTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -231,7 +238,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1056" />
+    <option name="x" value="1055" />
     <option name="y" value="20" />
     <option name="width" value="900" />
     <option name="height" value="995" />
@@ -244,6 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -297,7 +305,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1342,11 +1349,12 @@
       <workItem from="1596632381996" duration="3601000" />
       <workItem from="1596672722642" duration="12012000" />
       <workItem from="1599148704458" duration="48000" />
+      <workItem from="1599917160344" duration="139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41222000" />
+    <option name="totallyTimeSpent" value="41361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1361,7 +1369,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49889135" visible="true" weight="0.15013404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49889135" visible="true" weight="0.15214477" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1732,7 +1740,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>

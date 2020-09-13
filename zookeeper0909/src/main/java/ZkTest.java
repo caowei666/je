@@ -8,8 +8,8 @@ public class ZkTest {
     static ZooKeeper zooKeeper = null;
     public static void main(String[] args) {
         try {
-            //zooKeeper = new ZooKeeper("www.vm.com:2181", 5000, new Watcher() {
-            zooKeeper = new ZooKeeper("www.vm.com:2281,www.vm.com:2282,www.vm.com:2283", 5000, new Watcher() {
+            zooKeeper = new ZooKeeper("www.vm.com:2181", 5000, new Watcher() {
+//            zooKeeper = new ZooKeeper("www.vm.com:2281,www.vm.com:2282,www.vm.com:2283", 5000, new Watcher() {
                 @Override
                 public void process(WatchedEvent watchedEvent) {
                     Event.EventType type = watchedEvent.getType();

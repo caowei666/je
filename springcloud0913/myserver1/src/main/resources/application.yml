@@ -1,0 +1,18 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: qf1
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://root:root@qf2:8762/eureka
+  server:
+    #不要保护模式
+    enable-self-preservation: false
+spring:
+  security:
+    user:
+      name: root
+      password: root
