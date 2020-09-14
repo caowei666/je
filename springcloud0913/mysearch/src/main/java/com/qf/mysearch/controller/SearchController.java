@@ -9,11 +9,14 @@ public class SearchController {
     @Value("${server.port}")
     private String port;
 
+    @Value("${test_config}")
+    private String name;
+
     @GetMapping("/search")
     public String search(){
-        int i = 5/0;
+        //int i = 5/0;
         System.out.println("search:"+port);
-        return "search:"+port;
+        return "search:"+port+"------"+ name;
     }
 
     @GetMapping("/search/{id}")

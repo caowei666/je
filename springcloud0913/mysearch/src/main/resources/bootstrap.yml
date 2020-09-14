@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: SEARCH
+  cloud:
+    config:
+      name: mycloudtest
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
 eureka:
   client:
     service-url:
