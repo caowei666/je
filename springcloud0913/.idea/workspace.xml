@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423ce5c7-08ab-4e43-be9c-ab6ed5d0cf88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myconfigserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/src/main/java/com/qf/mysearch/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysearch/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mysearch/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myzuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myzuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myzuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myzuul/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myzuul/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="1083">
               <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
             </state>
           </provider>
@@ -60,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="285">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -200,8 +190,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1217" />
-    <option name="y" value="7" />
+    <option name="x" value="545" />
+    <option name="y" value="42" />
     <option name="width" value="990" />
     <option name="height" value="995" />
   </component>
@@ -212,74 +202,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud0913" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud0913" type="462c0819:PsiDirectoryNode" />
-              <item name="myzuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -388,16 +311,16 @@
       <updated>1599963353720</updated>
       <workItem from="1599963357561" duration="19725000" />
       <workItem from="1600090930980" duration="5773000" />
-      <workItem from="1600097096812" duration="1647000" />
+      <workItem from="1600097096812" duration="1843000" />
+      <workItem from="1600184733100" duration="36000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27145000" />
+    <option name="totallyTimeSpent" value="27377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="974" y="6" width="792" height="796" extended-state="0" />
-    <editor active="true" />
+    <frame x="436" y="34" width="792" height="796" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.4945504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -409,7 +332,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.34036145" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.34036145" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,6 +527,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/MyzuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myserver1/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -652,30 +599,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/MyzuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myzuul/src/main/java/com/qf/myzuul/util/MyZuulFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myzuul/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
         </state>
       </provider>
     </entry>
