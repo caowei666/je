@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32eb7923-69af-466e-a902-14ee895be887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/test/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springMVC0727/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springMVC0727/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/client/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/client/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/common/common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dubbo0912/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/common/src/main/java/service/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/java/service/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/src/main/resources/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/target/classes/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/target/classes/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../dubbo0912/provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dubbo0912/provider/target/tomcat/logs/access_log.2020-09-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../redis0915/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis0915/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ZkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ZkTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ZkTest$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ZkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ZkTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ZkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="237">
+              <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,6 +70,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>createNode</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,9 +99,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1055" />
-    <option name="y" value="20" />
-    <option name="width" value="900" />
+    <option name="x" value="826" />
+    <option name="y" value="61" />
+    <option name="width" value="1169" />
     <option name="height" value="995" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -149,11 +161,13 @@
       <workItem from="1599872804380" duration="37000" />
       <workItem from="1599874332392" duration="4259000" />
       <workItem from="1599912263256" duration="4705000" />
+      <workItem from="1600699391846" duration="3482000" />
+      <workItem from="1600784555429" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15674000" />
+    <option name="totallyTimeSpent" value="20463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -168,7 +182,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34135976" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28045326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -204,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ZkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="237">
+          <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

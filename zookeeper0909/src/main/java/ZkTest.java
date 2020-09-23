@@ -8,7 +8,7 @@ public class ZkTest {
     static ZooKeeper zooKeeper = null;
     public static void main(String[] args) {
         try {
-            zooKeeper = new ZooKeeper("www.vm.com:2181", 5000, new Watcher() {
+            zooKeeper = new ZooKeeper("www.vm.com:2181", 10000, new Watcher() {
 //            zooKeeper = new ZooKeeper("www.vm.com:2281,www.vm.com:2282,www.vm.com:2283", 5000, new Watcher() {
                 @Override
                 public void process(WatchedEvent watchedEvent) {
@@ -23,10 +23,11 @@ public class ZkTest {
 //            createNode("/p1","520");
 //            Stat exist = exist("/coding123");
 //            zooKeeper.delete("/coding123",-1);
-            List<String> children = zooKeeper.getChildren("/", null);
+            List<String> children = zooKeeper.getChildren("/dubbo/service.HelloService/providers", null);
             for (String child:children){
                 System.out.println(child);
             }
+//            zooKeeper.delete("/dubbo",-1);
 //            zooKeeper.delete("/coding0000000001",-1);
 //            Stat stat = exist("/coding");
 //            if(stat!=null){

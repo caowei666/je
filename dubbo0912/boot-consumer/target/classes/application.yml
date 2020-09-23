@@ -1,0 +1,9 @@
+dubbo:
+  application:
+    name: boot-consumer
+  registry:
+    address: zookeeper://www.vm.com:2181
+  consumer:
+    timeout: 10000
+server:
+  port: 8082

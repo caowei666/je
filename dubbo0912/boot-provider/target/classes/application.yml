@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: boot-provider
+  protocol:
+    name: dubbo
+    port: 20882
+  registry:
+    address: zookeeper://www.vm.com:2181
+  scan:
+    base-packages: com.test.dubbo.provider
+server:
+  port: 8080

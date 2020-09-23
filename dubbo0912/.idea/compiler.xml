@@ -6,8 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bootconsumer" />
+        <module name="bootprovider" />
+        <module name="bootservice" />
+        <module name="client" />
+        <module name="common" />
         <module name="provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bootservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bootconsumer" options="-parameters" />
+      <module name="bootprovider" options="-parameters" />
+      <module name="bootservice" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="provider" options="-parameters" />
+    </option>
   </component>
 </project>
