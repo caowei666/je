@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: bike-consumer
+  registry:
+    address: zookeeper://www.vm.com:2181
+  consumer:
+    timeout: 5000
+server:
+  port: 8082
+spring:
+  mvc:
+    view:
+      suffix: .html

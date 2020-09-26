@@ -1,6 +1,8 @@
 package com.test.bike.pojo;
 
-public class PlatForm {
+import java.io.Serializable;
+
+public class PlatForm implements Serializable {
     private Integer id;
     private String name;
 

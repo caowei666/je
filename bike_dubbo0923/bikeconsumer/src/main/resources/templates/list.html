@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-lg-6">
+        <form action="list.html" method="post" class="form-inline" id="searchForm">
+            <input type="hidden" id="pageNum" name="pageNum">
+            <div class="form-group">
+                <label>平台</label>
+                <select class="form-control" name="platId">
+                    <option value="">请选择</option>
+                    <option th:each="p:${platforms}" th:value="${p.id}" th:text="${p.name}"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>状态</label>
+                <select class="form-control" name="status">
+                    <option value="">请选择</option>
+                    <option value="1">正常</option>
+                    <option value="0">报废</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">查询</button> <button type="button" class="btn btn-success" onclick="window.location.href='edit.html'">+添加</button>
+            </div>
+        </form>
+        <table class="table table-striped table-bordered" style="margin-top:20px">
+            <tr>
+                <td>ID</td>
+                <td>平台</td>
+                <td>车牌号</td>
+                <td>维修记录</td>
+                <td>维修时间</td>
+                <td>状态</td>
+                <td>操作</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -17,6 +17,7 @@
     <modules>
         <module>bikecommon</module>
         <module>bikeprovider</module>
+        <module>bikeconsumer</module>
     </modules>
 
     <dependencyManagement>
@@ -25,6 +26,11 @@
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>0.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>1.2.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
