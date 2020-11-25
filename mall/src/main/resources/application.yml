@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?serverTimezone=UTC
+    password: 19940206
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:com/example/mall/dao/mapper/*.xml
+  type-aliases-package: com.example.mall.pojo
+

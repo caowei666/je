@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mall.dao.PmsBrandMapper">
+    <select id="getPsmBrandList" resultType="PmsBrand">
+        select id,name,first_letter,sort,factory_status,show_status,product_count,product_comment_count from pms_brand
+    </select>
+
+    <select id="getPmsBrand" parameterType="int">
+        select id,name,first_letter,sort,factory_status,show_status,product_count,product_comment_count from pms_brand where id = #{pmsBrandId}
+    </select>
+
+    <insert id="addPmsBrandList" parameterType="PmsBrand">
+        insert into pms_brand(name,first_letter,sort,factory_status,show_status,logo,big_pic,brand_story)
+        values (#{name},#{firstLetter},#{sort},#{factoryStatus},#{showStatus},#{logo},#{big_pic},#{brand_story})
+    </insert>
+
+    <delete id="deletePmsBrandList" parameterType="int">
+        delete form pms_brand where id=#{pmsBrandId}
+    </delete>
+    
+    <update id="updatePmsBrandList" parameterType="PmsBrand">
+        update pms_brand
+        <set>
+            <if test="name!=null and name!=''">name=#{name},</if>
+            <if test="first_letter!=null and first_letter!=''">first_letter=#{firstLetter},</if>
+            <if test="sort!=null">sort=#{sort},</if>
+            <if test="factory_status!=null">factory_status=#{factoryStatus},</if>
+            <if test="show_status!=null">show_status=#{showStatus},</if>
+            <if test="logo!=null and logo!=''">logo=#{logo},</if>
+            <if test="big_pic!=null and big_pic!=''">big_pic=#{bigPic},</if>
+            <if test="brand_story!=null">brand_story=#{brandStory},</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>
