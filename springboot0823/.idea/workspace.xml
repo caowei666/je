@@ -24,157 +24,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9cf111e-3ea7-475d-8ffd-f9bef5483655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/springbootexamadmin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/PremissionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/RoleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/PremissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/dao/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/MenuInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/interceptor/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/AjaxResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/ExamConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/java/com/test/boot/util/TableData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springbootexamadmin/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/role.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/src/main/webapp/WEB-INF/pages/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/role.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../examadmin/target/exam-admin-1.0-SNAPSHOT/WEB-INF/pages/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shirospringMVC0903/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shirospringMVC0903/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="e9cf111e-3ea7-475d-8ffd-f9bef5483655" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/controller/HelloController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/controller/DeptController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-online.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/dao/DeptDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/TestBootStarter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -194,13 +48,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
-  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -212,7 +59,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\localMaven" />
-        <option name="mavenHome" value="D:/apache-maven-3.5.2" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.5.2" />
         <option name="userSettingsFile" value="D:\apache-maven-3.5.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -226,74 +73,6 @@
   <component name="ProjectId" id="1ggpntdEmjnA3AkLneJlF5nn2L3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot0823" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot0823" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -322,19 +101,7 @@
       <recent name="D:\javaee\springboot0823\src\main\resources\config" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.TestBootStarter">
+  <component name="RunManager">
     <configuration name="TestBootStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot0823" />
       <extension name="coverage">
@@ -448,46 +215,6 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="29248000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20643431" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="RestServices" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -496,14 +223,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -522,91 +242,7 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/pojo/Dept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/dao/DeptDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-online.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/controller/DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/boot/TestBootStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="masterDetails">
     <states>

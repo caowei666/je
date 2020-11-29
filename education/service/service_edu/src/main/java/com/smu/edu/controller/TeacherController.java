@@ -25,6 +25,7 @@ import java.util.List;
  * @since 2020-11-25
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/edu/teacher")
 @Api(tags="讲师管理")
 public class TeacherController {
@@ -35,7 +36,6 @@ public class TeacherController {
     @GetMapping("/findAll")
     @ApiOperation(value = "获取所有讲师列表")
     public Result findAllTeacher(){
-        int i = 2/0;
         List<Teacher> list = teacherService.list(null);
         return Result.success().data("items",list);
     }
