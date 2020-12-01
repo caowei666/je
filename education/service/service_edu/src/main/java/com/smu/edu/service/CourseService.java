@@ -1,8 +1,10 @@
 package com.smu.edu.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.smu.edu.domain.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.smu.edu.vo.CourseInfo;
+import com.smu.edu.vo.*;
 
 /**
  * <p>
@@ -15,4 +17,12 @@ import com.smu.edu.vo.CourseInfo;
 public interface CourseService extends IService<Course> {
 
     String saveCourseInfo(CourseInfo courseInfo);
+
+    CourseInfo getCourseInfo(String courseId);
+
+    String updateCourseInfo(CourseInfo courseInfo);
+
+    CoursePublishInfo getCoursePublishInfo(String courseId);
+
+    PageInfoList pageCourseList(CourseQuery courseQuery);
 }

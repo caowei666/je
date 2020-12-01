@@ -1,5 +1,8 @@
 package com.smu.edu.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.smu.base.exception.MyException;
 import com.smu.edu.domain.Course;
 import com.smu.edu.dao.CourseMapper;
@@ -7,10 +10,13 @@ import com.smu.edu.domain.CourseDescription;
 import com.smu.edu.service.CourseDescriptionService;
 import com.smu.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.smu.edu.vo.CourseInfo;
+import com.smu.edu.vo.*;
+import com.smu.utils.Result;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -40,4 +46,41 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         courseDescriptionService.save(courseDescription);
         return cid;
     }
+
+    @Override
+    public CourseInfo getCourseInfo(String courseId) {
+        CourseInfo courseInfo = new CourseInfo();
+        Course course = baseMapper.selectById(courseId);
+        BeanUtils.copyProperties(course,courseInfo);
+
+        CourseDescription byId = courseDescriptionService.getById(courseId);
+        BeanUtils.copyProperties(byId,courseInfo);
+        return courseInfo;
+    }
+
+    @Override
+    public String updateCourseInfo(CourseInfo courseInfo) {
+        Course course = new Course();
+        BeanUtils.copyProperties(courseInfo,course);
+        baseMapper.updateById(course);
+        String id = course.getId();
+
+        CourseDescription courseDescription = new CourseDescription();
+        BeanUtils.copyProperties(courseInfo,courseDescription);
+        courseDescriptionService.updateById(courseDescription);
+        return id;
+    }
+
+    @Override
+    public CoursePublishInfo getCoursePublishInfo(String courseId) {
+        CoursePublishInfo coursePublishInfo = baseMapper.getCoursePublishInfo(courseId);
+        return coursePublishInfo;
+    }
+
+    @Override
+    public PageInfoList pageCourseList( CourseQuery courseQuery) {
+        PageInfoList coursePageList = baseMapper.getCoursePageList(courseQuery);
+        return coursePageList;
+    }
+
 }
