@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class CourseQuery {
-    private Integer current;
-    private Integer size;
+    private Long current;
+    private Long size;
     private String title;
     private String teacherId;
     private String subjectParentId;

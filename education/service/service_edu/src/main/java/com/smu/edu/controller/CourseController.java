@@ -60,10 +60,16 @@ public class CourseController {
         return Result.success();
     }
 
-    @GetMapping("/pageCourseCondition")
-    public Result pageCourseCondition(@RequestBody(required = false) CourseQuery courseQuery){
-        PageInfoList pageInfoList = courseService.pageCourseList(courseQuery);
-        return Result.success().data("pageInfoList",pageInfoList);
+    @PostMapping("/pageCourseCondition")
+    public Result pageCourseCondition(@RequestBody CourseQuery courseQuery){
+        PageList<PageInfoList> pageInfoListPageList = courseService.pageCourseList(courseQuery);
+        return Result.success().data("pageInfoList",pageInfoListPageList);
+    }
+
+    @DeleteMapping("/deleteCourse/{courseId}")
+    public Result deleteCourse(@PathVariable String courseId){
+        courseService.removeCourseById(courseId);
+        return Result.success();
     }
 }
 

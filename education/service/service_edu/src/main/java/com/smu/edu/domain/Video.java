@@ -1,9 +1,8 @@
 package com.smu.edu.domain;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -44,12 +43,29 @@ public class Video implements Serializable {
     @ApiModelProperty(value = "视频id")
     private String videoSourceId;
 
-    private String videoOrigin;
+    @ApiModelProperty(value = "原始文件名称")
+    private String videoOriginName;
+
+    private String sort;
+
+    @ApiModelProperty(value = "播放次数")
+    private Long payCount;
+
+    @ApiModelProperty(value = "是否可以试听：0收费 1免费")
+    private Boolean isFree;
+
+    @ApiModelProperty(value = "视频时长（秒）")
+    private Float duration;
+
+    @ApiModelProperty(value = "Empty未上传 Transcoding转码中  Normal正常")
+    private String status;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(fill = FieldFill.INSERT)
     private Date gmtCreate;
 
     @ApiModelProperty(value = "修改时间")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModified;
 
 

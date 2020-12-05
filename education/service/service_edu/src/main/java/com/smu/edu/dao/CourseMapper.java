@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.smu.edu.vo.CoursePublishInfo;
 import com.smu.edu.vo.CourseQuery;
 import com.smu.edu.vo.PageInfoList;
+import io.swagger.models.auth.In;
 
 import java.util.List;
 
@@ -20,5 +21,7 @@ import java.util.List;
 public interface CourseMapper extends BaseMapper<Course> {
     public CoursePublishInfo getCoursePublishInfo(String courseId);
 
-    public PageInfoList getCoursePageList(CourseQuery courseQuery);
+    public List<PageInfoList> getCoursePageList(CourseQuery courseQuery);
+
+    public Long getCoursePageListTotal(CourseQuery courseQuery);
 }

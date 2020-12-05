@@ -19,4 +19,6 @@ public interface ChapterService extends IService<Chapter> {
     List<ChapterList> listChapter(String courseId);
 
     boolean deleteChapter(String chapterId);
+
+    void removeByCourseId(String courseId);
 }
